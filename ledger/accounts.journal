@@ -1,0 +1,130 @@
+; ============================================================
+; Chart of Accounts — Household Finance (Samuel & Fui Yee)
+; Currency: MYR
+; ============================================================
+
+; --- ASSETS ---
+account Assets:Bank:AmBank
+    note Samuel's AmBank savings/current account (8881020737788)
+account Assets:Bank:Maybank
+    note Samuel's Maybank Islamic savings account (158088-403774)
+account Assets:Cash
+    note Physical cash on hand
+account Assets:Loan:SovenaJohnson
+    note Cash lent to Sovena Johnson (domestic helper) — track until repaid
+
+; --- LIABILITIES ---
+account Liabilities:CreditCard:HSBC
+    note Samuel's HSBC credit card
+account Liabilities:CreditCard:AmBankCC
+    note Samuel's AmBank CARz Card Gold VISA (S) — card 4293 1307 0071 4622
+
+; --- INCOME ---
+account Income:Salary:Samuel
+    note Monthly salary from employer
+account Income:Salary:FuiYee
+    note Fui Yee's income
+account Income:Interest
+    note Bank interest / profit (Islamic)
+account Income:Refund
+    note Refunds and reversals
+account Income:Rental
+    note Rental income received
+account Income:Freelance
+    note Freelance / contract work income
+account Income:Other
+    note Miscellaneous income
+
+; --- EXPENSES: Food ---
+account Expenses:Food:Groceries
+    note Supermarkets and grocery shopping
+account Expenses:Food:DiningOut
+    note Restaurants, cafes, kopitiams
+account Expenses:Food:Delivery
+    note GrabFood, Foodpanda, ShopeeFood
+
+; --- EXPENSES: Transport ---
+account Expenses:Transport:Fuel
+    note Petrol and diesel
+account Expenses:Transport:Parking
+    note Parking fees
+account Expenses:Transport:Grab
+    note Grab rides
+account Expenses:Transport:PublicTransport
+    note LRT, MRT, bus, KTM
+account Expenses:Transport:Toll
+    note Highway toll
+
+; --- EXPENSES: Housing ---
+account Expenses:Housing:Mortgage
+    note Monthly mortgage — MYR 3,551 to Wong Fui Yee CIMB account, started Jul 2025
+account Expenses:Housing:Rent
+    note Monthly rent payment
+account Expenses:Housing:Maintenance
+    note Maintenance fees, repairs
+
+; --- EXPENSES: Utilities ---
+account Expenses:Utilities:Electric
+    note TNB electricity bills
+account Expenses:Utilities:Water
+    note Water bills
+account Expenses:Utilities:Internet
+    note Broadband / fibre internet
+account Expenses:Utilities:Phone
+    note Mobile phone plans
+
+; --- EXPENSES: Subscriptions ---
+account Expenses:Subscriptions:Spotify
+account Expenses:Subscriptions:Google
+    note Google One, Workspace, GCP
+account Expenses:Subscriptions:OpenAI
+    note ChatGPT Plus / API
+account Expenses:Subscriptions:Canva
+account Expenses:Subscriptions:Other
+    note Netflix, Disney+, Apple, WeChat, etc.
+account Expenses:Subscriptions:WaterFilter
+    note Cuckoo water purifier monthly rental
+
+; --- EXPENSES: Shopping ---
+account Expenses:Shopping:Online
+    note Shopee, Lazada, Amazon
+account Expenses:Shopping:General
+    note Retail, general merchandise
+
+; --- EXPENSES: Healthcare ---
+account Expenses:Healthcare:Medical
+    note Clinics, hospitals, doctors
+account Expenses:Healthcare:Pharmacy
+    note Watsons, Guardian, pharmacies
+account Expenses:Healthcare:Gym
+    note Gym membership (Anytime Fitness)
+
+; --- EXPENSES: Other ---
+account Expenses:Insurance
+    note Life, medical, vehicle insurance
+account Expenses:Education
+    note Courses, tuition, books
+account Expenses:Entertainment
+    note Leisure activities
+account Expenses:Personal
+    note Personal care, e-wallet QR payments
+account Expenses:Gifts
+    note Gifts and donations
+account Expenses:Bank:Fees
+    note Bank charges, annual fees, service tax
+account Expenses:Bank:Interest
+    note Credit card interest / late fees
+account Expenses:Tax
+    note Income tax, LHDN
+account Expenses:Instalment:Divo
+    note Divo house instalments (cabinets, water filter, etc.)
+account Expenses:Instalment:Personal
+    note Personal purchase instalments (iPad, Machines Apple reseller, etc.)
+account Expenses:Uncategorized
+    note Transactions not yet categorised (review and refine rules)
+
+; --- EQUITY / TRANSFERS ---
+account Equity:Transfer
+    note Inter-account transfers (nets to zero across accounts)
+account Equity:OpeningBalance
+    note Opening balance entries

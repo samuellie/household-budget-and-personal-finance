@@ -1,0 +1,79 @@
+; ============================================================
+; Household Finance — Master Journal
+; Samuel & Fui Yee  |  Currency: MYR
+; ============================================================
+; This file includes all sub-journals. Uncomment each line
+; once the corresponding journal has been generated.
+; ============================================================
+
+include commodities.journal
+include accounts.journal
+
+; ============================================================
+; AmBank (Assets:Bank:AmBank)
+; Coverage: Apr 2025 – May 2026
+; ============================================================
+include ambank/2025-04.journal
+include ambank/2025-05.journal
+include ambank/2025-06.journal
+include ambank/2025-07.journal
+include ambank/2025-08.journal
+include ambank/2025-09.journal
+include ambank/2025-10.journal
+include ambank/2025-11.journal
+include ambank/2025-12.journal
+include ambank/2026-01.journal
+include ambank/2026-02.journal
+include ambank/2026-03.journal
+include ambank/2026-04.journal
+include ambank/2026-05.journal
+
+; ============================================================
+; Maybank (Assets:Bank:Maybank)
+; Coverage: Mar 2025 – May 2026
+; ============================================================
+include maybank/2025-03.journal
+include maybank/2025-04.journal
+include maybank/2025-05.journal
+include maybank/2025-06.journal
+include maybank/2025-07.journal
+include maybank/2025-08.journal
+include maybank/2025-09.journal
+include maybank/2025-10.journal
+include maybank/2025-11.journal
+include maybank/2025-12.journal
+include maybank/2026-01.journal
+include maybank/2026-02.journal
+include maybank/2026-03.journal
+include maybank/2026-04.journal
+include maybank/2026-05.journal
+
+; ============================================================
+; AmBank Credit Card — CARz Card Gold VISA (S) (Liabilities:CreditCard:AmBankCC)
+; Coverage: Oct 2025 – Jun 2026
+; ============================================================
+include ambcc/opening-balance.journal
+include ambcc/2025-10.journal
+include ambcc/2025-11.journal
+include ambcc/2025-12.journal
+include ambcc/2026-01.journal
+include ambcc/2026-02.journal
+include ambcc/2026-03.journal
+include ambcc/2026-04.journal
+include ambcc/2026-05.journal
+include ambcc/2026-06.journal
+
+; ============================================================
+; HSBC Credit Card (Liabilities:CreditCard:HSBC)
+; Coverage: Sep 2025 – Jun 2026
+; ============================================================
+include hsbc/2025-09.journal
+include hsbc/2025-10.journal
+include hsbc/2025-11.journal
+include hsbc/2025-12.journal
+include hsbc/2026-01.journal
+include hsbc/2026-02.journal
+include hsbc/2026-03.journal
+include hsbc/2026-04.journal
+include hsbc/2026-05.journal
+include hsbc/2026-06.journal

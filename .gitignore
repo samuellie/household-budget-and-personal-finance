@@ -1,0 +1,29 @@
+# Source bank statement PDFs — large binaries, store locally only
+Bank Statements/
+
+# Generated Excel reports — binary, regenerate with generate_reports.py
+reports/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ledger journal backups
+*.journal.bak
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude Code local settings (personal, not shared)
+.claude/settings.local.json
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo

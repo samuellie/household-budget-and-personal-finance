@@ -1,0 +1,88 @@
+# Pending Transaction Classification — AmBank CC (CARz Card Gold VISA S)
+# =======================================================================
+# One representative entry per unique merchant pattern.
+# Fill in `category:` and optionally `rule_pattern:` for each.
+# Once confirmed, add rule_pattern → category into ledger/categories.rules
+# =======================================================================
+
+# ── INSURANCE ──────────────────────────────────────────────────────────────────
+
+- merchant: GREATEASTERN1031508066
+  example_desc: "GREATEASTERN1031508066 KUALA LUMPUR MY"
+  example_date: 2025-09-12
+  amount: 280.00
+  frequency: monthly
+  note: "Great Eastern insurance (no space — existing rule 'GREAT EASTERN' misses it)"
+  category: Expenses:Insurance
+  rule_pattern:           # GREATEASTERN
+
+# ── SUBSCRIPTIONS ──────────────────────────────────────────────────────────────
+
+- merchant: APPLE.COM/US
+  example_desc: "APPLE.COM/US 8006927753 US [USD 99.00]"
+  example_date: 2025-10-12
+  amount: 423.06
+  frequency: annual (USD 99)
+  note: "Apple subscription (iCloud+? Apple One?). Existing rule only matches APPLE.COM/BILL"
+  category: Expenses:Subscriptions:Other
+  rule_pattern:           # APPLE\.COM/US
+
+- merchant: WEIXIN
+  example_desc: "WEIXIN Surrounding c ShenZhen CN [CNY 15.00–30.00]"
+  example_date: 2025-09-08
+  amount: 17.99    # varies by FX rate
+  frequency: monthly (CNY 15–30)
+  note: "WeChat/Weixin — likely subscription or in-app payment"
+  category: Expenses:Subscriptions:Other
+  rule_pattern:           # WEIXIN
+
+# ── RECURRING SERVICES ─────────────────────────────────────────────────────────
+
+- merchant: Ezypay Anytime Fitness
+  example_desc: "Ezypay*Anytime Fitness TaKuala Lumpur MY"
+  example_date: 2025-10-01
+  amount: 192.78
+  frequency: monthly
+  note: "Gym membership billed via Ezypay. Alt desc: 'Ezypay Ezypay*Anytime FitKuala Lumpur MY'"
+  category: Expenses:Healthcare:Gym
+  rule_pattern:           # Ezypay.*Anytime Fit|Anytime Fitness
+
+- merchant: CUCKOO
+  example_desc: "CUCKOO Kuala Lumpur MY"
+  example_date: 2025-10-01
+  amount: 85.00
+  frequency: monthly
+  note: "Cuckoo water purifier monthly rental/subscription"
+  category: Expenses:Subscriptions:WaterFilter
+  rule_pattern:           # CUCKOO
+
+# ── INSTALMENT PLANS ───────────────────────────────────────────────────────────
+# These are 0% credit card instalments. Suggest Expenses:Instalment:<Name>
+# so they can be tracked separately from regular spending.
+
+- merchant: LEGEND (instalment)
+  example_desc: "LEGEND 03rd/24 (RM8,736)"
+  example_date: 2025-11-03
+  amount: 416.00    # monthly, 24-month plan, total ~RM9,984
+  frequency: monthly instalment
+  note: "24-month instalment — house cabinet"
+  category: Expenses:Instalment:Divo
+  rule_pattern:           # LEGEND \d+\w+/\d+
+
+- merchant: UR @ PINNACLE S PETA (instalment)
+  example_desc: "UR @ PINNACLE S PETA 26th/36 (RM810)"
+  example_date: 2025-11-03
+  amount: 81.00    # monthly, 36-month plan, total ~RM2,916
+  frequency: monthly instalment
+  note: "36-month instalment — iPad purchase instalment from UR @ PINNACLE S PETALING"
+  category: Expenses:Instalment:Personal
+  rule_pattern:           # UR @ PINNACLE
+
+- merchant: MACHINES-PVL BKT JAL (instalment)
+  example_desc: "MACHINES-PVL BKT JAL 20th/36 (RM5,520)"
+  example_date: 2025-11-03
+  amount: 345.00    # monthly, 36-month plan, total ~RM12,420
+  frequency: monthly instalment
+  note: "36-month instalment at Pavilion Bukit Jalil — 'MACHINES' brand (Apple reseller?)"
+  category: Expenses:Instalment:Personal
+  rule_pattern:           # MACHINES-PVL

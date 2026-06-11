@@ -1,0 +1,5 @@
+; Malaysian Ringgit commodity definition
+commodity MYR
+    format MYR 1,000.00
+    note Malaysian Ringgit
+    nomarket
