@@ -4,57 +4,57 @@
 ; Transactions: 11
 
 2025-09-02 * GT-KL GATEWAY KUALA LUMPUR MY
-    Expenses:Dining                                MYR 83.05
-    Liabilities:CreditCard:AmBankCC                MYR -83.05
+    Expenses:Samuel:Dining                                MYR 83.05
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -83.05
     ; raw: GT-KL GATEWAY KUALA LUMPUR MY 83.05
 
 2025-09-07 * PAYMENT RECEIVED - THANK YOU,LIE YING PING @ LEE YING PING,own,zhi hou
-    Liabilities:CreditCard:AmBankCC                MYR 500.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR 500.00
     Equity:Transfer                                MYR -500.00
     ; raw: PAYMENT RECEIVED - THANK YOU,LIE YING PING @ LEE YING 500.00CR PING,own,zhi hou
 
 2025-09-08 * FIGMA FIGMA.COM US [USD 64.80]
-    Expenses:Subscriptions                         MYR 277.10
-    Liabilities:CreditCard:AmBankCC                MYR -277.10
+    Expenses:Samuel:Subscriptions                         MYR 277.10
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -277.10
     ; raw: FIGMA FIGMA.COM US 277.10
 
 2025-09-08 * WEIXIN Surrounding c ShenZhen CN [CNY 30.00]
-    Expenses:Subscriptions:Other                   MYR 17.99
-    Liabilities:CreditCard:AmBankCC                MYR -17.99
+    Expenses:Samuel:Subscriptions:Other                   MYR 17.99
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -17.99
     ; raw: WEIXIN Surrounding c ShenZhen CN 17.99
 
 2025-09-12 * GREATEASTERN1031508066 KUALA LUMPUR MY
-    Expenses:Insurance                             MYR 280.00
-    Liabilities:CreditCard:AmBankCC                MYR -280.00
+    Expenses:Samuel:Insurance                             MYR 280.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -280.00
     ; raw: GREATEASTERN1031508066 KUALA LUMPUR MY 280.00
 
 2025-09-21 * PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own,
-    Liabilities:CreditCard:AmBankCC                MYR 2,059.04
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR 2,059.04
     Equity:Transfer                                MYR -2,059.04
     ; raw: PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own, 2,059.04CR
 
 2025-10-01 * Ezypay*Anytime Fitness TaKuala Lumpur MY
-    Expenses:Healthcare:Gym                        MYR 192.78
-    Liabilities:CreditCard:AmBankCC                MYR -192.78
+    Expenses:Samuel:Healthcare:Gym                        MYR 192.78
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -192.78
     ; raw: Ezypay*Anytime Fitness TaKuala Lumpur MY 192.78
 
 2025-10-01 * CUCKOO Kuala Lumpur MY
-    Expenses:Subscriptions:WaterFilter             MYR 85.00
-    Liabilities:CreditCard:AmBankCC                MYR -85.00
+    Expenses:Samuel:Subscriptions:WaterFilter             MYR 85.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -85.00
     ; raw: CUCKOO Kuala Lumpur MY 85.00
 
 2025-10-03 * LEGEND 02nd/24 (RM9,152)
-    Expenses:Instalment:Divo                       MYR 416.00
-    Liabilities:CreditCard:AmBankCC                MYR -416.00
+    Expenses:Samuel:Instalment:Divo                       MYR 416.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -416.00
     ; raw: LEGEND 02nd/24 (RM9,152) 416.00
 
 2025-10-03 * UR @ PINNACLE S PETA 25th/36 (RM891)
-    Expenses:Instalment:Personal                   MYR 81.00
-    Liabilities:CreditCard:AmBankCC                MYR -81.00
+    Expenses:Samuel:Instalment:Personal                   MYR 81.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -81.00
     ; raw: UR @ PINNACLE S PETA 25th/36 (RM891) 81.00
 
 2025-10-03 * MACHINES-PVL BKT JAL 19th/36 (RM5,865)
-    Expenses:Instalment:Personal                   MYR 345.00
-    Liabilities:CreditCard:AmBankCC                MYR -345.00
+    Expenses:Samuel:Instalment:Personal                   MYR 345.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -345.00
     ; raw: MACHINES-PVL BKT JAL 19th/36 (RM5,865) 345.00
 

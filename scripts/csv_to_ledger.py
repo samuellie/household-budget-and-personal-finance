@@ -37,6 +37,28 @@ OWN_ACCOUNT_PATTERNS = re.compile(
 _MORTGAGE_PAYEE = re.compile(r"WONG\s+FUI\s+YEE", re.IGNORECASE)
 _MORTGAGE_AMOUNT = 3551.00
 
+# Inter-spouse transfers: money moving between Samuel (LIE ZHI HOU) and
+# Fui Yee (WONG FUI YEE) is internal to the household → Equity:Transfer,
+# so the combined P&L is not inflated. Applied on the *receiving* person's
+# accounts (e.g. Samuel's funding landing in Fui Yee's CIMB).
+_SPOUSE_OF = {
+    "Samuel": re.compile(r"WONG\s*FUI\s*YEE", re.IGNORECASE),
+    "FuiYee": re.compile(r"LIE\s*ZHI\s*HOU|LIE\s*ZHI\s*HO\b", re.IGNORECASE),
+}
+
+
+def inject_person(account: str, owner: str) -> str:
+    """Insert the owner segment after the root: Expenses:Groceries → Expenses:FuiYee:Groceries.
+    Equity accounts are shared (person-neutral) and left unchanged."""
+    parts = account.split(":")
+    root = parts[0]
+    if root not in ("Assets", "Liabilities", "Expenses", "Income"):
+        return account  # Equity:* stays shared
+    if len(parts) >= 2 and parts[1] in ("Samuel", "FuiYee"):
+        return account  # already namespaced
+    tail = ":".join(parts[1:])
+    return f"{root}:{owner}:{tail}" if tail else f"{root}:{owner}"
+
 
 def format_amount(amount: float) -> str:
     """Format a float as 'MYR 1,234.56' or 'MYR -1,234.56'."""
@@ -78,8 +100,10 @@ def build_entry(txn: dict, bank: str) -> str:
 
     own_account_account = config.ACCOUNTS[bank]
     abs_amount = abs(amount)
+    owner = config.OWNER[bank]
+    kind = config.BANK_KIND[bank]
 
-    # Categorise the counter-account
+    # Categorise the counter-account (person-neutral category)
     category, matched = categorize_with_confidence(desc, is_debit=is_debit)
     todo_flag = "" if matched else "  ; TODO: categorise"
 
@@ -88,19 +112,29 @@ def build_entry(txn: dict, bank: str) -> str:
         category = "Equity:Transfer"
         todo_flag = ""
 
-    # Override: mortgage payment to Wong Fui Yee CIMB (exact amount match)
-    if (bank in ("ambank", "maybank") and is_debit
+    # Inter-spouse transfer: counterparty is the other partner → internal
+    # household transfer (Equity:Transfer), so combined P&L isn't inflated.
+    spouse_re = _SPOUSE_OF.get(owner)
+    if spouse_re and spouse_re.search(desc):
+        category = "Equity:Transfer"
+        todo_flag = ""
+
+    # Override: mortgage payment to Wong Fui Yee CIMB (exact amount match) — Samuel's savings only
+    if (kind == "bank" and owner == "Samuel" and is_debit
             and abs_amount == _MORTGAGE_AMOUNT
             and _MORTGAGE_PAYEE.search(desc)):
         category = "Expenses:Housing:Mortgage"
         todo_flag = ""
+
+    # Inject the owner segment (Equity stays shared)
+    category = inject_person(category, owner)
 
     lines = []
     # Marker: * = cleared
     payee = desc[:70]  # truncate for readability
     lines.append(f"{txn_date} * {payee}")
 
-    if bank in ("ambank", "maybank"):
+    if kind == "bank":
         if is_debit:
             # Split mortgage+personal: when a Wong Fui Yee transfer exceeds the mortgage amount,
             # carve out the fixed 3,551 portion and treat the remainder as personal spending.
@@ -118,7 +152,7 @@ def build_entry(txn: dict, bank: str) -> str:
             lines.append(f"    {own_account_account:<45}  {format_amount(abs_amount)}")
             lines.append(f"    {category:<45}  {format_amount(-abs_amount)}{todo_flag}")
 
-    elif bank in ("hsbc", "ambcc"):
+    elif kind == "card":
         if is_debit:
             # Purchase on credit card: debit Expense, credit Liability
             lines.append(f"    {category:<45}  {format_amount(abs_amount)}{todo_flag}")
@@ -189,6 +223,15 @@ def process_all(bank: str):
         months = [(2025, m) for m in range(10, 13)] + [(2026, m) for m in range(1, 7)]
         csv_fn = config.ambcc_csv_path
         jrn_fn = config.ambcc_journal_path
+    elif bank.startswith("fy_"):
+        sub = bank[3:]  # cimb, cimbcc, hsbc, rhb, uob
+        csv_dir = config.CSV_DIR / "fuiyee" / sub
+        months = []
+        for p in sorted(csv_dir.glob("*.csv")):
+            ym = p.stem  # YYYY-MM
+            months.append((int(ym[:4]), int(ym[5:7])))
+        csv_fn = lambda y, m, _s=sub: config.fy_csv_path(_s, y, m)
+        jrn_fn = lambda y, m, _s=sub: config.fy_journal_path(_s, y, m)
     else:
         print(f"Unknown bank: {bank}")
         sys.exit(1)
@@ -231,7 +274,10 @@ def update_main_journal():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert parsed CSVs to ledger journal files")
-    parser.add_argument("--bank", choices=["ambank", "maybank", "hsbc", "ambcc"], required=True)
+    parser.add_argument("--bank", choices=[
+        "ambank", "maybank", "hsbc", "ambcc",
+        "fy_cimb", "fy_cimbcc", "fy_hsbc", "fy_rhb", "fy_uob",
+    ], required=True)
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--input", help="Path to a single CSV file")
     group.add_argument("--all", action="store_true", help="Process all CSVs for this bank")
@@ -254,6 +300,7 @@ if __name__ == "__main__":
             elif args.bank == "maybank": out = config.maybank_journal_path(y, m)
             elif args.bank == "hsbc":   out = config.hsbc_journal_path(y, m)
             elif args.bank == "ambcc":  out = config.ambcc_journal_path(y, m)
+            elif args.bank.startswith("fy_"): out = config.fy_journal_path(args.bank[3:], y, m)
         process_csv(Path(args.input), args.bank, out)
     else:
         parser.print_help()

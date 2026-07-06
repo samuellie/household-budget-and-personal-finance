@@ -5,226 +5,226 @@
 
 2025-11-01 * FPX PAYMENT FR A/ 3230141189 * MONEE CAPITAL MALAYS
     Equity:Transfer                                MYR 133.56
-    Assets:Bank:Maybank                            MYR -133.56
+    Assets:Samuel:Bank:Maybank                            MYR -133.56
     ; raw: 01/11/25 FPX PAYMENT FR A/ 133.56- 64,743.47 | 3230141189 * | MONEE CAPITAL MALAYS | 2511011032150755
 
 2025-11-01 * FPX PAYMENT FR A/ 3230721052 * TICKET2U
     Equity:Transfer                                MYR 58.00
-    Assets:Bank:Maybank                            MYR -58.00
+    Assets:Samuel:Bank:Maybank                            MYR -58.00
     ; raw: 01/11/25 FPX PAYMENT FR A/ 58.00- 64,685.47 | 3230721052 * | TICKET2U | 2511011424110408
 
 2025-11-01 * IBK FUND TFR FR A/C DAVID LIAN YOON WAI* Rental
-    Expenses:Housing:Rent                          MYR 1,650.00
-    Assets:Bank:Maybank                            MYR -1,650.00
+    Expenses:Samuel:Housing:Rent                          MYR 1,650.00
+    Assets:Samuel:Bank:Maybank                            MYR -1,650.00
     ; raw: 01/11/25 IBK FUND TFR FR A/C 1,650.00- 63,035.47 | DAVID LIAN YOON WAI* | Rental | MBB CT
 
 2025-11-01 * FPX PAYMENT FR A/ 82A6FCD8958685F37C7* AXIATA DIGITAL ECODE
-    Expenses:Subscriptions                         MYR 513.00
-    Assets:Bank:Maybank                            MYR -513.00
+    Expenses:Samuel:Subscriptions                         MYR 513.00
+    Assets:Samuel:Bank:Maybank                            MYR -513.00
     ; raw: 01/11/25 FPX PAYMENT FR A/ 513.00- 62,522.47 | 82A6FCD8958685F37C7* | AXIATA DIGITAL ECODE | 2511011931330627
 
 2025-11-02 * PRE-AUTH DEBIT GOOGLE*CLOUD FGNX8V* CC GOOGLE.COM, SG
-    Expenses:Subscriptions:Google                  MYR 0.05
-    Assets:Bank:Maybank                            MYR -0.05
+    Expenses:Samuel:Subscriptions:Google                  MYR 0.05
+    Assets:Samuel:Bank:Maybank                            MYR -0.05
     ; raw: 02/11/25 PRE-AUTH DEBIT 0.05- 62,522.42 | GOOGLE*CLOUD FGNX8V* | CC GOOGLE.COM, SG | SALE DEBIT
 
 2025-11-03 * SALE DEBIT GRABPAY-EC * PETALING JAYA, MY
-    Expenses:Personal                              MYR 170.00
-    Assets:Bank:Maybank                            MYR -170.00
+    Expenses:Samuel:Personal                              MYR 170.00
+    Assets:Samuel:Bank:Maybank                            MYR -170.00
     ; raw: 03/11/25 SALE DEBIT 170.00- 62,352.42 | GRABPAY-EC * | PETALING JAYA, MY | SALE DEBIT
 
 2025-11-03 * IBK FUND TFR FR A/C TINKERVE PLT * Cash loan
     Equity:Transfer                                MYR 2,000.00
-    Assets:Bank:Maybank                            MYR -2,000.00
+    Assets:Samuel:Bank:Maybank                            MYR -2,000.00
     ; raw: 03/11/25 IBK FUND TFR FR A/C 2,000.00- 60,352.42 | TINKERVE PLT * | Cash loan | MBB CT
 
 2025-11-03 * PAYMENT VIA MYDEBIT MBE KL GATEWAY MALL* KUALA LUMPUR PAYMENT VIA MYDE
-    Expenses:Shopping:General                      MYR 1.00
-    Assets:Bank:Maybank                            MYR -1.00
+    Expenses:Samuel:Shopping:General                      MYR 1.00
+    Assets:Samuel:Bank:Maybank                            MYR -1.00
     ; raw: 03/11/25 PAYMENT VIA MYDEBIT 1.00- 60,351.42 | MBE KL GATEWAY MALL* | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-11-03 * PAYMENT VIA MYDEBIT BANGSAR SHOPPING CE* KUALA LUMPUR PAYMENT VIA MYDE
-    Expenses:Shopping:General                      MYR 9.00
-    Assets:Bank:Maybank                            MYR -9.00
+    Expenses:Samuel:Shopping:General                      MYR 9.00
+    Assets:Samuel:Bank:Maybank                            MYR -9.00
     ; raw: 03/11/25 PAYMENT VIA MYDEBIT 9.00- 60,342.42 | BANGSAR SHOPPING CE* | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-11-06 * FPX PAYMENT FR A/ 20251106M0000041861* ShopeePay Top Up tempoh 21 hari
-    Expenses:Shopping:General                      MYR 98.34
-    Assets:Bank:Maybank                            MYR -98.34
+    Expenses:Samuel:Shopping:General                      MYR 98.34
+    Assets:Samuel:Bank:Maybank                            MYR -98.34
     ; raw: 06/11/25 FPX PAYMENT FR A/ 98.34- 60,244.08 | 20251106M0000041861* | ShopeePay Top Up | 2511061327263050 | tempoh 21 har
 
 2025-11-06 * FUND TRANSFER TO A/ TOH WERN LIANG * 117275434Q
-    Assets:Bank:Maybank                            MYR 32.78
+    Assets:Samuel:Bank:Maybank                            MYR 32.78
     Equity:Transfer                                MYR -32.78
     ; raw: 06/11/25 FUND TRANSFER TO A/ 32.78+ 60,276.86 | TOH WERN LIANG * | 117275434Q | MAE QR
 
 2025-11-06 * PAYMENT VIA MYDEBIT BANGSAR SHOPPING CE* KUALA LUMPUR PAYMENT VIA MYDE
-    Expenses:Shopping:General                      MYR 9.00
-    Assets:Bank:Maybank                            MYR -9.00
+    Expenses:Samuel:Shopping:General                      MYR 9.00
+    Assets:Samuel:Bank:Maybank                            MYR -9.00
     ; raw: 06/11/25 PAYMENT VIA MYDEBIT 9.00- 60,267.86 | BANGSAR SHOPPING CE* | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-11-06 * PRE-AUTH MYDEBIT SPRINT PANTAI * KUALA LUMPUR PRE-AUTH MYDEBIT
-    Expenses:Transport:Toll                        MYR 2.50
-    Assets:Bank:Maybank                            MYR -2.50
+    Expenses:Samuel:Transport:Toll                        MYR 2.50
+    Assets:Samuel:Bank:Maybank                            MYR -2.50
     ; raw: 06/11/25 PRE-AUTH MYDEBIT 2.50- 60,265.36 | SPRINT PANTAI * | KUALA LUMPUR | PRE-AUTH MYDEBIT *
 
 2025-11-06 * REV PREAUTH MYDEBIT SPRINT PANTAI * KUALA LUMPUR REV PREAUTH MYDEBIT
-    Assets:Bank:Maybank                            MYR 2.50
-    Expenses:Transport:Toll                        MYR -2.50
+    Assets:Samuel:Bank:Maybank                            MYR 2.50
+    Expenses:Samuel:Transport:Toll                        MYR -2.50
     ; raw: 06/11/25 REV PREAUTH MYDEBIT 2.50+ 60,267.86 | SPRINT PANTAI * | KUALA LUMPUR | REV PREAUTH MYDEBIT*
 
 2025-11-06 * PAYMENT VIA MYDEBIT SPRINT PANTAI * KUALA LUMPUR PAYMENT VIA MYDEBIT
-    Expenses:Transport:Toll                        MYR 2.50
-    Assets:Bank:Maybank                            MYR -2.50
+    Expenses:Samuel:Transport:Toll                        MYR 2.50
+    Assets:Samuel:Bank:Maybank                            MYR -2.50
     ; raw: 06/11/25 PAYMENT VIA MYDEBIT 2.50- 60,265.36 | SPRINT PANTAI * | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-11-08 * FPX PAYMENT FR A/ RXRJEFHQGBPKYG * LUNO MALAYSIA SDN BH
-    Assets:Crypto:Luno                             MYR 1,000.00
-    Assets:Bank:Maybank                            MYR -1,000.00
+    Assets:Samuel:Crypto:Luno                             MYR 1,000.00
+    Assets:Samuel:Bank:Maybank                            MYR -1,000.00
     ; raw: 08/11/25 FPX PAYMENT FR A/ 1,000.00- 59,265.36 | RXRJEFHQGBPKYG * | LUNO MALAYSIA SDN BH | 2511081004430902
 
 2025-11-08 * IBK FUND TFR FR A/C Trfr
     Equity:Transfer                                MYR 200.00
-    Assets:Bank:Maybank                            MYR -200.00
+    Assets:Samuel:Bank:Maybank                            MYR -200.00
     ; raw: 08/11/25 IBK FUND TFR FR A/C 200.00- 59,065.36 | Trfr | MBB CT
 
 2025-11-08 * FPX PAYMENT FR A/ 20251108M0003261861* ZUSPRESSO (M) SDN BH
     Equity:Transfer                                MYR 22.60
-    Assets:Bank:Maybank                            MYR -22.60
+    Assets:Samuel:Bank:Maybank                            MYR -22.60
     ; raw: 08/11/25 FPX PAYMENT FR A/ 22.60- 59,042.76 | 20251108M0003261861* | ZUSPRESSO (M) SDN BH | 2511081143333664
 
 2025-11-09 * IBK FUND TFR FR A/C KOKSIEWMOI * QR76891046
     Equity:Transfer                                MYR 117.00
-    Assets:Bank:Maybank                            MYR -117.00
+    Assets:Samuel:Bank:Maybank                            MYR -117.00
     ; raw: 09/11/25 IBK FUND TFR FR A/C 117.00- 58,925.76 | KOKSIEWMOI * | QR76891046 | DUITNOW QR
 
 2025-11-09 * IBK FUND TFR TO A/C WONG FUI YEE * MBB CT-
-    Assets:Bank:Maybank                            MYR 117.00
+    Assets:Samuel:Bank:Maybank                            MYR 117.00
     Equity:Transfer                                MYR -117.00
     ; raw: 09/11/25 IBK FUND TFR TO A/C 117.00+ 59,042.76 | WONG FUI YEE * | Fund Transfer | MBB CT-
 
 2025-11-18 * PAYMENT VIA MYDEBIT tempoh 21 hari. 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视
-    Expenses:Parking                               MYR 3.00
-    Assets:Bank:Maybank                            MYR -3.00
+    Expenses:Samuel:Parking                               MYR 3.00
+    Assets:Samuel:Bank:Maybank                            MYR -3.00
     ; raw: 18/11/25 PAYMENT VIA MYDEBIT 3.00- 59,039.76 | tempoh 21 hari. | 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视为正确。 | 請通知本行在何地址更换。 |
 
 2025-11-19 * DEBIT ADVICE
-    Expenses:Bank:Fees                             MYR 8.00
-    Assets:Bank:Maybank                            MYR -8.00
+    Expenses:Samuel:Bank:Fees                             MYR 8.00
+    Assets:Samuel:Bank:Maybank                            MYR -8.00
     ; raw: 19/11/25 DEBIT ADVICE 8.00- 59,031.76
 
 2025-11-19 * SALE DEBIT GKS*STUFFD * WP KUALA LUMP, MY
-    Expenses:Dining                                MYR 21.20
-    Assets:Bank:Maybank                            MYR -21.20
+    Expenses:Samuel:Dining                                MYR 21.20
+    Assets:Samuel:Bank:Maybank                            MYR -21.20
     ; raw: 19/11/25 SALE DEBIT 21.20- 59,010.56 | GKS*STUFFD * | WP KUALA LUMP, MY | SALE DEBIT
 
 2025-11-19 * IBK FUND TFR FR A/C LIEWKAMFOOK * QR71556890
     Equity:Transfer                                MYR 30.00
-    Assets:Bank:Maybank                            MYR -30.00
+    Assets:Samuel:Bank:Maybank                            MYR -30.00
     ; raw: 19/11/25 IBK FUND TFR FR A/C 30.00- 58,980.56 | LIEWKAMFOOK * | QR71556890 | DUITNOW QR
 
 2025-11-19 * IBK FUND TFR FR A/C YOONGSEOWYING * QR85471381
     Equity:Transfer                                MYR 20.00
-    Assets:Bank:Maybank                            MYR -20.00
+    Assets:Samuel:Bank:Maybank                            MYR -20.00
     ; raw: 19/11/25 IBK FUND TFR FR A/C 20.00- 58,960.56 | YOONGSEOWYING * | QR85471381 | DUITNOW QR
 
 2025-11-19 * TRANSFER FROM A/C MBBQR2229758 * 136489568Q
-    Expenses:Personal                              MYR 30.00
-    Assets:Bank:Maybank                            MYR -30.00
+    Expenses:Samuel:Personal                              MYR 30.00
+    Assets:Samuel:Bank:Maybank                            MYR -30.00
     ; raw: 19/11/25 TRANSFER FROM A/C 30.00- 58,930.56 | MBBQR2229758 * | 11112766380432 | 136489568Q
 
 2025-11-20 * SALE DEBIT GKS*STUFFD * WP KUALA LUMP, MY
-    Expenses:Dining                                MYR 19.60
-    Assets:Bank:Maybank                            MYR -19.60
+    Expenses:Samuel:Dining                                MYR 19.60
+    Assets:Samuel:Bank:Maybank                            MYR -19.60
     ; raw: 20/11/25 SALE DEBIT 19.60- 58,910.96 | GKS*STUFFD * | WP KUALA LUMP, MY | SALE DEBIT
 
 2025-11-20 * PAYMENT VIA MYDEBIT GIGI COFFEE-KL GATE* KUALA LUMPUR, MYS PAYMENT VIA
-    Expenses:Coffee                                MYR 10.00
-    Assets:Bank:Maybank                            MYR -10.00
+    Expenses:Samuel:Coffee                                MYR 10.00
+    Assets:Samuel:Bank:Maybank                            MYR -10.00
     ; raw: 20/11/25 PAYMENT VIA MYDEBIT 10.00- 58,900.96 | GIGI COFFEE-KL GATE* | KUALA LUMPUR, MYS | PAYMENT VIA MYDEBIT
 
 2025-11-21 * FUND TRANSFER TO A/ TOH WERN LIANG * 325455937Q
-    Assets:Bank:Maybank                            MYR 22.10
+    Assets:Samuel:Bank:Maybank                            MYR 22.10
     Equity:Transfer                                MYR -22.10
     ; raw: 21/11/25 FUND TRANSFER TO A/ 22.10+ 58,923.06 | TOH WERN LIANG * | 325455937Q | MAE QR
 
 2025-11-22 * PAYMENT VIA MYDEBIT PASAR BESAR * KUALA LUMPUR PAYMENT VIA MYDEBIT
-    Expenses:Shopping:General                      MYR 5.30
-    Assets:Bank:Maybank                            MYR -5.30
+    Expenses:Samuel:Shopping:General                      MYR 5.30
+    Assets:Samuel:Bank:Maybank                            MYR -5.30
     ; raw: 22/11/25 PAYMENT VIA MYDEBIT 5.30- 58,917.76 | PASAR BESAR * | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-11-23 * FPX PAYMENT FR A/ P8T7UBDCXK4M5S * LUNO MALAYSIA SDN BH
-    Assets:Crypto:Luno                             MYR 2,000.00
-    Assets:Bank:Maybank                            MYR -2,000.00
+    Assets:Samuel:Crypto:Luno                             MYR 2,000.00
+    Assets:Samuel:Bank:Maybank                            MYR -2,000.00
     ; raw: 23/11/25 FPX PAYMENT FR A/ 2,000.00- 56,917.76 | P8T7UBDCXK4M5S * | LUNO MALAYSIA SDN BH | 2511231052410176
 
 2025-11-23 * IBK FUND TFR FR A/C tempoh 21 hari. 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视
     Equity:Transfer                                MYR 2,534.80
-    Assets:Bank:Maybank                            MYR -2,534.80
+    Assets:Samuel:Bank:Maybank                            MYR -2,534.80
     ; raw: 23/11/25 IBK FUND TFR FR A/C 2,534.80- 54,382.96 | tempoh 21 hari. | 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视为正确。 | 請通知本行在何地址更
 
 2025-11-24 * SALE DEBIT GKS*STUFFD * WP KUALA LUMP, MY
-    Expenses:Dining                                MYR 19.60
-    Assets:Bank:Maybank                            MYR -19.60
+    Expenses:Samuel:Dining                                MYR 19.60
+    Assets:Samuel:Bank:Maybank                            MYR -19.60
     ; raw: 24/11/25 SALE DEBIT 19.60- 54,363.36 | GKS*STUFFD * | WP KUALA LUMP, MY | SALE DEBIT
 
 2025-11-24 * PAYMENT VIA MYDEBIT STRICTLY GOURMET SD* PAYMENT VIA MYDEBIT
-    Expenses:Dining                                MYR 13.65
-    Assets:Bank:Maybank                            MYR -13.65
+    Expenses:Samuel:Dining                                MYR 13.65
+    Assets:Samuel:Bank:Maybank                            MYR -13.65
     ; raw: 24/11/25 PAYMENT VIA MYDEBIT 13.65- 54,349.71 | STRICTLY GOURMET SD* | PAYMENT VIA MYDEBIT
 
 2025-11-25 * IBK FUND TFR FR A/C WONG FUI YEE * Miao
     Equity:Transfer                                MYR 7,102.00
-    Assets:Bank:Maybank                            MYR -7,102.00
+    Assets:Samuel:Bank:Maybank                            MYR -7,102.00
     ; raw: 25/11/25 IBK FUND TFR FR A/C 7,102.00- 47,247.71 | WONG FUI YEE * | Miao | MBB CT
 
 2025-11-25 * IBK FUND TFR FR A/C Trfr
     Equity:Transfer                                MYR 2,000.00
-    Assets:Bank:Maybank                            MYR -2,000.00
+    Assets:Samuel:Bank:Maybank                            MYR -2,000.00
     ; raw: 25/11/25 IBK FUND TFR FR A/C 2,000.00- 45,247.71 | Trfr | MBB CT
 
 2025-11-25 * PAYMENT VIA MYDEBIT KUALA LUMPUR PAYMENT VIA MYDEBIT
-    Expenses:Shopping:General                      MYR 25.90
-    Assets:Bank:Maybank                            MYR -25.90
+    Expenses:Samuel:Shopping:General                      MYR 25.90
+    Assets:Samuel:Bank:Maybank                            MYR -25.90
     ; raw: 25/11/25 PAYMENT VIA MYDEBIT 25.90- 45,221.81 | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-11-27 * IBK FUND TFR FR A/C Convenience Store * MBBQR111112791068793 786212006
-    Expenses:Personal                              MYR 7.50
-    Assets:Bank:Maybank                            MYR -7.50
+    Expenses:Samuel:Personal                              MYR 7.50
+    Assets:Samuel:Bank:Maybank                            MYR -7.50
     ; raw: 27/11/25 IBK FUND TFR FR A/C 7.50- 45,214.31 | Convenience Store * | MBBQR111112791068793 | 786212006Q
 
 2025-11-28 * PAYMENT VIA MYDEBIT KUALA LUMPUR PAYMENT VIA MYDEBIT
-    Expenses:Shopping:General                      MYR 23.80
-    Assets:Bank:Maybank                            MYR -23.80
+    Expenses:Samuel:Shopping:General                      MYR 23.80
+    Assets:Samuel:Bank:Maybank                            MYR -23.80
     ; raw: 28/11/25 PAYMENT VIA MYDEBIT 23.80- 45,190.51 | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-11-29 * IBK FUND TFR FR A/C WONG FUI YEE * Hair gel
     Equity:Transfer                                MYR 18.00
-    Assets:Bank:Maybank                            MYR -18.00
+    Assets:Samuel:Bank:Maybank                            MYR -18.00
     ; raw: 29/11/25 IBK FUND TFR FR A/C 18.00- 45,172.51 | WONG FUI YEE * | Hair gel | MBB CT
 
 2025-11-29 * PYMT FROM A/C Kwong Wah Loka * 928891132Q QR PAY SALES
-    Expenses:Personal                              MYR 18.30
-    Assets:Bank:Maybank                            MYR -18.30
+    Expenses:Samuel:Personal                              MYR 18.30
+    Assets:Samuel:Bank:Maybank                            MYR -18.30
     ; raw: 29/11/25 PYMT FROM A/C 18.30- 45,154.21 | Kwong Wah Loka * | 928891132Q | QR PAY SALES
 
 2025-11-29 * IBK FUND TFR FR A/C GENERAL STORE SDN. * QR73867713
     Equity:Transfer                                MYR 44.00
-    Assets:Bank:Maybank                            MYR -44.00
+    Assets:Samuel:Bank:Maybank                            MYR -44.00
     ; raw: 29/11/25 IBK FUND TFR FR A/C 44.00- 45,110.21 | GENERAL STORE SDN. * | QR73867713 | DUITNOW QR
 
 2025-11-29 * PAYMENT VIA MYDEBIT tempoh 21 hari. 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视
-    Expenses:Shopping:General                      MYR 71.10
-    Assets:Bank:Maybank                            MYR -71.10
+    Expenses:Samuel:Shopping:General                      MYR 71.10
+    Assets:Samuel:Bank:Maybank                            MYR -71.10
     ; raw: 29/11/25 PAYMENT VIA MYDEBIT 71.10- 45,039.11 | tempoh 21 hari. | 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视为正确。 | 請通知本行在何地址更换。 
 
 2025-11-30 * FPX PAYMENT FR A/ 20251130M0000041861* SPayLater Repayment
     Equity:Transfer                                MYR 153.29
-    Assets:Bank:Maybank                            MYR -153.29
+    Assets:Samuel:Bank:Maybank                            MYR -153.29
     ; raw: 30/11/25 FPX PAYMENT FR A/ 153.29- 44,885.82 | 20251130M0000041861* | SPayLater Repayment | 2511302020113257
 
 2025-11-30 * SALE DEBIT GRABPAY-EC * PETALING JAYA, MY
-    Expenses:Personal                              MYR 362.00
-    Assets:Bank:Maybank                            MYR -362.00
+    Expenses:Samuel:Personal                              MYR 362.00
+    Assets:Samuel:Bank:Maybank                            MYR -362.00
     ; raw: 30/11/25 SALE DEBIT 362.00- 44,523.82 | GRABPAY-EC * | PETALING JAYA, MY | SALE DEBIT
 

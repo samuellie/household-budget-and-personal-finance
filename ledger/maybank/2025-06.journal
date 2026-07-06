@@ -5,281 +5,281 @@
 
 2025-06-01 * IBK FUND TFR FR A/C 83103558
     Equity:Transfer                                MYR 45.00
-    Assets:Bank:Maybank                            MYR -45.00
+    Assets:Samuel:Bank:Maybank                            MYR -45.00
     ; raw: 01/06/25 IBK FUND TFR FR A/C 45.00- 8,743.91 | 83103558 | DUITNOW QR
 
 2025-06-01 * IBK FUND TFR FR A/C newlife aquatic * 73209398
     Equity:Transfer                                MYR 31.00
-    Assets:Bank:Maybank                            MYR -31.00
+    Assets:Samuel:Bank:Maybank                            MYR -31.00
     ; raw: 01/06/25 IBK FUND TFR FR A/C 31.00- 8,712.91 | newlife aquatic * | 73209398 | DUITNOW QR
 
 2025-06-01 * FPX PAYMENT FR A/ 17ED2DBE761025335C5* AXIATA DIGITAL ECODE
-    Expenses:Subscriptions                         MYR 489.00
-    Assets:Bank:Maybank                            MYR -489.00
+    Expenses:Samuel:Subscriptions                         MYR 489.00
+    Assets:Samuel:Bank:Maybank                            MYR -489.00
     ; raw: 01/06/25 FPX PAYMENT FR A/ 489.00- 8,223.91 | 17ED2DBE761025335C5* | AXIATA DIGITAL ECODE | 2506011558410414
 
 2025-06-01 * PRE-AUTH DEBIT Google GSUITE_tinke* Singapore, SG
-    Expenses:Subscriptions:Google                  MYR 259.20
-    Assets:Bank:Maybank                            MYR -259.20
+    Expenses:Samuel:Subscriptions:Google                  MYR 259.20
+    Assets:Samuel:Bank:Maybank                            MYR -259.20
     ; raw: 01/06/25 PRE-AUTH DEBIT 259.20- 7,964.71 | Google GSUITE_tinke* | Singapore, SG | SALE DEBIT
 
 2025-06-01 * IBK FUND TFR FR A/C DAVID LIAN YOON WAI* Rental
-    Expenses:Housing:Rent                          MYR 1,650.00
-    Assets:Bank:Maybank                            MYR -1,650.00
+    Expenses:Samuel:Housing:Rent                          MYR 1,650.00
+    Assets:Samuel:Bank:Maybank                            MYR -1,650.00
     ; raw: 01/06/25 IBK FUND TFR FR A/C 1,650.00- 6,314.71 | DAVID LIAN YOON WAI* | Rental | MBB CT
 
 2025-06-02 * PRE-AUTH DEBIT GOOGLE*CLOUD 6VXSSK* CC GOOGLE.COM, SG
-    Expenses:Subscriptions:Google                  MYR 0.05
-    Assets:Bank:Maybank                            MYR -0.05
+    Expenses:Samuel:Subscriptions:Google                  MYR 0.05
+    Assets:Samuel:Bank:Maybank                            MYR -0.05
     ; raw: 02/06/25 PRE-AUTH DEBIT 0.05- 6,314.66 | GOOGLE*CLOUD 6VXSSK* | CC GOOGLE.COM, SG | SALE DEBIT
 
 2025-06-02 * PAYMENT VIA MYDEBIT MTRUSTEE BERHAD * PETALING JAYA PAYMENT VIA MYDEBI
-    Expenses:Shopping:General                      MYR 2.00
-    Assets:Bank:Maybank                            MYR -2.00
+    Expenses:Samuel:Shopping:General                      MYR 2.00
+    Assets:Samuel:Bank:Maybank                            MYR -2.00
     ; raw: 02/06/25 PAYMENT VIA MYDEBIT 2.00- 6,312.66 | MTRUSTEE BERHAD * | PETALING JAYA | PAYMENT VIA MYDEBIT
 
 2025-06-02 * PAYMENT VIA MYDEBIT MTRUSTEE BERHAD * PETALING JAYA PAYMENT VIA MYDEBI
-    Expenses:Shopping:General                      MYR 2.00
-    Assets:Bank:Maybank                            MYR -2.00
+    Expenses:Samuel:Shopping:General                      MYR 2.00
+    Assets:Samuel:Bank:Maybank                            MYR -2.00
     ; raw: 02/06/25 PAYMENT VIA MYDEBIT 2.00- 6,310.66 | MTRUSTEE BERHAD * | PETALING JAYA | PAYMENT VIA MYDEBIT
 
 2025-06-02 * IBK FUND TFR FR A/C WONG FUI YEE * Miao
     Equity:Transfer                                MYR 1,197.00
-    Assets:Bank:Maybank                            MYR -1,197.00
+    Assets:Samuel:Bank:Maybank                            MYR -1,197.00
     ; raw: 02/06/25 IBK FUND TFR FR A/C 1,197.00- 5,113.66 | WONG FUI YEE * | Miao | MBB CT
 
 2025-06-03 * IBK FUND TFR FR A/C SALAM TIARA GATEWAY* 85815933
     Equity:Transfer                                MYR 103.60
-    Assets:Bank:Maybank                            MYR -103.60
+    Assets:Samuel:Bank:Maybank                            MYR -103.60
     ; raw: 03/06/25 IBK FUND TFR FR A/C 103.60- 5,010.06 | SALAM TIARA GATEWAY* | 85815933 | DUITNOW QR
 
 2025-06-03 * FUND TRANSFER TO A/ tempoh 21 hari. 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视
-    Assets:Bank:Maybank                            MYR 18.90
+    Assets:Samuel:Bank:Maybank                            MYR 18.90
     Equity:Transfer                                MYR -18.90
     ; raw: 03/06/25 FUND TRANSFER TO A/ 18.90+ 5,028.96 | tempoh 21 hari. | 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视为正确。 | 請通知本行在何地址更换。 |
 
 2025-06-03 * IBK FUND TFR FR A/C SZE BEE CHIN * 76352491
     Equity:Transfer                                MYR 63.00
-    Assets:Bank:Maybank                            MYR -63.00
+    Assets:Samuel:Bank:Maybank                            MYR -63.00
     ; raw: 03/06/25 IBK FUND TFR FR A/C 63.00- 4,965.96 | SZE BEE CHIN * | 76352491 | DUITNOW QR
 
 2025-06-03 * IBK FUND TFR FR A/C Foodie Kuchai * 76358294
     Equity:Transfer                                MYR 20.80
-    Assets:Bank:Maybank                            MYR -20.80
+    Assets:Samuel:Bank:Maybank                            MYR -20.80
     ; raw: 03/06/25 IBK FUND TFR FR A/C 20.80- 4,945.16 | Foodie Kuchai * | 76358294 | DUITNOW QR
 
 2025-06-03 * IBK FUND TFR TO A/C WONG FUI YEE * MBB CT-
-    Assets:Bank:Maybank                            MYR 83.80
+    Assets:Samuel:Bank:Maybank                            MYR 83.80
     Equity:Transfer                                MYR -83.80
     ; raw: 03/06/25 IBK FUND TFR TO A/C 83.80+ 5,028.96 | WONG FUI YEE * | Fund Transfer | MBB CT-
 
 2025-06-03 * PAYMENT VIA MYDEBIT APSB.DASH.FOODIE_FO* Kuala Lumpur PAYMENT VIA MYDE
-    Expenses:Parking                               MYR 4.40
-    Assets:Bank:Maybank                            MYR -4.40
+    Expenses:Samuel:Parking                               MYR 4.40
+    Assets:Samuel:Bank:Maybank                            MYR -4.40
     ; raw: 03/06/25 PAYMENT VIA MYDEBIT 4.40- 5,024.56 | APSB.DASH.FOODIE_FO* | Kuala Lumpur | PAYMENT VIA MYDEBIT
 
 2025-06-05 * IBK FUND TFR FR A/C PAHKLGW * 88636901
     Equity:Transfer                                MYR 37.30
-    Assets:Bank:Maybank                            MYR -37.30
+    Assets:Samuel:Bank:Maybank                            MYR -37.30
     ; raw: 05/06/25 IBK FUND TFR FR A/C 37.30- 4,987.26 | PAHKLGW * | 88636901 | DUITNOW QR
 
 2025-06-05 * FUND TRANSFER TO A/ MUHAMMAD FAYYADH BI* 970388987Q
-    Assets:Bank:Maybank                            MYR 18.50
+    Assets:Samuel:Bank:Maybank                            MYR 18.50
     Equity:Transfer                                MYR -18.50
     ; raw: 05/06/25 FUND TRANSFER TO A/ 18.50+ 5,005.76 | MUHAMMAD FAYYADH BI* | 970388987Q | MAE QR
 
 2025-06-06 * FUND TRANSFER TO A/ TOH WERN LIANG * 055617305Q
-    Assets:Bank:Maybank                            MYR 23.00
+    Assets:Samuel:Bank:Maybank                            MYR 23.00
     Equity:Transfer                                MYR -23.00
     ; raw: 06/06/25 FUND TRANSFER TO A/ 23.00+ 5,028.76 | TOH WERN LIANG * | 055617305Q | MAE QR
 
 2025-06-07 * PAYMENT VIA MYDEBIT AUTOPAY, 1 UTAMA * PETALING JAYA PAYMENT VIA MYDEB
-    Expenses:Transport:Parking                     MYR 4.00
-    Assets:Bank:Maybank                            MYR -4.00
+    Expenses:Samuel:Transport:Parking                     MYR 4.00
+    Assets:Samuel:Bank:Maybank                            MYR -4.00
     ; raw: 07/06/25 PAYMENT VIA MYDEBIT 4.00- 5,024.76 | AUTOPAY, 1 UTAMA * | PETALING JAYA | PAYMENT VIA MYDEBIT
 
 2025-06-09 * SALE DEBIT AUTOPAY, 1 UTAMA * PETALING JAYA, MY
-    Expenses:Transport:Parking                     MYR 4.00
-    Assets:Bank:Maybank                            MYR -4.00
+    Expenses:Samuel:Transport:Parking                     MYR 4.00
+    Assets:Samuel:Bank:Maybank                            MYR -4.00
     ; raw: 09/06/25 SALE DEBIT 4.00- 5,020.76 | AUTOPAY, 1 UTAMA * | PETALING JAYA, MY | SALE DEBIT
 
 2025-06-11 * IBK FUND TFR FR A/C PAHKLGW * tempoh 21 hari. 若银行在21天内未获得书面通知于任何差异，所有显
     Equity:Transfer                                MYR 34.50
-    Assets:Bank:Maybank                            MYR -34.50
+    Assets:Samuel:Bank:Maybank                            MYR -34.50
     ; raw: 11/06/25 IBK FUND TFR FR A/C 34.50- 4,986.26 | PAHKLGW * | tempoh 21 hari. | 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视为正确。 | 請通
 
 2025-06-11 * PAYMENT VIA MYDEBIT APSB.T24.TS_LOH_OS * Kuala Lumpur PAYMENT VIA MYDE
-    Expenses:Shopping:General                      MYR 10.00
-    Assets:Bank:Maybank                            MYR -10.00
+    Expenses:Samuel:Shopping:General                      MYR 10.00
+    Assets:Samuel:Bank:Maybank                            MYR -10.00
     ; raw: 11/06/25 PAYMENT VIA MYDEBIT 10.00- 4,976.26 | APSB.T24.TS_LOH_OS * | Kuala Lumpur | PAYMENT VIA MYDEBIT
 
 2025-06-11 * PYMT VIA MYDEBIT RE APSB.T24.TS_LOH_OS * Kuala Lumpur PAYMENT VIA MYDE
-    Assets:Bank:Maybank                            MYR 10.00
-    Expenses:Shopping:General                      MYR -10.00
+    Assets:Samuel:Bank:Maybank                            MYR 10.00
+    Expenses:Samuel:Shopping:General                      MYR -10.00
     ; raw: 11/06/25 PYMT VIA MYDEBIT RE 10.00+ 4,986.26 | APSB.T24.TS_LOH_OS * | Kuala Lumpur | PAYMENT VIA MYDEBIT
 
 2025-06-11 * PAYMENT VIA MYDEBIT TSLAW TOWER * KUALA LUMPUR PAYMENT VIA MYDEBIT
-    Expenses:Shopping:General                      MYR 6.00
-    Assets:Bank:Maybank                            MYR -6.00
+    Expenses:Samuel:Shopping:General                      MYR 6.00
+    Assets:Samuel:Bank:Maybank                            MYR -6.00
     ; raw: 11/06/25 PAYMENT VIA MYDEBIT 6.00- 4,980.26 | TSLAW TOWER * | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-06-12 * PAYMENT VIA MYDEBIT ACE -MV * KUALA LUMPUR PAYMENT VIA MYDEBIT
-    Expenses:Shopping:General                      MYR 43.80
-    Assets:Bank:Maybank                            MYR -43.80
+    Expenses:Samuel:Shopping:General                      MYR 43.80
+    Assets:Samuel:Bank:Maybank                            MYR -43.80
     ; raw: 12/06/25 PAYMENT VIA MYDEBIT 43.80- 4,936.46 | ACE -MV * | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-06-12 * FUND TRANSFER TO A/ TOH WERN LIANG * 482946658Q
-    Assets:Bank:Maybank                            MYR 23.10
+    Assets:Samuel:Bank:Maybank                            MYR 23.10
     Equity:Transfer                                MYR -23.10
     ; raw: 12/06/25 FUND TRANSFER TO A/ 23.10+ 4,959.56 | TOH WERN LIANG * | 482946658Q | MAE QR
 
 2025-06-13 * FUND TRANSFER TO A/ TOH WERN LIANG * 523866501Q
-    Assets:Bank:Maybank                            MYR 17.98
+    Assets:Samuel:Bank:Maybank                            MYR 17.98
     Equity:Transfer                                MYR -17.98
     ; raw: 13/06/25 FUND TRANSFER TO A/ 17.98+ 4,977.54 | TOH WERN LIANG * | 523866501Q | MAE QR
 
 2025-06-16 * IBK FUND TFR FR A/C WONG FUI YEE * Itunes purchase
     Equity:Transfer                                MYR 23.13
-    Assets:Bank:Maybank                            MYR -23.13
+    Assets:Samuel:Bank:Maybank                            MYR -23.13
     ; raw: 16/06/25 IBK FUND TFR FR A/C 23.13- 4,954.41 | WONG FUI YEE * | Itunes purchase | MBB CT
 
 2025-06-16 * FPX PAYMENT FR A/ T009226252619 * SHOPEE MALAYSIA
-    Expenses:Shopping:General                      MYR 271.56
-    Assets:Bank:Maybank                            MYR -271.56
+    Expenses:Samuel:Shopping:General                      MYR 271.56
+    Assets:Samuel:Bank:Maybank                            MYR -271.56
     ; raw: 16/06/25 FPX PAYMENT FR A/ 271.56- 4,682.85 | T009226252619 * | SHOPEE MALAYSIA | 2506162206500224
 
 2025-06-17 * IBK FUND TFR FR A/C PAHKLGW * 70754623
     Equity:Transfer                                MYR 89.35
-    Assets:Bank:Maybank                            MYR -89.35
+    Assets:Samuel:Bank:Maybank                            MYR -89.35
     ; raw: 17/06/25 IBK FUND TFR FR A/C 89.35- 4,593.50 | PAHKLGW * | 70754623 | DUITNOW QR
 
 2025-06-17 * FUND TRANSFER TO A/ TOH WERN LIANG * 820798847Q tempoh 21 hari. 若银行在21
-    Assets:Bank:Maybank                            MYR 40.10
+    Assets:Samuel:Bank:Maybank                            MYR 40.10
     Equity:Transfer                                MYR -40.10
     ; raw: 17/06/25 FUND TRANSFER TO A/ 40.10+ 4,633.60 | TOH WERN LIANG * | 820798847Q | tempoh 21 hari. | 若银行在21天内未获得书面通知于任何差异，所有
 
 2025-06-19 * FUND TRANSFER TO A/ MUHAMMAD FAYYADH BI* 948255895Q
-    Assets:Bank:Maybank                            MYR 14.00
+    Assets:Samuel:Bank:Maybank                            MYR 14.00
     Equity:Transfer                                MYR -14.00
     ; raw: 19/06/25 FUND TRANSFER TO A/ 14.00+ 4,647.60 | MUHAMMAD FAYYADH BI* | 948255895Q | MAE QR
 
 2025-06-20 * TRANSFER FROM A/C SOVENA JOHNSON * cash loan
     Equity:Transfer                                MYR 1,000.00
-    Assets:Bank:Maybank                            MYR -1,000.00
+    Assets:Samuel:Bank:Maybank                            MYR -1,000.00
     ; raw: 20/06/25 TRANSFER FROM A/C 1,000.00- 3,647.60 | SOVENA JOHNSON * | cash loan
 
 2025-06-21 * PYMT FROM A/C GOLDEN SCREEN CINEM
-    Expenses:Entertainment                         MYR 40.50
-    Assets:Bank:Maybank                            MYR -40.50
+    Expenses:Samuel:Entertainment                         MYR 40.50
+    Assets:Samuel:Bank:Maybank                            MYR -40.50
     ; raw: 21/06/25 PYMT FROM A/C 40.50- 3,607.10 | GOLDEN SCREEN CINEM* | 21025062101287
 
 2025-06-21 * SALE DEBIT JONETZ BY DON DON D* KUALA LUMPUR, MY
-    Expenses:Dining                                MYR 10.00
-    Assets:Bank:Maybank                            MYR -10.00
+    Expenses:Samuel:Dining                                MYR 10.00
+    Assets:Samuel:Bank:Maybank                            MYR -10.00
     ; raw: 21/06/25 SALE DEBIT 10.00- 3,597.10 | JONETZ BY DON DON D* | KUALA LUMPUR, MY | SALE DEBIT
 
 2025-06-21 * PAYMENT VIA MYDEBIT MR DIY (KUCHAI)-PMI* KUALA LUMPUR PAYMENT VIA MYDE
-    Expenses:Shopping:General                      MYR 61.10
-    Assets:Bank:Maybank                            MYR -61.10
+    Expenses:Samuel:Shopping:General                      MYR 61.10
+    Assets:Samuel:Bank:Maybank                            MYR -61.10
     ; raw: 21/06/25 PAYMENT VIA MYDEBIT 61.10- 3,536.00 | MR DIY (KUCHAI)-PMI* | KUALA LUMPUR | PAYMENT VIA MYDEBIT
 
 2025-06-22 * PAYMENT VIA MYDEBIT THE MARKET PLACE OU* KUALA LUMPUR, MYS PAYMENT VIA
-    Expenses:Shopping:General                      MYR 6.60
-    Assets:Bank:Maybank                            MYR -6.60
+    Expenses:Samuel:Shopping:General                      MYR 6.60
+    Assets:Samuel:Bank:Maybank                            MYR -6.60
     ; raw: 22/06/25 PAYMENT VIA MYDEBIT 6.60- 3,529.40 | THE MARKET PLACE OU* | KUALA LUMPUR, MYS | PAYMENT VIA MYDEBIT
 
 2025-06-25 * PRE-AUTH DEBIT Spotify * Stockholm, SE
-    Expenses:Subscriptions:Spotify                 MYR 24.90
-    Assets:Bank:Maybank                            MYR -24.90
+    Expenses:Samuel:Subscriptions:Spotify                 MYR 24.90
+    Assets:Samuel:Bank:Maybank                            MYR -24.90
     ; raw: 25/06/25 PRE-AUTH DEBIT 24.90- 3,504.50 | Spotify * | Stockholm, SE | SALE DEBIT
 
 2025-06-25 * IBK FUND TFR FR A/C 89 STREET CAFE * 88202392
     Equity:Transfer                                MYR 47.00
-    Assets:Bank:Maybank                            MYR -47.00
+    Assets:Samuel:Bank:Maybank                            MYR -47.00
     ; raw: 25/06/25 IBK FUND TFR FR A/C 47.00- 3,457.50 | 89 STREET CAFE * | 88202392 | DUITNOW QR
 
 2025-06-25 * SALE DEBIT MCDONALD'S-SHELL TM* KUALA LUMPUR, MY
-    Expenses:Transport:Fuel                        MYR 14.70
-    Assets:Bank:Maybank                            MYR -14.70
+    Expenses:Samuel:Transport:Fuel                        MYR 14.70
+    Assets:Samuel:Bank:Maybank                            MYR -14.70
     ; raw: 25/06/25 SALE DEBIT 14.70- 3,442.80 | MCDONALD'S-SHELL TM* | KUALA LUMPUR, MY | SALE DEBIT
 
 2025-06-26 * TRANSFER FROM A/C MBBQR1176400 * 459628666Q
-    Expenses:Personal                              MYR 50.00
-    Assets:Bank:Maybank                            MYR -50.00
+    Expenses:Samuel:Personal                              MYR 50.00
+    Assets:Samuel:Bank:Maybank                            MYR -50.00
     ; raw: 26/06/25 TRANSFER FROM A/C 50.00- 3,392.80 | MBBQR1176400 * | 11112341071523 | 459628666Q
 
 2025-06-27 * IBK FUND TFR FR A/C PAHKLGW * tempoh 21 hari. 若银行在21天内未获得书面通知于任何差异，所有显
     Equity:Transfer                                MYR 143.75
-    Assets:Bank:Maybank                            MYR -143.75
+    Assets:Samuel:Bank:Maybank                            MYR -143.75
     ; raw: 27/06/25 IBK FUND TFR FR A/C 143.75- 3,249.05 | PAHKLGW * | tempoh 21 hari. | 若银行在21天内未获得书面通知于任何差异，所有显示的账项及余额将被视为正确。 | 請
 
 2025-06-27 * FUND TRANSFER TO A/ SOVENA JOHNSON * Car repair
-    Assets:Bank:Maybank                            MYR 1,050.00
+    Assets:Samuel:Bank:Maybank                            MYR 1,050.00
     Equity:Transfer                                MYR -1,050.00
     ; raw: 27/06/25 FUND TRANSFER TO A/ 1,050.00+ 4,299.05 | SOVENA JOHNSON * | Car repair
 
 2025-06-27 * FUND TRANSFER TO A/ MATTHEW TIMA ENSIRI* 540599874Q
-    Assets:Bank:Maybank                            MYR 23.80
+    Assets:Samuel:Bank:Maybank                            MYR 23.80
     Equity:Transfer                                MYR -23.80
     ; raw: 27/06/25 FUND TRANSFER TO A/ 23.80+ 4,322.85 | MATTHEW TIMA ENSIRI* | 540599874Q | MAE QR
 
 2025-06-27 * FUND TRANSFER TO A/ SHAZLYN ASYZREEN BI* 541691156Q
-    Assets:Bank:Maybank                            MYR 25.80
+    Assets:Samuel:Bank:Maybank                            MYR 25.80
     Equity:Transfer                                MYR -25.80
     ; raw: 27/06/25 FUND TRANSFER TO A/ 25.80+ 4,348.65 | SHAZLYN ASYZREEN BI* | 541691156Q | MAE QR
 
 2025-06-28 * IBK FUND TFR FR A/C TENGWUNBAKERYANDCON* 84115668
     Equity:Transfer                                MYR 40.00
-    Assets:Bank:Maybank                            MYR -40.00
+    Assets:Samuel:Bank:Maybank                            MYR -40.00
     ; raw: 28/06/25 IBK FUND TFR FR A/C 40.00- 4,308.65 | TENGWUNBAKERYANDCON* | 84115668 | DUITNOW QR
 
 2025-06-29 * PAYMENT VIA MYDEBIT SPORT PLANET-3 D`SA* PETALING JAYA PAYMENT VIA MYD
-    Expenses:Shopping:General                      MYR 39.00
-    Assets:Bank:Maybank                            MYR -39.00
+    Expenses:Samuel:Shopping:General                      MYR 39.00
+    Assets:Samuel:Bank:Maybank                            MYR -39.00
     ; raw: 29/06/25 PAYMENT VIA MYDEBIT 39.00- 4,269.65 | SPORT PLANET-3 D`SA* | PETALING JAYA | PAYMENT VIA MYDEBIT
 
 2025-06-29 * PAYMENT VIA MYDEBIT MTRUSTEE BERHAD * PETALING JAYA PAYMENT VIA MYDEBI
-    Expenses:Shopping:General                      MYR 2.00
-    Assets:Bank:Maybank                            MYR -2.00
+    Expenses:Samuel:Shopping:General                      MYR 2.00
+    Assets:Samuel:Bank:Maybank                            MYR -2.00
     ; raw: 29/06/25 PAYMENT VIA MYDEBIT 2.00- 4,267.65 | MTRUSTEE BERHAD * | PETALING JAYA | PAYMENT VIA MYDEBIT
 
 2025-06-29 * PRE-AUTH DEBIT Steam Purchase * 425-952-2985, DE
-    Expenses:Entertainment                         MYR 43.79
-    Assets:Bank:Maybank                            MYR -43.79
+    Expenses:Samuel:Entertainment                         MYR 43.79
+    Assets:Samuel:Bank:Maybank                            MYR -43.79
     ; raw: 29/06/25 PRE-AUTH DEBIT 43.79- 4,223.86 | Steam Purchase * | 425-952-2985, DE | SALE DEBIT
 
 2025-06-29 * PRE-AUTH DEBIT Microsoft*Store * Singapore, SG
-    Expenses:Subscriptions                         MYR 4.00
-    Assets:Bank:Maybank                            MYR -4.00
+    Expenses:Samuel:Subscriptions                         MYR 4.00
+    Assets:Samuel:Bank:Maybank                            MYR -4.00
     ; raw: 29/06/25 PRE-AUTH DEBIT 4.00- 4,219.86 | Microsoft*Store * | Singapore, SG | SALE DEBIT
 
 2025-06-29 * PRE-AUTH REFUND Microsoft*Store * Singapore, SG
-    Assets:Bank:Maybank                            MYR 4.00
-    Expenses:Subscriptions                         MYR -4.00
+    Assets:Samuel:Bank:Maybank                            MYR 4.00
+    Expenses:Samuel:Subscriptions                         MYR -4.00
     ; raw: 29/06/25 PRE-AUTH REFUND 4.00+ 4,223.86 | Microsoft*Store * | Singapore, SG | SALE DEBIT
 
 2025-06-29 * PRE-AUTH DEBIT MICROSOFT*STORE * MSBILL.INFO, SG tempoh 21 hari. 若银行在2
-    Expenses:Subscriptions                         MYR 5.00
-    Assets:Bank:Maybank                            MYR -5.00
+    Expenses:Samuel:Subscriptions                         MYR 5.00
+    Assets:Samuel:Bank:Maybank                            MYR -5.00
     ; raw: 29/06/25 PRE-AUTH DEBIT 5.00- 4,218.86 | MICROSOFT*STORE * | MSBILL.INFO, SG | SALE DEBIT | tempoh 21 hari. | 若银行在21天内未获
 
 2025-06-29 * IBK FUND TFR FR A/C Trfr
     Equity:Transfer                                MYR 200.00
-    Assets:Bank:Maybank                            MYR -200.00
+    Assets:Samuel:Bank:Maybank                            MYR -200.00
     ; raw: 29/06/25 IBK FUND TFR FR A/C 200.00- 4,018.86 | Trfr | MBB CT
 
 2025-06-30 * FPX PAYMENT FR A/ 2962214444 * SEAMONEY CAPITAL MAL
-    Expenses:Personal                              MYR 68.58
-    Assets:Bank:Maybank                            MYR -68.58
+    Expenses:Samuel:Personal                              MYR 68.58
+    Assets:Samuel:Bank:Maybank                            MYR -68.58
     ; raw: 30/06/25 FPX PAYMENT FR A/ 68.58- 3,950.28 | 2962214444 * | SEAMONEY CAPITAL MAL | 2506301331420562
 
 2025-06-30 * FUND TRANSFER TO A/ TOH WERN LIANG * 770203632Q
-    Assets:Bank:Maybank                            MYR 23.10
+    Assets:Samuel:Bank:Maybank                            MYR 23.10
     Equity:Transfer                                MYR -23.10
     ; raw: 30/06/25 FUND TRANSFER TO A/ 23.10+ 3,973.38 | TOH WERN LIANG * | 770203632Q | MAE QR
 
 2025-06-30 * PROFIT PAID
-    Assets:Bank:Maybank                            MYR 7.40
-    Income:Other                                   MYR -7.40  ; TODO: categorise
+    Assets:Samuel:Bank:Maybank                            MYR 7.40
+    Income:Samuel:Other                                   MYR -7.40  ; TODO: categorise
     ; raw: 30/06/25 PROFIT PAID 7.40+ 3,980.78
 

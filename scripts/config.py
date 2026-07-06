@@ -23,12 +23,38 @@ CATEGORIES_RULES = LEDGER_DIR / "categories.rules"
 # Currency
 CURRENCY = "MYR"
 
-# Ledger account names
+# Ledger account names (person-first structure: <Root>:<Person>:<...>)
+# Samuel's accounts and Fui Yee's accounts are namespaced by owner so each
+# person can be reviewed independently (bal Expenses:Samuel / Expenses:FuiYee)
+# and combined (bal Expenses).
 ACCOUNTS = {
-    "ambank":  "Assets:Bank:AmBank",
-    "maybank": "Assets:Bank:Maybank",
-    "hsbc":    "Liabilities:CreditCard:HSBC",
-    "ambcc":   "Liabilities:CreditCard:AmBankCC",
+    # Samuel
+    "ambank":  "Assets:Samuel:Bank:AmBank",
+    "maybank": "Assets:Samuel:Bank:Maybank",
+    "hsbc":    "Liabilities:Samuel:CreditCard:HSBC",
+    "ambcc":   "Liabilities:Samuel:CreditCard:AmBankCC",
+    # Fui Yee
+    "fy_cimb":   "Assets:FuiYee:Bank:CIMB",
+    "fy_cimbcc": "Liabilities:FuiYee:CreditCard:CIMBCC",
+    "fy_hsbc":   "Liabilities:FuiYee:CreditCard:HSBC",
+    "fy_rhb":    "Liabilities:FuiYee:CreditCard:RHB",
+    "fy_uob":    "Liabilities:FuiYee:CreditCard:UOB",
+}
+
+# Which person owns each bank — used to inject the person segment into
+# categorised Income/Expense/Asset/Liability accounts. Equity stays shared.
+OWNER = {
+    "ambank": "Samuel", "maybank": "Samuel", "hsbc": "Samuel", "ambcc": "Samuel",
+    "fy_cimb": "FuiYee", "fy_cimbcc": "FuiYee", "fy_hsbc": "FuiYee",
+    "fy_rhb": "FuiYee", "fy_uob": "FuiYee",
+}
+
+# Bank "kind" — determines double-entry direction in csv_to_ledger.
+#   "bank" = asset account (debit = money out); "card" = liability (debit = purchase)
+BANK_KIND = {
+    "ambank": "bank", "maybank": "bank", "fy_cimb": "bank",
+    "hsbc": "card", "ambcc": "card",
+    "fy_cimbcc": "card", "fy_hsbc": "card", "fy_rhb": "card", "fy_uob": "card",
 }
 
 # Statement source paths
@@ -36,6 +62,14 @@ SAMUEL_AMBANK_DIR  = BANK_STATEMENTS_DIR / "Samuel" / "Ambank"
 SAMUEL_MAYBANK_DIR = BANK_STATEMENTS_DIR / "Samuel" / "Maybank"
 SAMUEL_HSBC_DIR    = BANK_STATEMENTS_DIR / "Samuel" / "HSBC Ccard"
 SAMUEL_AMBCC_DIR   = BANK_STATEMENTS_DIR / "Samuel" / "Ambank Ccard"
+
+# Fui Yee statement source paths
+FUIYEE_DIR         = BANK_STATEMENTS_DIR / "Fui Yee"
+FY_CIMB_DIR        = FUIYEE_DIR / "CIMB"
+FY_CIMBCC_DIR      = FUIYEE_DIR / "CIMB_CC"
+FY_HSBC_DIR        = FUIYEE_DIR / "HSBC"
+FY_RHB_DIR         = FUIYEE_DIR / "RHB"
+FY_UOB_DIR         = FUIYEE_DIR / "UOB"
 
 # Target card extracted from the consolidated AmBank CC statement
 # CARz Card Gold VISA (S) — Samuel's supplementary card
@@ -85,3 +119,14 @@ def ambcc_csv_path(year: int, month: int) -> Path:
 
 def ambcc_journal_path(year: int, month: int) -> Path:
     return LEDGER_DIR / "ambcc" / f"{year}-{month:02d}.journal"
+
+
+# ── Fui Yee generic helpers ─────────────────────────────────────────────────
+# Fui Yee CSVs and journals live under a fuiyee/<bank> subfolder.
+# `bank` is one of: cimb, cimbcc, hsbc, rhb, uob  (without the fy_ prefix).
+
+def fy_csv_path(bank: str, year: int, month: int) -> Path:
+    return CSV_DIR / "fuiyee" / bank / f"{year}-{month:02d}.csv"
+
+def fy_journal_path(bank: str, year: int, month: int) -> Path:
+    return LEDGER_DIR / "fuiyee" / bank / f"{year}-{month:02d}.journal"

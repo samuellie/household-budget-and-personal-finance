@@ -1,0 +1,6 @@
+; Opening balance for Fui Yee CIMB Credit Card
+; Source: Sep 2024 statement "PREVIOUS BALANCE 687.96" — charges from before the tracking period
+
+2024-08-31 * Opening Balance — Fui Yee CIMB Credit Card
+    Liabilities:FuiYee:CreditCard:CIMBCC    MYR -687.96
+    Equity:OpeningBalance                   MYR  687.96

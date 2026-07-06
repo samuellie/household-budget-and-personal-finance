@@ -1,155 +1,810 @@
 {
   "_comment": "Category rules for auto-classifying bank transactions. Matched case-insensitively in priority order (highest first). First match wins.",
   "rules": [
-    {"pattern": "TINKERVE TECHNOLOGY|SVG GIRO CR.*TINKERVE|GIRO.*PAYOUT.*TINKERVE", "account": "Income:Salary:Samuel", "priority": 10, "note": "Samuel's employer"},
-    {"pattern": "INTERBANK GIRO.*SALARY|SALARY.*GIRO|GAJI", "account": "Income:Salary:Samuel", "priority": 8},
-    {"pattern": "INT/HB/PFT|INTEREST EARNED|FAEDAH KREDIT|PROFIT.*CREDIT", "account": "Income:Interest", "priority": 9},
-    {"pattern": "REFUND|REVERSAL|REBAT|PRE-AUTH REFUND", "account": "Income:Refund", "priority": 8},
-
-    {"pattern": "WONG FUI YEE.*(HOUSE|LOAN|MORTGAGE)|(HOUSE LOAN|MORTGAGE).*WONG FUI YEE|WONG FUI YEE.*LOAN AND", "account": "Expenses:Housing:Mortgage", "priority": 10, "note": "Monthly mortgage to Fui Yee CIMB account (RM3,551/mth, started Jul 2025)"},
-    {"pattern": "DAVID LIAN YOON WAI.*Rental|IBK.*DAVID LIAN.*RENTAL", "account": "Expenses:Housing:Rent", "priority": 10, "note": "Rental payment to landlord"},
-    {"pattern": "MAINTENANCE FEE|SERVICE CHARGE|CONDO|JOINT MANAGEMENT", "account": "Expenses:Housing:Maintenance", "priority": 7},
-
-    {"pattern": "GRABFOOD|GRAB FOOD|FOODPANDA|SHOPEEFOOD|SHOPEE FOOD|DAHMAKAN|BEEPIT", "account": "Expenses:Dining", "priority": 10},
-    {"pattern": "JAYA GROCER|VILLAGE GROCER|AEON.*SUPERMARKET|TESCO|LOTUS|MYDIN|99 SPEED|COLD STORAGE|JASONS|BENS INDEPENDENT", "account": "Expenses:Groceries", "priority": 9},
-    {"pattern": "RESTAURANT|RESTORAN|MAMAK|KOPITIAM|BISTRO|MCDONALD|KFC|PIZZA|DOMINO|BURGER KING|A&W|SUBWAY|STARBUCKS|ZUS COFFEE|OLD TOWN|SECRET RECIPE|SUSHI|MARRYBROWN", "account": "Expenses:Dining", "priority": 6},
-
-    {"pattern": "PETRONAS|SHELL.*STATION|PETRON|CALTEX|BHP.*FUEL", "account": "Expenses:Transport:Fuel", "priority": 10},
-    {"pattern": "PARKING|PARK.*METER|DBKL PARKING|APCOA|CAR PARK", "account": "Expenses:Transport:Parking", "priority": 9},
-    {"pattern": "GRAB.*CAR|GRABCAR|GRAB.*RIDE|GOJEK", "account": "Expenses:Transport:Grab", "priority": 9},
-    {"pattern": "RAPIDKL|PRASARANA|KTM |LRT |MRT |MONORAIL|KLIAEKSPRES|KLIA EKSPRES", "account": "Expenses:Transport:PublicTransport", "priority": 9},
-    {"pattern": "PLUS.*TOLL|LEBUHRAYA|LITRAK|SPRINT|KESAS|MEX |WCE |GAMUDA TOLL|ANIH|PROLINTAS", "account": "Expenses:Transport:Toll", "priority": 9},
-
-    {"pattern": "SPOTIFY", "account": "Expenses:Subscriptions:Spotify", "priority": 10},
-    {"pattern": "GOOGLE.*STORAGE|GOOGLE ONE|GOOGLE WORKSPACE|GSUITE|GOOGLE.*CLOUD|GOOGLE.*PLAY", "account": "Expenses:Subscriptions:Google", "priority": 10},
-    {"pattern": "OPENAI|CHATGPT", "account": "Expenses:Subscriptions:OpenAI", "priority": 10},
-    {"pattern": "CANVA", "account": "Expenses:Subscriptions:Canva", "priority": 10},
-    {"pattern": "NETFLIX|DISNEY.*PLUS|DISNEY\\+|DISNEYPLUS|YOUTUBE PREMIUM|APPLE\\.COM/BILL|APPLE\\.COM/US|PRIMEVIDEO|HBO GO|VIU |DIMSUM", "account": "Expenses:Subscriptions:Other", "priority": 9},
-    {"pattern": "WEIXIN", "account": "Expenses:Subscriptions:Other", "priority": 9, "note": "WeChat/Weixin in-app or subscription charge"},
-    {"pattern": "MICROSOFT|ADOBE|DROPBOX|NOTION|FIGMA|AXIATA DIGITAL ECODE|SUPABASE|AIRTABLE|ASANA|WEBSHARE|SNAPSHOOTER|VERCEL|RENDER|RAILWAY|CLOUDFLARE|DIGITALOCEAN|AWS |HEROKU", "account": "Expenses:Subscriptions", "priority": 7, "note": "SaaS/cloud tools"},
-    {"pattern": "KILO CODE|KILOCOD", "account": "Expenses:Subscriptions", "priority": 8},
-    {"pattern": "OTTER\\.?AI", "account": "Expenses:Subscriptions", "priority": 8},
-    {"pattern": "TD INTERIM INT|TD.*INT/PFT|FD.*INTEREST|TERM DEPOSIT.*INT", "account": "Income:Interest", "priority": 9, "note": "Fixed deposit / term deposit interest"},
-
-    {"pattern": "TENAGA|TNB ", "account": "Expenses:Utilities:Electric", "priority": 10},
-    {"pattern": "AIR SELANGOR|SYABAS|INDAH WATER|SAJ |PBA |LAKU ", "account": "Expenses:Utilities:Water", "priority": 10},
-    {"pattern": "UNIFI|TIME DOTCOM|MAXIS.*FIBRE|YES 4G.*HOME|CELCOM.*HOME", "account": "Expenses:Utilities:Internet", "priority": 10},
-    {"pattern": "DIGI |CELCOM|MAXIS|HOTLINK|U MOBILE|YES 4G|TUNE TALK|ALTEL|MSK COMMUNICATION", "account": "Expenses:Utilities:Phone", "priority": 8},
-
-    {"pattern": "GOLDEN SCREEN|GSC |CINEMA|PAWAGAM|TGV |MBO CINEMA|MMC |CATHAY|ODEON", "account": "Expenses:Entertainment", "priority": 10},
-    {"pattern": "STEAMGAMES|STEAM PURCHASE|STEAM GAMES|XBOX|PLAYSTATION|NINTENDO|EPIC GAMES|APPLE.*GAME|GOOGLE.*GAME", "account": "Expenses:Entertainment", "priority": 10},
-    {"pattern": "CABLE CAR|THEME PARK|GENTING|SUNWAY LAGOON|LEGOLAND|AQUARIA|ZOO |BERJAYA TIMES", "account": "Expenses:Entertainment", "priority": 9},
-
-    {"pattern": "GP AEON|GP.*SUPERMARKET|GP.*GROCER|GP.*JAYA GROCER|GP.*VILLAGE GROCER|GP.*COLD STORAGE|GP.*TESCO|GP.*LOTUS|GP.*MYDIN|GP.*99 SPEED", "account": "Expenses:Groceries", "priority": 10, "note": "GrabPay at grocery stores"},
-    {"pattern": "GP PARKSON|GP DAISO|GP.*MR DIY|GP.*IKEA|GP.*COURTS|GP.*HARVEY NORMAN|GP GARDEN SCENTS", "account": "Expenses:Shopping:General", "priority": 10, "note": "GrabPay at retail"},
-    {"pattern": "GP STRICTLY GOURMET|GP.*RESTAURANT|GP.*CAFE|GP.*BAKERY|GP.*DIM SUM|GP.*ROAST MEAT|GP.*NOODLE|GP.*MALA|GP.*PAPASAN|GP HONG FU|GP BIG BABA|GP.*AYAM|GP NLBH|GP.*DE MARKET|GP GT-KL|GP.*EATERY|GP.*KITCHEN|GP.*FOOD|GP.*BISTRO", "account": "Expenses:Dining", "priority": 9, "note": "GrabPay at restaurants"},
-    {"pattern": "GP ", "account": "Expenses:Personal", "priority": 2, "note": "GrabPay — merchant uncategorised"},
-
-    {"pattern": "STUFFD|GKS\\*STUFFD", "account": "Expenses:Dining", "priority": 9, "note": "STUFFD burger restaurant"},
-    {"pattern": "STRICTLY GOURMET|DE MARKET|PAPASAN|ROAST MEAT|TK BAKERY|OFFFFIVE COFFEE|CROISSSE|JONETZ|AYAM PENYET|GT-KL GATEWAY|SB093|NLBH BANGSAR|MALA PARADISE|HONG FU|BIG BABA|TSUYOI|APSB_S.PK", "account": "Expenses:Dining", "priority": 8},
-
-    {"pattern": "SHELL |SHELL\\d|SHELL-", "account": "Expenses:Transport:Fuel", "priority": 10},
-    {"pattern": "AUTOPAY.*PARK|LDP PJ SELATAN|AUTOPAY.*CARPARK|PRE-AUTH MYDEBIT.*LDP", "account": "Expenses:Transport:Toll", "priority": 9},
-    {"pattern": "AUTOPAY.*1 UTAMA|1 UTAMA.*AUTOPAY|AUTOPAY, 1 UTAMA", "account": "Expenses:Transport:Parking", "priority": 10},
-
-    {"pattern": "GRAB\\*|GRAB\\s*V4-", "account": "Expenses:Transport:Grab", "priority": 9, "note": "Grab rides on credit card"},
-
-    {"pattern": "PAYMENT.*THANK YOU|THANK YOU.*PAYMENT|BAYARAN.*TERIMA KASIH", "account": "Equity:Transfer", "priority": 9, "note": "Credit card payment received"},
-    {"pattern": "SERVICE TAX.*CARD|CREDIT CARD.*SERVICE TAX|ANNUAL.*CARD.*FEE", "account": "Expenses:Bank:Fees", "priority": 9},
-    {"pattern": "DEBIT ADVICE", "account": "Expenses:Bank:Fees", "priority": 8},
-
-    {"pattern": "SHOPEE|LAZADA|AMAZON|ZALORA|ASOS|TAOBAO|ALIEXPRESS|SHEIN|MR DIY|IKEA|HARVEY NORMAN|COURTS|SENHENG|DAISO|PARKSON", "account": "Expenses:Shopping:General", "priority": 7},
-    {"pattern": "SHOPEE.*ONLINE|LAZADA.*ONLINE|AMAZON.*ONLINE", "account": "Expenses:Shopping:Online", "priority": 8},
-    {"pattern": "WATSON|GUARDIAN|CARING PHARMACY|FARMASI|ALPRO", "account": "Expenses:Healthcare:Pharmacy", "priority": 9},
-    {"pattern": "HOSPITAL|KLINIK|CLINIC|DR\\.|SPECIALIST|DENTAL|OPTOMETRY|PANTAI|SUNWAY MEDICAL|COLUMBIA|PRINCE COURT|KPJ|GLENEAGLES|UMSC", "account": "Expenses:Healthcare:Medical", "priority": 9},
-
-    {"pattern": "PRUDENTIAL|AIA |ALLIANZ|GREAT EASTERN|GREATEASTERN|MANULIFE|ZURICH|SUN LIFE|ETIQA|TAKAFUL|AXA ", "account": "Expenses:Insurance", "priority": 10},
-
-    {"pattern": "PAYMENT VIA MYDEBIT.*PARKING|PAYMENT VIA MYDEBIT.*CARPARK|PAYMENT VIA MYDEBIT.*PARK ", "account": "Expenses:Transport:Parking", "priority": 10},
-    {"pattern": "APSB.*DASH|APSB\\.DASH\\.HONDA|DASH.*HONDA", "account": "Expenses:Parking", "priority": 10, "note": "Dash by Honda parking app, PJ"},
-    {"pattern": "PAYMENT VIA MYDEBIT.*PETROL|PAYMENT VIA MYDEBIT.*FUEL|PAYMENT VIA MYDEBIT.*PETRONAS|PAYMENT VIA MYDEBIT.*SHELL", "account": "Expenses:Transport:Fuel", "priority": 10},
-    {"pattern": "PAYMENT VIA MYDEBIT.*RESTAURANT|PAYMENT VIA MYDEBIT.*CAFE|PAYMENT VIA MYDEBIT.*FOOD|PAYMENT VIA MYDEBIT.*MAMAK|PAYMENT VIA MYDEBIT.*KOPITIAM", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "PAYMENT VIA MYDEBIT.*PHARMACY|PAYMENT VIA MYDEBIT.*WATSON|PAYMENT VIA MYDEBIT.*GUARDIAN|PAYMENT VIA MYDEBIT.*CLINIC", "account": "Expenses:Healthcare:Pharmacy", "priority": 8},
-    {"pattern": "PAYMENT VIA MYDEBIT", "account": "Expenses:Shopping:General", "priority": 3, "note": "MyDebit card payment — review category"},
-    {"pattern": "CASH WITHDRAWAL|ATM WITHDRAWAL", "account": "Assets:Cash", "priority": 9, "note": "Cash out — tracked as asset"},
-
-    {"pattern": "DEBITCARD ANNUAL FEE|ANNUAL FEE|SERVICE TAX|STAMP DUTY|MISC DEBIT.*FEE|MISC.*CHARGE", "account": "Expenses:Bank:Fees", "priority": 9},
-    {"pattern": "FINANCE CHARGE|INTEREST CHARGE|OVERLIMIT|LATE PAYMENT CHARGE", "account": "Expenses:Bank:Interest", "priority": 9},
-
-    {"pattern": "LHDN|HASIL|INCOME TAX|TAX PAYMENT", "account": "Expenses:Tax", "priority": 10},
-
-    {"pattern": "IBG DIRECT DEBIT.*AHAM|AHAM ASSET|FPX.*AHAM", "account": "Assets:Investment:AHAM", "priority": 9, "note": "AHAM Asset Management — monthly IBG direct debit and ad-hoc FPX top-ups"},
-    {"pattern": "UNIT TRUST|PUBLIC MUTUAL|KENANGA|VERSA|STASHAWAY|WAHED|TABUNG HAJI|ASNB|ASM |ASB ", "account": "Assets:Investment", "priority": 5, "note": "Unit trust / investment fund contributions"},
-    {"pattern": "LUNO MALAYSIA", "account": "Assets:Crypto:Luno", "priority": 8, "note": "Luno crypto exchange — Bitcoin purchases"},
-    {"pattern": "MTRUSTEE BERHAD", "account": "Assets:Crypto:Luno", "priority": 9, "note": "Luno withdrawal — Mtrustee is Luno's payment trustee"},
-    {"pattern": "SEAMONEY|SEABANK|SHOPEE.*PAY", "account": "Expenses:Personal", "priority": 6, "note": "SeaMoney/ShopeePay top-ups"},
-
-    {"pattern": "DEP TO CARD|DEPOSIT.*CARD|CCPAYMENT|PAY.*CREDIT CARD", "account": "Equity:Transfer", "priority": 8, "note": "Credit card payment from bank account"},
-    {"pattern": "IBK FUND TFR|DUITNOW|DUIT NOW|IBG.*TRANSFER|FUND TRANSFER|INTERBANK|FPX PAYMENT|INSTANT TRANSFER", "account": "Equity:Transfer", "priority": 2, "note": "Generic transfer — review; may be own-account or to third party"},
-    {"pattern": "SOVENA JOHNSON|TOH WERN LIANG", "account": "Equity:Transfer", "priority": 9, "note": "Personal transfers"},
-    {"pattern": "IKEA.*CHERAS|IKEA-CHERAS", "account": "Expenses:Divo", "priority": 11, "note": "IKEA Cheras — Divo house furnishing"},
-    {"pattern": "LEGEND KITCHEN", "account": "Expenses:Instalment:Divo", "priority": 9, "note": "Divo kitchen renovation instalment via Fui Yee"},
-    {"pattern": "NCS CONSTRUCTION", "account": "Expenses:Housing:Maintenance", "priority": 9, "note": "One-time construction/renovation payment"},
-    {"pattern": "AKEMI BED", "account": "Expenses:Instalment:Divo", "priority": 9, "note": "Divo furniture purchase — Akemi bed"},
-    {"pattern": "ALT SYNERGY", "account": "Income:Freelance", "priority": 9, "note": "Freelance tech/platform development income"},
-    {"pattern": "MAE QR|MBBQR|QR PAY|QRPAY|GRABPAY-EC|TNGD|TNG.*WALLET|BOOST.*WALLET|SETEL|TOUCH N GO WALLET", "account": "Expenses:Personal", "priority": 3, "note": "E-wallet and QR payments — review category"},
-
-    {"pattern": "Ezypay.*Anytime Fit|Anytime Fitness", "account": "Expenses:Healthcare:Gym", "priority": 9, "note": "Anytime Fitness gym membership via Ezypay"},
-    {"pattern": "CUCKOO", "account": "Expenses:Subscriptions:WaterFilter", "priority": 9, "note": "Cuckoo water purifier monthly rental"},
-    {"pattern": "LEGEND\\s+\\d+\\w+/\\d+", "account": "Expenses:Instalment:Divo", "priority": 9, "note": "LEGEND house cabinet 24-month instalment"},
-    {"pattern": "UR @ PINNACLE", "account": "Expenses:Instalment:Personal", "priority": 9, "note": "UR @ Pinnacle S Petaling — iPad 36-month instalment"},
-    {"pattern": "MACHINES-PVL", "account": "Expenses:Instalment:Personal", "priority": 9, "note": "Machines Apple reseller, Pavilion Bukit Jalil — 36-month instalment"},
-    {"pattern": "ATO PETALING JAYA|ATO PETALING", "account": "Expenses:Personal", "priority": 8, "note": "ATO barber shop, Petaling Jaya"},
-    {"pattern": "NESH MARKETING", "account": "Expenses:Instalment:Divo", "priority": 8, "note": "Nesh water filter instalment for Divo house, 24 months"},
-    {"pattern": "LOVE AND CO", "account": "Expenses:Instalment:Jewellery", "priority": 8, "note": "Love & Co jewellery instalment, Mid Valley, 12 months"},
-    {"pattern": "X[|Il]\\s*NOODLES|XI NOODLES|Xl NOODLES", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "CBTL|COFFEE BEAN", "account": "Expenses:Coffee", "priority": 8},
-    {"pattern": "PORTO FINO", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "ROBERTO", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "SHISHIDO", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "BLACKBIXON", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "SUSYI BABY", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "MURNI DISCOVERY", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "GIGI COFFEE", "account": "Expenses:Coffee", "priority": 8},
-    {"pattern": "SHINSUNMI", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "MARCO.*GARDENS|MARCO@THE", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "NASI LEMAK SHOP", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "HOUSE OF WHEAT", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "OMEGA PORK NOODLE", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "NERONERO", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "KOPI WONG ZHI", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "MASTER LEE HOTPOT", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "TCRS", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "SEOUL GARDEN", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "ALI.*MUTHU|ALI, MUTHU", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "BUCOLIC", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "JINDINGHUI", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "THAI GENG", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "EAST OCEAN REST", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "NYONYA BABA DELIGHTS", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "MONTIGO", "account": "Expenses:Personal", "priority": 8},
-    {"pattern": "SUGAR BY FROZEN", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "GHOSTBIRD", "account": "Expenses:Coffee", "priority": 8},
-    {"pattern": "BHPETROL", "account": "Expenses:Petrol", "priority": 8},
-    {"pattern": "PSS-", "account": "Expenses:Petrol", "priority": 8},
-    {"pattern": "L.OCCITANE", "account": "Expenses:Shopping", "priority": 8},
-    {"pattern": "TNS LIVING", "account": "Expenses:Instalment:Divo", "priority": 8, "note": "TNS Living furniture instalment for Divo house"},
-    {"pattern": "OMG HOME", "account": "Expenses:Divo", "priority": 8},
-    {"pattern": "LO HONG KA", "account": "Expenses:Shopping", "priority": 8},
-    {"pattern": "7-?ELEVEN|7 ELEVEN", "account": "Expenses:Groceries", "priority": 8},
-    {"pattern": "BIG-IPC|BIG IPC", "account": "Expenses:Groceries", "priority": 8, "note": "BIG supermarket at IPC Shopping Centre"},
-    {"pattern": "INFINITYCO", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "ALOE MIND|PYX.*ALOE", "account": "Expenses:Health", "priority": 8},
-    {"pattern": "THE NATURE AQUA", "account": "Expenses:Personal", "priority": 8, "note": "Aquascape hobby shop"},
-    {"pattern": "INDEED", "account": "Expenses:Business", "priority": 8, "note": "Indeed job posting charges"},
-    {"pattern": "UPWORK", "account": "Expenses:Business", "priority": 8},
-    {"pattern": "AIRASIA.*INFLIGHT|AIRASIA.*IN.FLIGHT", "account": "Expenses:Dining", "priority": 8},
-    {"pattern": "BREW & BREAD|BREW AND BREAD", "account": "Expenses:Dining", "priority": 8, "note": "Brew & Bread café, Taman Desa"},
-    {"pattern": "SOUPER TANG", "account": "Expenses:Dining", "priority": 8, "note": "Souper Tang restaurant, Mid Valley"},
-    {"pattern": "REXHARGE", "account": "Expenses:Transport:Fuel", "priority": 9, "note": "REXHARGE EV charging station"},
-    {"pattern": "GOOD TASTE.*DESA|GOOD TASTE TAMAN", "account": "Expenses:Dining", "priority": 8, "note": "Good Taste restaurant, Taman Desa"},
-    {"pattern": "SFC-SYMPHONY|SFC.*SYMPHONY", "account": "Expenses:Dining", "priority": 8, "note": "SFC food outlet, Symphony Square PJ"},
-    {"pattern": "THUNDER MATCH|ECS-THUNDER", "account": "Expenses:Personal", "priority": 8, "note": "Thunder Match badminton equipment shop"}
+    {
+      "pattern": "TINKERVE TECHNOLOGY|SVG GIRO CR.*TINKERVE|GIRO.*PAYOUT.*TINKERVE",
+      "account": "Income:Salary",
+      "priority": 10,
+      "note": "Samuel's employer"
+    },
+    {
+      "pattern": "INTERBANK GIRO.*SALARY|SALARY.*GIRO|GAJI",
+      "account": "Income:Salary",
+      "priority": 8
+    },
+    {
+      "pattern": "INT/HB/PFT|INTEREST EARNED|FAEDAH KREDIT|PROFIT.*CREDIT",
+      "account": "Income:Interest",
+      "priority": 9
+    },
+    {
+      "pattern": "REFUND|REVERSAL|REBAT|PRE-AUTH REFUND",
+      "account": "Income:Refund",
+      "priority": 8
+    },
+    {
+      "pattern": "WONG FUI YEE.*(HOUSE|LOAN|MORTGAGE)|(HOUSE LOAN|MORTGAGE).*WONG FUI YEE|WONG FUI YEE.*LOAN AND",
+      "account": "Expenses:Housing:Mortgage",
+      "priority": 10,
+      "note": "Monthly mortgage to Fui Yee CIMB account (RM3,551/mth, started Jul 2025)"
+    },
+    {
+      "pattern": "DAVID LIAN YOON WAI.*Rental|IBK.*DAVID LIAN.*RENTAL",
+      "account": "Expenses:Housing:Rent",
+      "priority": 10,
+      "note": "Rental payment to landlord"
+    },
+    {
+      "pattern": "MAINTENANCE FEE|SERVICE CHARGE|CONDO|JOINT MANAGEMENT",
+      "account": "Expenses:Housing:Maintenance",
+      "priority": 7
+    },
+    {
+      "pattern": "GRABFOOD|GRAB FOOD|FOODPANDA|SHOPEEFOOD|SHOPEE FOOD|DAHMAKAN|BEEPIT",
+      "account": "Expenses:Dining",
+      "priority": 10
+    },
+    {
+      "pattern": "JAYA GROCER|VILLAGE GROCER|AEON.*SUPERMARKET|TESCO|LOTUS|MYDIN|99 SPEED|COLD STORAGE|JASONS|BENS INDEPENDENT",
+      "account": "Expenses:Groceries",
+      "priority": 9
+    },
+    {
+      "pattern": "RESTAURANT|RESTORAN|MAMAK|KOPITIAM|BISTRO|MCDONALD|KFC|PIZZA|DOMINO|BURGER KING|A&W|SUBWAY|STARBUCKS|ZUS COFFEE|OLD TOWN|SECRET RECIPE|SUSHI|MARRYBROWN",
+      "account": "Expenses:Dining",
+      "priority": 6
+    },
+    {
+      "pattern": "PETRONAS|SHELL.*STATION|PETRON|CALTEX|BHP.*FUEL",
+      "account": "Expenses:Transport:Fuel",
+      "priority": 10
+    },
+    {
+      "pattern": "PARKING|PARK.*METER|DBKL PARKING|APCOA|CAR PARK",
+      "account": "Expenses:Transport:Parking",
+      "priority": 9
+    },
+    {
+      "pattern": "GRAB.*CAR|GRABCAR|GRAB.*RIDE|GOJEK",
+      "account": "Expenses:Transport:Grab",
+      "priority": 9
+    },
+    {
+      "pattern": "RAPIDKL|PRASARANA|KTM |LRT |MRT |MONORAIL|KLIAEKSPRES|KLIA EKSPRES",
+      "account": "Expenses:Transport:PublicTransport",
+      "priority": 9
+    },
+    {
+      "pattern": "PLUS.*TOLL|LEBUHRAYA|LITRAK|SPRINT|KESAS|MEX |WCE |GAMUDA TOLL|ANIH|PROLINTAS",
+      "account": "Expenses:Transport:Toll",
+      "priority": 9
+    },
+    {
+      "pattern": "SPOTIFY",
+      "account": "Expenses:Subscriptions:Spotify",
+      "priority": 10
+    },
+    {
+      "pattern": "GOOGLE.*STORAGE|GOOGLE ONE|GOOGLE WORKSPACE|GSUITE|GOOGLE.*CLOUD|GOOGLE.*PLAY",
+      "account": "Expenses:Subscriptions:Google",
+      "priority": 10
+    },
+    {
+      "pattern": "OPENAI|CHATGPT",
+      "account": "Expenses:Subscriptions:OpenAI",
+      "priority": 10
+    },
+    {
+      "pattern": "CANVA",
+      "account": "Expenses:Subscriptions:Canva",
+      "priority": 10
+    },
+    {
+      "pattern": "NETFLIX|DISNEY.*PLUS|DISNEY\\+|DISNEYPLUS|YOUTUBE PREMIUM|APPLE\\.COM/BILL|APPLE\\.COM/US|PRIMEVIDEO|HBO GO|VIU |DIMSUM",
+      "account": "Expenses:Subscriptions:Other",
+      "priority": 9
+    },
+    {
+      "pattern": "WEIXIN",
+      "account": "Expenses:Subscriptions:Other",
+      "priority": 9,
+      "note": "WeChat/Weixin in-app or subscription charge"
+    },
+    {
+      "pattern": "MICROSOFT|ADOBE|DROPBOX|NOTION|FIGMA|AXIATA DIGITAL ECODE|SUPABASE|AIRTABLE|ASANA|WEBSHARE|SNAPSHOOTER|VERCEL|RENDER|RAILWAY|CLOUDFLARE|DIGITALOCEAN|AWS |HEROKU",
+      "account": "Expenses:Subscriptions",
+      "priority": 7,
+      "note": "SaaS/cloud tools"
+    },
+    {
+      "pattern": "KILO CODE|KILOCOD",
+      "account": "Expenses:Subscriptions",
+      "priority": 8
+    },
+    {
+      "pattern": "OTTER\\.?AI",
+      "account": "Expenses:Subscriptions",
+      "priority": 8
+    },
+    {
+      "pattern": "TD INTERIM INT|TD.*INT/PFT|FD.*INTEREST|TERM DEPOSIT.*INT",
+      "account": "Income:Interest",
+      "priority": 9,
+      "note": "Fixed deposit / term deposit interest"
+    },
+    {
+      "pattern": "TENAGA|TNB ",
+      "account": "Expenses:Utilities:Electric",
+      "priority": 10
+    },
+    {
+      "pattern": "AIR SELANGOR|SYABAS|INDAH WATER|SAJ |PBA |LAKU ",
+      "account": "Expenses:Utilities:Water",
+      "priority": 10
+    },
+    {
+      "pattern": "UNIFI|TIME DOTCOM|MAXIS.*FIBRE|YES 4G.*HOME|CELCOM.*HOME",
+      "account": "Expenses:Utilities:Internet",
+      "priority": 10
+    },
+    {
+      "pattern": "DIGI |CELCOM|MAXIS|HOTLINK|U MOBILE|YES 4G|TUNE TALK|ALTEL|MSK COMMUNICATION",
+      "account": "Expenses:Utilities:Phone",
+      "priority": 8
+    },
+    {
+      "pattern": "GOLDEN SCREEN|GSC |CINEMA|PAWAGAM|TGV |MBO CINEMA|MMC |CATHAY|ODEON",
+      "account": "Expenses:Entertainment",
+      "priority": 10
+    },
+    {
+      "pattern": "STEAMGAMES|STEAM PURCHASE|STEAM GAMES|XBOX|PLAYSTATION|NINTENDO|EPIC GAMES|APPLE.*GAME|GOOGLE.*GAME",
+      "account": "Expenses:Entertainment",
+      "priority": 10
+    },
+    {
+      "pattern": "CABLE CAR|THEME PARK|GENTING|SUNWAY LAGOON|LEGOLAND|AQUARIA|ZOO |BERJAYA TIMES",
+      "account": "Expenses:Entertainment",
+      "priority": 9
+    },
+    {
+      "pattern": "GP AEON|GP.*SUPERMARKET|GP.*GROCER|GP.*JAYA GROCER|GP.*VILLAGE GROCER|GP.*COLD STORAGE|GP.*TESCO|GP.*LOTUS|GP.*MYDIN|GP.*99 SPEED",
+      "account": "Expenses:Groceries",
+      "priority": 10,
+      "note": "GrabPay at grocery stores"
+    },
+    {
+      "pattern": "GP PARKSON|GP DAISO|GP.*MR DIY|GP.*IKEA|GP.*COURTS|GP.*HARVEY NORMAN|GP GARDEN SCENTS",
+      "account": "Expenses:Shopping:General",
+      "priority": 10,
+      "note": "GrabPay at retail"
+    },
+    {
+      "pattern": "GP STRICTLY GOURMET|GP.*RESTAURANT|GP.*CAFE|GP.*BAKERY|GP.*DIM SUM|GP.*ROAST MEAT|GP.*NOODLE|GP.*MALA|GP.*PAPASAN|GP HONG FU|GP BIG BABA|GP.*AYAM|GP NLBH|GP.*DE MARKET|GP GT-KL|GP.*EATERY|GP.*KITCHEN|GP.*FOOD|GP.*BISTRO",
+      "account": "Expenses:Dining",
+      "priority": 9,
+      "note": "GrabPay at restaurants"
+    },
+    {
+      "pattern": "GP ",
+      "account": "Expenses:Personal",
+      "priority": 2,
+      "note": "GrabPay — merchant uncategorised"
+    },
+    {
+      "pattern": "STUFFD|GKS\\*STUFFD",
+      "account": "Expenses:Dining",
+      "priority": 9,
+      "note": "STUFFD burger restaurant"
+    },
+    {
+      "pattern": "STRICTLY GOURMET|DE MARKET|PAPASAN|ROAST MEAT|TK BAKERY|OFFFFIVE COFFEE|CROISSSE|JONETZ|AYAM PENYET|GT-KL GATEWAY|SB093|NLBH BANGSAR|MALA PARADISE|HONG FU|BIG BABA|TSUYOI|APSB_S.PK",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "SHELL |SHELL\\d|SHELL-",
+      "account": "Expenses:Transport:Fuel",
+      "priority": 10
+    },
+    {
+      "pattern": "AUTOPAY.*PARK|LDP PJ SELATAN|AUTOPAY.*CARPARK|PRE-AUTH MYDEBIT.*LDP",
+      "account": "Expenses:Transport:Toll",
+      "priority": 9
+    },
+    {
+      "pattern": "AUTOPAY.*1 UTAMA|1 UTAMA.*AUTOPAY|AUTOPAY, 1 UTAMA",
+      "account": "Expenses:Transport:Parking",
+      "priority": 10
+    },
+    {
+      "pattern": "GRAB\\*|GRAB\\s*V4-",
+      "account": "Expenses:Transport:Grab",
+      "priority": 9,
+      "note": "Grab rides on credit card"
+    },
+    {
+      "pattern": "PAYMENT.*THANK YOU|THANK YOU.*PAYMENT|BAYARAN.*TERIMA KASIH",
+      "account": "Equity:Transfer",
+      "priority": 9,
+      "note": "Credit card payment received"
+    },
+    {
+      "pattern": "SERVICE TAX.*CARD|CREDIT CARD.*SERVICE TAX|ANNUAL.*CARD.*FEE",
+      "account": "Expenses:Bank:Fees",
+      "priority": 9
+    },
+    {
+      "pattern": "DEBIT ADVICE",
+      "account": "Expenses:Bank:Fees",
+      "priority": 8
+    },
+    {
+      "pattern": "SHOPEE|LAZADA|AMAZON|ZALORA|ASOS|TAOBAO|ALIEXPRESS|SHEIN|MR DIY|IKEA|HARVEY NORMAN|COURTS|SENHENG|DAISO|PARKSON",
+      "account": "Expenses:Shopping:General",
+      "priority": 7
+    },
+    {
+      "pattern": "SHOPEE.*ONLINE|LAZADA.*ONLINE|AMAZON.*ONLINE",
+      "account": "Expenses:Shopping:Online",
+      "priority": 8
+    },
+    {
+      "pattern": "WATSON|GUARDIAN|CARING PHARMACY|FARMASI|ALPRO",
+      "account": "Expenses:Healthcare:Pharmacy",
+      "priority": 9
+    },
+    {
+      "pattern": "HOSPITAL|KLINIK|CLINIC|DR\\.|SPECIALIST|DENTAL|OPTOMETRY|PANTAI|SUNWAY MEDICAL|COLUMBIA|PRINCE COURT|KPJ|GLENEAGLES|UMSC",
+      "account": "Expenses:Healthcare:Medical",
+      "priority": 9
+    },
+    {
+      "pattern": "PRUDENTIAL|AIA |ALLIANZ|GREAT EASTERN|GREATEASTERN|MANULIFE|ZURICH|SUN LIFE|ETIQA|TAKAFUL|AXA ",
+      "account": "Expenses:Insurance",
+      "priority": 10
+    },
+    {
+      "pattern": "PAYMENT VIA MYDEBIT.*PARKING|PAYMENT VIA MYDEBIT.*CARPARK|PAYMENT VIA MYDEBIT.*PARK ",
+      "account": "Expenses:Transport:Parking",
+      "priority": 10
+    },
+    {
+      "pattern": "APSB.*DASH|APSB\\.DASH\\.HONDA|DASH.*HONDA",
+      "account": "Expenses:Parking",
+      "priority": 10,
+      "note": "Dash by Honda parking app, PJ"
+    },
+    {
+      "pattern": "PAYMENT VIA MYDEBIT.*PETROL|PAYMENT VIA MYDEBIT.*FUEL|PAYMENT VIA MYDEBIT.*PETRONAS|PAYMENT VIA MYDEBIT.*SHELL",
+      "account": "Expenses:Transport:Fuel",
+      "priority": 10
+    },
+    {
+      "pattern": "PAYMENT VIA MYDEBIT.*RESTAURANT|PAYMENT VIA MYDEBIT.*CAFE|PAYMENT VIA MYDEBIT.*FOOD|PAYMENT VIA MYDEBIT.*MAMAK|PAYMENT VIA MYDEBIT.*KOPITIAM",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "PAYMENT VIA MYDEBIT.*PHARMACY|PAYMENT VIA MYDEBIT.*WATSON|PAYMENT VIA MYDEBIT.*GUARDIAN|PAYMENT VIA MYDEBIT.*CLINIC",
+      "account": "Expenses:Healthcare:Pharmacy",
+      "priority": 8
+    },
+    {
+      "pattern": "PAYMENT VIA MYDEBIT",
+      "account": "Expenses:Shopping:General",
+      "priority": 3,
+      "note": "MyDebit card payment — review category"
+    },
+    {
+      "pattern": "CASH WITHDRAWAL|ATM WITHDRAWAL",
+      "account": "Assets:Cash",
+      "priority": 9,
+      "note": "Cash out — tracked as asset"
+    },
+    {
+      "pattern": "DEBITCARD ANNUAL FEE|ANNUAL FEE|SERVICE TAX|STAMP DUTY|MISC DEBIT.*FEE|MISC.*CHARGE",
+      "account": "Expenses:Bank:Fees",
+      "priority": 9
+    },
+    {
+      "pattern": "FINANCE CHARGE|INTEREST CHARGE|OVERLIMIT|LATE PAYMENT CHARGE",
+      "account": "Expenses:Bank:Interest",
+      "priority": 9
+    },
+    {
+      "pattern": "LHDN|HASIL|INCOME TAX|TAX PAYMENT",
+      "account": "Expenses:Tax",
+      "priority": 10
+    },
+    {
+      "pattern": "IBG DIRECT DEBIT.*AHAM|AHAM ASSET|FPX.*AHAM",
+      "account": "Assets:Investment:AHAM",
+      "priority": 9,
+      "note": "AHAM Asset Management — monthly IBG direct debit and ad-hoc FPX top-ups"
+    },
+    {
+      "pattern": "UNIT TRUST|PUBLIC MUTUAL|KENANGA|VERSA|STASHAWAY|WAHED|TABUNG HAJI|ASNB|ASM |ASB ",
+      "account": "Assets:Investment",
+      "priority": 5,
+      "note": "Unit trust / investment fund contributions"
+    },
+    {
+      "pattern": "LUNO MALAYSIA",
+      "account": "Assets:Crypto:Luno",
+      "priority": 8,
+      "note": "Luno crypto exchange — Bitcoin purchases"
+    },
+    {
+      "pattern": "MTRUSTEE BERHAD",
+      "account": "Assets:Crypto:Luno",
+      "priority": 9,
+      "note": "Luno withdrawal — Mtrustee is Luno's payment trustee"
+    },
+    {
+      "pattern": "SEAMONEY|SEABANK|SHOPEE.*PAY",
+      "account": "Expenses:Personal",
+      "priority": 6,
+      "note": "SeaMoney/ShopeePay top-ups"
+    },
+    {
+      "pattern": "DEP TO CARD|DEPOSIT.*CARD|CCPAYMENT|PAY.*CREDIT CARD",
+      "account": "Equity:Transfer",
+      "priority": 8,
+      "note": "Credit card payment from bank account"
+    },
+    {
+      "pattern": "IBK FUND TFR|DUITNOW|DUIT NOW|IBG.*TRANSFER|FUND TRANSFER|INTERBANK|FPX PAYMENT|INSTANT TRANSFER",
+      "account": "Equity:Transfer",
+      "priority": 2,
+      "note": "Generic transfer — review; may be own-account or to third party"
+    },
+    {
+      "pattern": "SOVENA JOHNSON|TOH WERN LIANG",
+      "account": "Equity:Transfer",
+      "priority": 9,
+      "note": "Personal transfers"
+    },
+    {
+      "pattern": "IKEA.*CHERAS|IKEA-CHERAS",
+      "account": "Expenses:Divo",
+      "priority": 11,
+      "note": "IKEA Cheras — Divo house furnishing"
+    },
+    {
+      "pattern": "LEGEND KITCHEN",
+      "account": "Expenses:Instalment:Divo",
+      "priority": 9,
+      "note": "Divo kitchen renovation instalment via Fui Yee"
+    },
+    {
+      "pattern": "NCS CONSTRUCTION",
+      "account": "Expenses:Housing:Maintenance",
+      "priority": 9,
+      "note": "One-time construction/renovation payment"
+    },
+    {
+      "pattern": "AKEMI BED",
+      "account": "Expenses:Instalment:Divo",
+      "priority": 9,
+      "note": "Divo furniture purchase — Akemi bed"
+    },
+    {
+      "pattern": "ALT SYNERGY",
+      "account": "Income:Freelance",
+      "priority": 9,
+      "note": "Freelance tech/platform development income"
+    },
+    {
+      "pattern": "MAE QR|MBBQR|QR PAY|QRPAY|GRABPAY-EC|TNGD|TNG.*WALLET|BOOST.*WALLET|SETEL|TOUCH N GO WALLET",
+      "account": "Expenses:Personal",
+      "priority": 3,
+      "note": "E-wallet and QR payments — review category"
+    },
+    {
+      "pattern": "Ezypay.*Anytime Fit|Anytime Fitness",
+      "account": "Expenses:Healthcare:Gym",
+      "priority": 9,
+      "note": "Anytime Fitness gym membership via Ezypay"
+    },
+    {
+      "pattern": "CUCKOO",
+      "account": "Expenses:Subscriptions:WaterFilter",
+      "priority": 9,
+      "note": "Cuckoo water purifier monthly rental"
+    },
+    {
+      "pattern": "LEGEND\\s+\\d+\\w+/\\d+",
+      "account": "Expenses:Instalment:Divo",
+      "priority": 9,
+      "note": "LEGEND house cabinet 24-month instalment"
+    },
+    {
+      "pattern": "UR @ PINNACLE",
+      "account": "Expenses:Instalment:Personal",
+      "priority": 9,
+      "note": "UR @ Pinnacle S Petaling — iPad 36-month instalment"
+    },
+    {
+      "pattern": "MACHINES-PVL",
+      "account": "Expenses:Instalment:Personal",
+      "priority": 9,
+      "note": "Machines Apple reseller, Pavilion Bukit Jalil — 36-month instalment"
+    },
+    {
+      "pattern": "ATO PETALING JAYA|ATO PETALING",
+      "account": "Expenses:Personal",
+      "priority": 8,
+      "note": "ATO barber shop, Petaling Jaya"
+    },
+    {
+      "pattern": "NESH MARKETING",
+      "account": "Expenses:Instalment:Divo",
+      "priority": 8,
+      "note": "Nesh water filter instalment for Divo house, 24 months"
+    },
+    {
+      "pattern": "LOVE AND CO",
+      "account": "Expenses:Instalment:Jewellery",
+      "priority": 8,
+      "note": "Love & Co jewellery instalment, Mid Valley, 12 months"
+    },
+    {
+      "pattern": "X[|Il]\\s*NOODLES|XI NOODLES|Xl NOODLES",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "CBTL|COFFEE BEAN",
+      "account": "Expenses:Coffee",
+      "priority": 8
+    },
+    {
+      "pattern": "PORTO FINO",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "ROBERTO",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "SHISHIDO",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "BLACKBIXON",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "SUSYI BABY",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "MURNI DISCOVERY",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "GIGI COFFEE",
+      "account": "Expenses:Coffee",
+      "priority": 8
+    },
+    {
+      "pattern": "SHINSUNMI",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "MARCO.*GARDENS|MARCO@THE",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "NASI LEMAK SHOP",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "HOUSE OF WHEAT",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "OMEGA PORK NOODLE",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "NERONERO",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "KOPI WONG ZHI",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "MASTER LEE HOTPOT",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "TCRS",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "SEOUL GARDEN",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "ALI.*MUTHU|ALI, MUTHU",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "BUCOLIC",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "JINDINGHUI",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "THAI GENG",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "EAST OCEAN REST",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "NYONYA BABA DELIGHTS",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "MONTIGO",
+      "account": "Expenses:Personal",
+      "priority": 8
+    },
+    {
+      "pattern": "SUGAR BY FROZEN",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "GHOSTBIRD",
+      "account": "Expenses:Coffee",
+      "priority": 8
+    },
+    {
+      "pattern": "BHPETROL",
+      "account": "Expenses:Petrol",
+      "priority": 8
+    },
+    {
+      "pattern": "PSS-",
+      "account": "Expenses:Petrol",
+      "priority": 8
+    },
+    {
+      "pattern": "L.OCCITANE",
+      "account": "Expenses:Shopping",
+      "priority": 8
+    },
+    {
+      "pattern": "TNS LIVING",
+      "account": "Expenses:Instalment:Divo",
+      "priority": 8,
+      "note": "TNS Living furniture instalment for Divo house"
+    },
+    {
+      "pattern": "OMG HOME",
+      "account": "Expenses:Divo",
+      "priority": 8
+    },
+    {
+      "pattern": "LO HONG KA",
+      "account": "Expenses:Shopping",
+      "priority": 8
+    },
+    {
+      "pattern": "7-?ELEVEN|7 ELEVEN",
+      "account": "Expenses:Groceries",
+      "priority": 8
+    },
+    {
+      "pattern": "BIG-IPC|BIG IPC",
+      "account": "Expenses:Groceries",
+      "priority": 8,
+      "note": "BIG supermarket at IPC Shopping Centre"
+    },
+    {
+      "pattern": "INFINITYCO",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "ALOE MIND|PYX.*ALOE",
+      "account": "Expenses:Health",
+      "priority": 8
+    },
+    {
+      "pattern": "THE NATURE AQUA",
+      "account": "Expenses:Personal",
+      "priority": 8,
+      "note": "Aquascape hobby shop"
+    },
+    {
+      "pattern": "INDEED",
+      "account": "Expenses:Business",
+      "priority": 8,
+      "note": "Indeed job posting charges"
+    },
+    {
+      "pattern": "UPWORK",
+      "account": "Expenses:Business",
+      "priority": 8
+    },
+    {
+      "pattern": "AIRASIA.*INFLIGHT|AIRASIA.*IN.FLIGHT",
+      "account": "Expenses:Dining",
+      "priority": 8
+    },
+    {
+      "pattern": "BREW & BREAD|BREW AND BREAD",
+      "account": "Expenses:Dining",
+      "priority": 8,
+      "note": "Brew & Bread café, Taman Desa"
+    },
+    {
+      "pattern": "SOUPER TANG",
+      "account": "Expenses:Dining",
+      "priority": 8,
+      "note": "Souper Tang restaurant, Mid Valley"
+    },
+    {
+      "pattern": "REXHARGE",
+      "account": "Expenses:Transport:Fuel",
+      "priority": 9,
+      "note": "REXHARGE EV charging station"
+    },
+    {
+      "pattern": "GOOD TASTE.*DESA|GOOD TASTE TAMAN",
+      "account": "Expenses:Dining",
+      "priority": 8,
+      "note": "Good Taste restaurant, Taman Desa"
+    },
+    {
+      "pattern": "SFC-SYMPHONY|SFC.*SYMPHONY",
+      "account": "Expenses:Dining",
+      "priority": 8,
+      "note": "SFC food outlet, Symphony Square PJ"
+    },
+    {
+      "pattern": "THUNDER MATCH|ECS-THUNDER",
+      "account": "Expenses:Personal",
+      "priority": 8,
+      "note": "Thunder Match badminton equipment shop"
+    },
+    {
+      "priority": 10,
+      "pattern": "I-PYMT TO LOAN/FINANCING",
+      "account": "Expenses:Housing:Mortgage",
+      "comment": "CIMB housing loan auto-deduction (Fui Yee) — the real mortgage payment to the bank"
+    },
+    {
+      "priority": 9,
+      "pattern": "I-PYMT TO CCARD",
+      "account": "Equity:Transfer",
+      "comment": "Paying own credit card from CIMB"
+    },
+    {
+      "priority": 9,
+      "pattern": "I-FUNDS TR TO|I-FUNDS TRANSFER",
+      "account": "Equity:Transfer",
+      "comment": "Own funds transfer"
+    },
+    {
+      "priority": 9,
+      "pattern": "I-PAYMENT FPXPAY AMBANK",
+      "account": "Equity:Transfer",
+      "comment": "FPX transfer to own AmBank account"
+    },
+    {
+      "priority": 9,
+      "pattern": "CREDIT INTEREST",
+      "account": "Income:Interest",
+      "comment": "CIMB savings profit/interest"
+    },
+    {
+      "priority": 8,
+      "pattern": "BONUS/INCENTIVE|CA/SA BONUS",
+      "account": "Income:Interest",
+      "comment": "Savings bonus/incentive"
+    },
+    {
+      "priority": 3,
+      "pattern": "POS DEBIT GRAB RIDES|GRAB RIDES-EC",
+      "account": "Expenses:Transport:Grab",
+      "comment": "Grab rides"
+    },
+    {
+      "priority": 3,
+      "pattern": "FPXPAY ALIPAY|FPXPAY SHOPEEPAY|FPXPAY TNG|FPXPAY GRABPAY",
+      "account": "Expenses:Personal",
+      "comment": "e-wallet top-up"
+    },
+    {
+      "priority": 6,
+      "pattern": "FPXPAY OYENINSURANCE|OYEN INSURANCE",
+      "account": "Expenses:Insurance",
+      "comment": "Oyen pet insurance"
+    },
+    {
+      "priority": 8,
+      "pattern": "SMARTMOVE.*BAL|BALTRANSFER|BALANCE TRANSFER",
+      "account": "Equity:Transfer",
+      "comment": "Credit card balance transfer"
+    },
+    {
+      "priority": 6,
+      "pattern": "UOB PL-EPP|EPP INSTALMENT|-EPP ",
+      "account": "Expenses:Instalment:Personal",
+      "comment": "EPP instalment plan"
+    },
+    {
+      "priority": 5,
+      "pattern": "NSK GROCER|NSK TRADE",
+      "account": "Expenses:Groceries"
+    },
+    {
+      "priority": 5,
+      "pattern": "LEGENDKITCHEN|LEGEND KITCHEN|FISH WORLD|KEJ FISH",
+      "account": "Expenses:Dining"
+    },
+    {
+      "priority": 5,
+      "pattern": "DUNLOPILLO|LEGEND HOME APPLIANCE|ONE LIVING|BOX OF BRICKS|GOLIVE ASIA",
+      "account": "Expenses:Shopping:General",
+      "comment": "Home/appliances/retail"
+    },
+    {
+      "priority": 5,
+      "pattern": "TRAVELOKA",
+      "account": "Expenses:Entertainment",
+      "comment": "Travel"
+    },
+    {
+      "priority": 5,
+      "pattern": "MUSEE PLATINUM|HERBALINE",
+      "account": "Expenses:Personal",
+      "comment": "Beauty/wellness"
+    },
+    {
+      "priority": 6,
+      "pattern": "OYEN",
+      "account": "Expenses:Insurance",
+      "comment": "Oyen pet insurance"
+    },
+    {
+      "priority": 5,
+      "pattern": "SG AUTO WORKS|AUTO WORKS",
+      "account": "Expenses:Transport",
+      "comment": "Car servicing"
+    }
   ],
   "default_expense": "Expenses:Uncategorized",
   "default_income": "Income:Other"

@@ -4,117 +4,117 @@
 ; Transactions: 23
 
 2025-11-23 * PAYMENT - THANK YOU CR
-    Liabilities:CreditCard:HSBC                    MYR 2,534.80
+    Liabilities:Samuel:CreditCard:HSBC                    MYR 2,534.80
     Equity:Transfer                                MYR -2,534.80
     ; raw: 23 NOV 23 NOV PAYMENT - THANK YOU 2,534.80 CR
 
 2025-11-05 * ROBERTO'S 1020-OSTERIA KUALA LUMPUR MY
-    Expenses:Dining                                MYR 127.60
-    Liabilities:CreditCard:HSBC                    MYR -127.60
+    Expenses:Samuel:Dining                                MYR 127.60
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -127.60
     ; raw: 05 NOV 03 NOV ROBERTO'S 1020-OSTERIA KUALA LUMPUR MY 127.60
 
 2025-11-05 * SHISHIDO EXPRESS W.P.KL MY
-    Expenses:Dining                                MYR 61.60
-    Liabilities:CreditCard:HSBC                    MYR -61.60
+    Expenses:Samuel:Dining                                MYR 61.60
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -61.60
     ; raw: 05 NOV 04 NOV SHISHIDO EXPRESS W.P.KL MY 61.60
 
 2025-11-09 * IPY*BLACKBIXON CAFE - SELANGOR MY
-    Expenses:Dining                                MYR 96.30
-    Liabilities:CreditCard:HSBC                    MYR -96.30
+    Expenses:Samuel:Dining                                MYR 96.30
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -96.30
     ; raw: 09 NOV 07 NOV IPY*BLACKBIXON CAFE - SELANGOR MY 96.30
 
 2025-11-10 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 65.07
-    Liabilities:CreditCard:HSBC                    MYR -65.07
+    Expenses:Samuel:Transport:Fuel                        MYR 65.07
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -65.07
     ; raw: 10 NOV 09 NOV PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 65.07
 
 2025-11-12 * GT-KL GATEWAY KUALA LUMPUR MY
-    Expenses:Dining                                MYR 39.80
-    Liabilities:CreditCard:HSBC                    MYR -39.80
+    Expenses:Samuel:Dining                                MYR 39.80
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -39.80
     ; raw: 12 NOV 11 NOV GT-KL GATEWAY KUALA LUMPUR MY 39.80
 
 2025-11-13 * MR DIY (M)-SCG KUALA LUMPUR MY
-    Expenses:Shopping:General                      MYR 33.20
-    Liabilities:CreditCard:HSBC                    MYR -33.20
+    Expenses:Samuel:Shopping:General                      MYR 33.20
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -33.20
     ; raw: 13 NOV 12 NOV MR DIY (M)-SCG KUALA LUMPUR MY 33.20
 
 2025-11-13 * SUSYI BABY CAMI-FMYTOWN KUALA LUMPUR MY
-    Expenses:Dining                                MYR 89.60
-    Liabilities:CreditCard:HSBC                    MYR -89.60
+    Expenses:Samuel:Dining                                MYR 89.60
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -89.60
     ; raw: 13 NOV 12 NOV SUSYI BABY CAMI-FMYTOWN KUALA LUMPUR MY 89.60
 
 2025-11-14 * MICROSOFT*14 DAY TRIAL MSBILL.INFO SG
-    Expenses:Subscriptions                         MYR 25.00
-    Liabilities:CreditCard:HSBC                    MYR -25.00
+    Expenses:Samuel:Subscriptions                         MYR 25.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -25.00
     ; raw: 14 NOV 13 NOV MICROSOFT*14 DAY TRIAL MSBILL.INFO SG 25.00
 
 2025-11-14 * GP PAPASAN - KL GATEWAY KUALA LUMPUR
-    Expenses:Dining                                MYR 66.00
-    Liabilities:CreditCard:HSBC                    MYR -66.00
+    Expenses:Samuel:Dining                                MYR 66.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -66.00
     ; raw: 14 NOV 13 NOV GP PAPASAN - KL GATEWAY KUALA LUMPUR 66.00
 
 2025-11-16 * MURNI DISCOVERY-PJ SS2 PAYA MY
-    Expenses:Dining                                MYR 127.00
-    Liabilities:CreditCard:HSBC                    MYR -127.00
+    Expenses:Samuel:Dining                                MYR 127.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -127.00
     ; raw: 16 NOV 13 NOV MURNI DISCOVERY-PJ SS2 PAYA MY 127.00
 
 2025-11-16 * GIGI COFFEE-KL GATEWAY KUALA LUMPUR MY
-    Expenses:Coffee                                MYR 13.10
-    Liabilities:CreditCard:HSBC                    MYR -13.10
+    Expenses:Samuel:Coffee                                MYR 13.10
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -13.10
     ; raw: 16 NOV 14 NOV GIGI COFFEE-KL GATEWAY KUALA LUMPUR MY 13.10
 
 2025-11-16 * GKS*STUFFD W.P. KUALA L MY
-    Expenses:Dining                                MYR 19.60
-    Liabilities:CreditCard:HSBC                    MYR -19.60
+    Expenses:Samuel:Dining                                MYR 19.60
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -19.60
     ; raw: 16 NOV 14 NOV GKS*STUFFD W.P. KUALA L MY 19.60
 
 2025-11-16 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 53.17
-    Liabilities:CreditCard:HSBC                    MYR -53.17
+    Expenses:Samuel:Transport:Fuel                        MYR 53.17
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -53.17
     ; raw: 16 NOV 14 NOV PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 53.17
 
 2025-11-16 * SHINSUNMI - SUNWAY GEO SUBANG JAYA MY
-    Expenses:Dining                                MYR 28.00
-    Liabilities:CreditCard:HSBC                    MYR -28.00
+    Expenses:Samuel:Dining                                MYR 28.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -28.00
     ; raw: 16 NOV 15 NOV SHINSUNMI - SUNWAY GEO SUBANG JAYA MY 28.00
 
 2025-11-16 * ATO PETALING JAYA MY
-    Expenses:Personal                              MYR 60.00
-    Liabilities:CreditCard:HSBC                    MYR -60.00
+    Expenses:Samuel:Personal                              MYR 60.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -60.00
     ; raw: 16 NOV 15 NOV ATO PETALING JAYA MY 60.00
 
 2025-11-17 * GP FAMOUS AMOS-PMPJ PETALING JAYA
-    Expenses:Personal                              MYR 7.90
-    Liabilities:CreditCard:HSBC                    MYR -7.90
+    Expenses:Samuel:Personal                              MYR 7.90
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -7.90
     ; raw: 17 NOV 16 NOV GP FAMOUS AMOS-PMPJ PETALING JAYA 7.90
 
 2025-11-19 * AYAM PENYET KL GATEWAY KUALA LUMPUR MY
-    Expenses:Dining                                MYR 39.20
-    Liabilities:CreditCard:HSBC                    MYR -39.20
+    Expenses:Samuel:Dining                                MYR 39.20
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -39.20
     ; raw: 19 NOV 18 NOV AYAM PENYET KL GATEWAY KUALA LUMPUR MY 39.20
 
 2025-11-21 * PETRONAS DAMAI PERDANA CHERAS MY
-    Expenses:Transport:Fuel                        MYR 70.81
-    Liabilities:CreditCard:HSBC                    MYR -70.81
+    Expenses:Samuel:Transport:Fuel                        MYR 70.81
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -70.81
     ; raw: 21 NOV 19 NOV PETRONAS DAMAI PERDANA CHERAS MY 70.81
 
 2025-11-23 * GP GT-KL GATEWAY KUALA LUMPUR
-    Expenses:Dining                                MYR 49.80
-    Liabilities:CreditCard:HSBC                    MYR -49.80
+    Expenses:Samuel:Dining                                MYR 49.80
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -49.80
     ; raw: 23 NOV 21 NOV GP GT-KL GATEWAY KUALA LUMPUR 49.80
 
 2025-11-26 * SPOTIFY STOCKHOLM ~ SE
-    Expenses:Subscriptions:Spotify                 MYR 30.90
-    Liabilities:CreditCard:HSBC                    MYR -30.90
+    Expenses:Samuel:Subscriptions:Spotify                 MYR 30.90
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -30.90
     ; raw: 26 NOV 25 NOV SPOTIFY STOCKHOLM ~ SE 30.90
 
 2025-11-30 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 61.44
-    Liabilities:CreditCard:HSBC                    MYR -61.44
+    Expenses:Samuel:Transport:Fuel                        MYR 61.44
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -61.44
     ; raw: 30 NOV 28 NOV PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 61.44
 
 2025-12-03 * LOVE AND CO- MV GEN - 1/12 INSTALMENT
-    Expenses:Instalment:Jewellery                  MYR 249.91
-    Liabilities:CreditCard:HSBC                    MYR -249.91
+    Expenses:Samuel:Instalment:Jewellery                  MYR 249.91
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -249.91
     ; raw: 03 DEC 03 DEC LOVE AND CO- MV GEN - 1/12 INSTALMENT 249.91 Your charge(s) for this month RM1,165.09 ***Please forward yo
 

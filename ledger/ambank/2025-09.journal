@@ -4,37 +4,37 @@
 ; Transactions: 7
 
 2025-09-05 * DuitNow CR TRF /MISC CREDIT, MUHAMMAD
-    Assets:Bank:AmBank                             MYR 15.00
+    Assets:Samuel:Bank:AmBank                             MYR 15.00
     Equity:Transfer                                MYR -15.00
     ; raw: 05Sep DuitNow CR TRF /MISC CREDIT, MUHAMMAD 15.00 3,098.63 FAIRUZ BIN KHALIZAN, Transfer,
 
 2025-09-08 * IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 500.00
-    Assets:Bank:AmBank                             MYR -500.00
+    Assets:Samuel:Investment:AHAM                         MYR 500.00
+    Assets:Samuel:Bank:AmBank                             MYR -500.00
     ; raw: 08Sep IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET 500.00 2,598.63 MANAGEMEN, PayNet Direct Debit, 5000032438
 
 2025-09-18 * DuitNow CR TRF /MISC CREDIT, LIM JUN HAO
-    Assets:Bank:AmBank                             MYR 39.64
+    Assets:Samuel:Bank:AmBank                             MYR 39.64
     Equity:Transfer                                MYR -39.64
     ; raw: 18Sep DuitNow CR TRF /MISC CREDIT, LIM JUN HAO, 39.64 2,638.27 Lunch,
 
 2025-09-21 * DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own
     Equity:Transfer                                MYR 2,059.04
-    Assets:Bank:AmBank                             MYR -2,059.04
+    Assets:Samuel:Bank:AmBank                             MYR -2,059.04
     ; raw: 21Sep DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own, 2,059.04 579.23
 
 2025-09-24 * DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU
-    Assets:Bank:AmBank                             MYR 2,000.00
+    Assets:Samuel:Bank:AmBank                             MYR 2,000.00
     Equity:Transfer                                MYR -2,000.00
     ; raw: 24Sep DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU, 2,000.00 2,579.23 Trfr,
 
 2025-09-24 * FPX PAYMENT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 500.00
-    Assets:Bank:AmBank                             MYR -500.00
+    Assets:Samuel:Investment:AHAM                         MYR 500.00
+    Assets:Samuel:Bank:AmBank                             MYR -500.00
     ; raw: 24Sep FPX PAYMENT /MISC DEBIT, AHAM ASSET 500.00 2,079.23 MANAGEMENT BERHAD532509241806309, 532509241806309, 25092423265
 
 2025-09-30 * INT/HB/PFT
-    Assets:Bank:AmBank                             MYR 0.30
-    Income:Interest                                MYR -0.30
+    Assets:Samuel:Bank:AmBank                             MYR 0.30
+    Income:Samuel:Interest                                MYR -0.30
     ; raw: 30Sep INT/HB/PFT, , , 0.30 2,079.53 Dilindungi oleh PIDM setakat RM250,000 bagi setiap pendeposit ACCOUNT NO. / NO. AKAU
 

@@ -4,32 +4,32 @@
 ; Transactions: 6
 
 2025-04-01 * DEBITCARD ANNUAL FEE /MISC DEBIT
-    Expenses:Bank:Fees                             MYR 8.00
-    Assets:Bank:AmBank                             MYR -8.00
+    Expenses:Samuel:Bank:Fees                             MYR 8.00
+    Assets:Samuel:Bank:AmBank                             MYR -8.00
     ; raw: 01Apr DEBITCARD ANNUAL FEE /MISC DEBIT, , , 8.00 2,502.36
 
 2025-04-07 * IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 500.00
-    Assets:Bank:AmBank                             MYR -500.00
+    Assets:Samuel:Investment:AHAM                         MYR 500.00
+    Assets:Samuel:Bank:AmBank                             MYR -500.00
     ; raw: 07Apr IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET 500.00 2,002.36 MANAGEMEN, PayNet Direct Debit, 5000032438
 
 2025-04-07 * DuitNow CR TRF /MISC CREDIT, LIM JUN HAO
-    Assets:Bank:AmBank                             MYR 17.64
+    Assets:Samuel:Bank:AmBank                             MYR 17.64
     Equity:Transfer                                MYR -17.64
     ; raw: 07Apr DuitNow CR TRF /MISC CREDIT, LIM JUN HAO, 17.64 2,020.00 lunch,
 
 2025-04-26 * DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU
-    Assets:Bank:AmBank                             MYR 4,000.00
+    Assets:Samuel:Bank:AmBank                             MYR 4,000.00
     Equity:Transfer                                MYR -4,000.00
     ; raw: 26Apr DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU, 4,000.00 6,020.00 Trfr,
 
 2025-04-26 * DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own
     Equity:Transfer                                MYR 2,528.77
-    Assets:Bank:AmBank                             MYR -2,528.77
+    Assets:Samuel:Bank:AmBank                             MYR -2,528.77
     ; raw: 26Apr DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own, 2,528.77 3,491.23
 
 2025-04-30 * INT/HB/PFT
-    Assets:Bank:AmBank                             MYR 0.29
-    Income:Interest                                MYR -0.29
+    Assets:Samuel:Bank:AmBank                             MYR 0.29
+    Income:Samuel:Interest                                MYR -0.29
     ; raw: 30Apr INT/HB/PFT, , , 0.29 3,491.52 customercare@ambankgroup.com Kumpulan AmBank telah mengeluarkan satu Notis Privasi y
 

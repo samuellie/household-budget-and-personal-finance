@@ -4,22 +4,22 @@
 ; Transactions: 4
 
 2026-02-05 * IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 500.00
-    Assets:Bank:AmBank                             MYR -500.00
+    Assets:Samuel:Investment:AHAM                         MYR 500.00
+    Assets:Samuel:Bank:AmBank                             MYR -500.00
     ; raw: 05Feb IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET 500.00 1,220.18 MANAGEMEN, PayNet Direct Debit, 5000032438
 
 2026-02-21 * DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own
     Equity:Transfer                                MYR 1,207.00
-    Assets:Bank:AmBank                             MYR -1,207.00
+    Assets:Samuel:Bank:AmBank                             MYR -1,207.00
     ; raw: 21Feb DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own, 1,207.00 13.18
 
 2026-02-21 * DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU
-    Assets:Bank:AmBank                             MYR 2,000.00
+    Assets:Samuel:Bank:AmBank                             MYR 2,000.00
     Equity:Transfer                                MYR -2,000.00
     ; raw: 21Feb DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU, 2,000.00 2,013.18 Trfr,
 
 2026-02-28 * INT/HB/PFT
-    Assets:Bank:AmBank                             MYR 0.17
-    Income:Interest                                MYR -0.17
+    Assets:Samuel:Bank:AmBank                             MYR 0.17
+    Income:Samuel:Interest                                MYR -0.17
     ; raw: 28Feb INT/HB/PFT, , , 0.17 2,013.35 customercare@ambankgroup.com Kumpulan AmBank telah mengeluarkan satu Notis Privasi y
 

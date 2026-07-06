@@ -4,37 +4,37 @@
 ; Transactions: 7
 
 2026-04-09 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 66.40
-    Liabilities:CreditCard:AmBankCC                MYR -66.40
+    Expenses:Samuel:Transport:Fuel                        MYR 66.40
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -66.40
     ; raw: PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 66.40
 
 2026-04-20 * PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own,
-    Liabilities:CreditCard:AmBankCC                MYR 1,207.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR 1,207.00
     Equity:Transfer                                MYR -1,207.00
     ; raw: PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own, 1,207.00CR
 
 2026-05-01 * CUCKOO Kuala Lumpur MY
-    Expenses:Subscriptions:WaterFilter             MYR 85.00
-    Liabilities:CreditCard:AmBankCC                MYR -85.00
+    Expenses:Samuel:Subscriptions:WaterFilter             MYR 85.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -85.00
     ; raw: CUCKOO Kuala Lumpur MY 85.00
 
 2026-05-03 * LEGEND 09th/24 (RM6,240)
-    Expenses:Instalment:Divo                       MYR 416.00
-    Liabilities:CreditCard:AmBankCC                MYR -416.00
+    Expenses:Samuel:Instalment:Divo                       MYR 416.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -416.00
     ; raw: LEGEND 09th/24 (RM6,240) 416.00
 
 2026-05-03 * UR @ PINNACLE S PETA 32nd/36 (RM324)
-    Expenses:Instalment:Personal                   MYR 81.00
-    Liabilities:CreditCard:AmBankCC                MYR -81.00
+    Expenses:Samuel:Instalment:Personal                   MYR 81.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -81.00
     ; raw: UR @ PINNACLE S PETA 32nd/36 (RM324) 81.00
 
 2026-05-03 * MACHINES-PVL BKT JAL 26th/36 (RM3,450)
-    Expenses:Instalment:Personal                   MYR 345.00
-    Liabilities:CreditCard:AmBankCC                MYR -345.00
+    Expenses:Samuel:Instalment:Personal                   MYR 345.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -345.00
     ; raw: MACHINES-PVL BKT JAL 26th/36 (RM3,450) 345.00
 
 2026-05-03 * AMBONUS - T107, CARz Petrol Rebate 2%
-    Liabilities:CreditCard:AmBankCC                MYR 1.33
-    Income:Refund                                  MYR -1.33
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR 1.33
+    Income:Samuel:Refund                                  MYR -1.33
     ; raw: AMBONUS - T107, CARz Petrol Rebate 2% 1.33CR
 

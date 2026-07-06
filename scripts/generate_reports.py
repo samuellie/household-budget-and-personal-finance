@@ -18,6 +18,7 @@ import argparse
 import re
 import subprocess
 import sys
+from collections import defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -202,7 +203,39 @@ def freeze(ws, cell="B2"):
 
 # ── P&L helpers ───────────────────────────────────────────────────────────────
 
+# ── Person scope ──────────────────────────────────────────────────────────────
+# Accounts are person-first: <Root>:<Person>:<...>. Reports run in three scopes:
+#   None      → Combined household (both people aggregated under neutral categories)
+#   "Samuel"  → Samuel only
+#   "FuiYee"  → Fui Yee only
+SCOPE: str | None = None
+PERSON_SEG = ("Samuel", "FuiYee")
+
+
+def scope_root(root: str) -> str:
+    """Ledger query pattern for a top-level root under the current scope."""
+    return f"{root}:{SCOPE}" if SCOPE else root
+
+
+def strip_person(account: str) -> str:
+    """Remove the person segment so person-neutral prefixes/labels match:
+    Expenses:Samuel:Groceries → Expenses:Groceries ; Equity:Transfer unchanged."""
+    parts = account.split(":")
+    if len(parts) >= 2 and parts[1] in PERSON_SEG:
+        return ":".join([parts[0]] + parts[2:])
+    return account
+
+
+def scope_label() -> str:
+    return {None: "Combined Household", "Samuel": "Samuel", "FuiYee": "Fui Yee"}[SCOPE]
+
+
+def scope_suffix() -> str:
+    return {None: "combined", "Samuel": "samuel", "FuiYee": "fuiyee"}[SCOPE]
+
+
 def _acc_matches(account: str, prefixes: list) -> bool:
+    account = strip_person(account)
     return any(account == p or account.startswith(p + ":") for p in prefixes)
 
 
@@ -212,9 +245,9 @@ def _fetch_period_data(all_months: list) -> dict:
     for y, m in all_months:
         period = f"{y}-{m:02d}"
         pd = {}
-        for acc, amt in ledger_balance("Income",   period=period).items():
+        for acc, amt in ledger_balance(scope_root("Income"),   period=period).items():
             pd[acc] = -amt          # ledger income is negative → make positive
-        for acc, amt in ledger_balance("Expenses", period=period).items():
+        for acc, amt in ledger_balance(scope_root("Expenses"), period=period).items():
             if amt > 0:
                 pd[acc] = amt
         data[period] = pd
@@ -247,7 +280,7 @@ def build_pnl_annual_sheet(wb, all_months: list, month_labels: list) -> None:
     # ── Title ─────────────────────────────────────────────────────────────────
     ws.merge_cells(f"A1:{get_column_letter(total_col)}1")
     t = ws["A1"]
-    t.value = "Annual P&L Statement  —  Samuel & Fui Yee Household  (FY 2025 / 2026)"
+    t.value = f"Annual P&L Statement  —  {scope_label()}  (FY 2025 / 2026)"
     t.font  = Font(bold=True, size=14, name="Calibri", color="FFFFFF")
     t.fill  = bg(C_HEADER_BG)
     t.alignment = Alignment(horizontal="center", vertical="center")
@@ -395,9 +428,9 @@ def generate_monthly_report(year: int, month: int) -> Path:
     ws_sum = wb.create_sheet("Summary")
     ws_sum.sheet_properties.tabColor = "1F3864"
 
-    income_bal  = ledger_balance("Income", period=period)
-    expense_bal = ledger_balance("Expenses", period=period)
-    asset_bal   = ledger_balance("Assets", end=f"{year}-{month:02d}-01")
+    income_bal  = ledger_balance(scope_root("Income"), period=period)
+    expense_bal = ledger_balance(scope_root("Expenses"), period=period)
+    asset_bal   = ledger_balance(scope_root("Assets"), end=f"{year}-{month:02d}-01")
 
     total_income   = -sum(income_bal.values())
     total_expenses =  sum(v for v in expense_bal.values() if v > 0)
@@ -406,7 +439,7 @@ def generate_monthly_report(year: int, month: int) -> Path:
 
     ws_sum.merge_cells("A1:D1")
     title = ws_sum["A1"]
-    title.value = f"Monthly Financial Summary — {datetime(year, month, 1).strftime('%B %Y')}"
+    title.value = f"Monthly Financial Summary — {scope_label()} — {datetime(year, month, 1).strftime('%B %Y')}"
     title.font = Font(bold=True, size=14, name="Calibri", color=C_HEADER_FG)
     title.fill = PatternFill("solid", fgColor=C_HEADER_BG)
     title.alignment = Alignment(horizontal="center", vertical="center")
@@ -423,7 +456,8 @@ def generate_monthly_report(year: int, month: int) -> Path:
         ("ACCOUNT BALANCES (month-end)", ""),
     ]
     for acc, bal in sorted(asset_bal.items()):
-        rows.append((acc.replace("Assets:Bank:", ""), bal))
+        disp = strip_person(acc).replace("Assets:Bank:", "").replace("Assets:", "")
+        rows.append((disp, bal))
 
     for r, (label, value) in enumerate(rows, start=2):
         cell_label = ws_sum.cell(row=r, column=1, value=label)
@@ -460,10 +494,12 @@ def generate_monthly_report(year: int, month: int) -> Path:
         header_style(cell)
     ws_cat.row_dimensions[1].height = 22
 
-    expense_items = sorted(
-        [(acc.replace("Expenses:", ""), amt) for acc, amt in expense_bal.items() if amt > 0],
-        key=lambda x: x[1], reverse=True
-    )
+    from collections import defaultdict
+    _agg = defaultdict(float)
+    for acc, amt in expense_bal.items():
+        if amt > 0:
+            _agg[strip_person(acc).replace("Expenses:", "")] += amt
+    expense_items = sorted(_agg.items(), key=lambda x: x[1], reverse=True)
 
     for r, (category, amount) in enumerate(expense_items, start=2):
         ws_cat.cell(row=r, column=1, value=category)
@@ -496,7 +532,7 @@ def generate_monthly_report(year: int, month: int) -> Path:
         header_style(cell)
     ws_txn.row_dimensions[1].height = 22
 
-    all_txns = ledger_register_csv("", period=period)
+    all_txns = ledger_register_csv(SCOPE or "", period=period)
     for r, txn in enumerate(all_txns, start=2):
         ws_txn.cell(row=r, column=1, value=txn["date"])
         ws_txn.cell(row=r, column=2, value=txn["payee"])
@@ -515,7 +551,7 @@ def generate_monthly_report(year: int, month: int) -> Path:
     freeze(ws_txn)
 
     config.REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = config.REPORTS_DIR / f"monthly_{period}.xlsx"
+    out_path = config.REPORTS_DIR / f"monthly_{scope_suffix()}_{period}.xlsx"
     wb.save(out_path)
     print(f"  Saved → {out_path}")
     return out_path
@@ -553,8 +589,8 @@ def generate_annual_report(start_year: int = 2025, end_year: int = 2026) -> Path
     trend_data = []
     for y, m in all_months:
         period = f"{y}-{m:02d}"
-        inc_bal  = ledger_balance("Income",   period=period)
-        exp_bal  = ledger_balance("Expenses", period=period)
+        inc_bal  = ledger_balance(scope_root("Income"),   period=period)
+        exp_bal  = ledger_balance(scope_root("Expenses"), period=period)
         income   = -sum(inc_bal.values())
         expenses = sum(v for v in exp_bal.values() if v > 0)
         net      = income - expenses
@@ -598,8 +634,12 @@ def generate_annual_report(start_year: int = 2025, end_year: int = 2026) -> Path
     monthly_cats = {}
     for y, m in all_months:
         period = f"{y}-{m:02d}"
-        bal = ledger_balance("Expenses", period=period)
-        monthly_cats[period] = {k.replace("Expenses:", ""): v for k, v in bal.items() if v > 0}
+        bal = ledger_balance(scope_root("Expenses"), period=period)
+        _cats = defaultdict(float)
+        for k, v in bal.items():
+            if v > 0:
+                _cats[strip_person(k).replace("Expenses:", "")] += v
+        monthly_cats[period] = dict(_cats)
         all_categories.update(monthly_cats[period].keys())
 
     sorted_cats = sorted(all_categories)
@@ -663,7 +703,7 @@ def generate_annual_report(start_year: int = 2025, end_year: int = 2026) -> Path
             end_date = f"{y+1}-01-01"
         else:
             end_date = f"{y}-{m+1:02d}-01"
-        bal = ledger_balance("Assets|Liabilities", end=end_date)
+        bal = ledger_balance(f"{scope_root('Assets')}|{scope_root('Liabilities')}", end=end_date)
         period = f"{y}-{m:02d}"
         monthly_balances[period] = bal
         account_names.update(bal.keys())
@@ -677,8 +717,10 @@ def generate_annual_report(start_year: int = 2025, end_year: int = 2026) -> Path
                 break
 
     for r, acc in enumerate(sorted(account_names), start=2):
-        ws_bal.cell(row=r, column=1,
-                    value=acc.replace("Assets:Bank:", "").replace("Liabilities:CreditCard:", "CC: "))
+        _a = strip_person(acc) if SCOPE else acc
+        _disp = (_a.replace("Assets:", "").replace("Liabilities:", "")
+                    .replace("Bank:", "").replace("CreditCard:", "CC: "))
+        ws_bal.cell(row=r, column=1, value=_disp)
         first = account_first_period.get(acc, all_periods[-1])
         for c, (y, m) in enumerate(all_months, start=2):
             period = f"{y}-{m:02d}"
@@ -697,7 +739,7 @@ def generate_annual_report(start_year: int = 2025, end_year: int = 2026) -> Path
 
     # ── Save ──────────────────────────────────────────────────────────────────
     config.REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = config.REPORTS_DIR / f"annual_{start_year}-{end_year}.xlsx"
+    out_path = config.REPORTS_DIR / f"annual_{scope_suffix()}_{start_year}-{end_year}.xlsx"
     wb.save(out_path)
     print(f"  Saved → {out_path}")
     return out_path
@@ -711,14 +753,17 @@ if __name__ == "__main__":
                         help="Generate monthly report (can specify multiple)")
     parser.add_argument("--annual", action="store_true", help="Generate annual summary report")
     parser.add_argument("--all", action="store_true", help="Generate all monthly + annual reports")
+    parser.add_argument("--scope", choices=["combined", "samuel", "fuiyee", "all"],
+                        default="all",
+                        help="Person scope: combined, samuel, fuiyee, or all (default: all three)")
     args = parser.parse_args()
 
     if not any([args.month, args.annual, args.all]):
         parser.print_help()
         sys.exit(0)
 
-    if args.all or args.annual:
-        generate_annual_report()
+    scope_map = {"combined": None, "samuel": "Samuel", "fuiyee": "FuiYee"}
+    scopes = [None, "Samuel", "FuiYee"] if args.scope == "all" else [scope_map[args.scope]]
 
     months_to_run = []
     if args.all:
@@ -731,8 +776,13 @@ if __name__ == "__main__":
             y, m = int(m_str[:4]), int(m_str[5:7])
             months_to_run.append((y, m))
 
-    for y, m in months_to_run:
-        try:
-            generate_monthly_report(y, m)
-        except RuntimeError as e:
-            print(f"  SKIP {y}-{m:02d}: {e}")
+    for sc in scopes:
+        SCOPE = sc
+        print(f"\n########## SCOPE: {scope_label()} ##########")
+        if args.all or args.annual:
+            generate_annual_report()
+        for y, m in months_to_run:
+            try:
+                generate_monthly_report(y, m)
+            except RuntimeError as e:
+                print(f"  SKIP {y}-{m:02d}: {e}")

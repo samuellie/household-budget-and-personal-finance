@@ -2,5 +2,5 @@
 ; Source: Oct 2025 statement "PREVIOUS BALANCE 2,559.04" — charges from before Oct 2025 tracking period
 
 2025-09-01 * Opening Balance — AmBank CC CARz Card Gold VISA (S) 4622
-    Liabilities:CreditCard:AmBankCC    MYR -2,559.04
+    Liabilities:Samuel:CreditCard:AmBankCC    MYR -2,559.04
     Equity:OpeningBalance              MYR  2,559.04

@@ -4,172 +4,172 @@
 ; Transactions: 34
 
 2026-05-24 * PAYMENT - THANK YOU
-    Liabilities:CreditCard:HSBC                    MYR 2,016.22
+    Liabilities:Samuel:CreditCard:HSBC                    MYR 2,016.22
     Equity:Transfer                                MYR -2,016.22
     ; raw: 24 MAY 24 MAY PAYMENT - THANK YOU 2,016.22CR
 
 2026-05-04 * GP XLL MALAHOTPOT KUALA LUMPUR
-    Expenses:Dining                                MYR 6.30
-    Liabilities:CreditCard:HSBC                    MYR -6.30
+    Expenses:Samuel:Dining                                MYR 6.30
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -6.30
     ; raw: 04 MAY 03 MAY GP XLL MALAHOTPOT KUALA LUMPUR 6.30
 
 2026-05-08 * GP MCDONALD'S-SHELL TMN D KUALA LUMPUR
-    Expenses:Transport:Fuel                        MYR 7.00
-    Liabilities:CreditCard:HSBC                    MYR -7.00
+    Expenses:Samuel:Transport:Fuel                        MYR 7.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -7.00
     ; raw: 08 MAY 07 MAY GP MCDONALD'S-SHELL TMN D KUALA LUMPUR 7.00
 
 2026-05-10 * THAI GENG-SS2 PETALING JAYA MY
-    Expenses:Dining                                MYR 204.15
-    Liabilities:CreditCard:HSBC                    MYR -204.15
+    Expenses:Samuel:Dining                                MYR 204.15
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -204.15
     ; raw: 10 MAY 07 MAY THAI GENG-SS2 PETALING JAYA MY 204.15
 
 2026-05-10 * CHEMOR EAST OCEAN REST CHEMOR MY
-    Expenses:Dining                                MYR 141.20
-    Liabilities:CreditCard:HSBC                    MYR -141.20
+    Expenses:Samuel:Dining                                MYR 141.20
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -141.20
     ; raw: 10 MAY 09 MAY CHEMOR EAST OCEAN REST CHEMOR MY 141.20
 
 2026-05-10 * PETRON KANTHAN (F1) CHEMOR MY
-    Expenses:Transport:Fuel                        MYR 99.01
-    Liabilities:CreditCard:HSBC                    MYR -99.01
+    Expenses:Samuel:Transport:Fuel                        MYR 99.01
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -99.01
     ; raw: 10 MAY 09 MAY PETRON KANTHAN (F1) CHEMOR MY 99.01
 
 2026-05-10 * GP 65 ONDO SDN BHD (LAGEN KEDAH
-    Expenses:Personal                              MYR 21.90
-    Liabilities:CreditCard:HSBC                    MYR -21.90
+    Expenses:Samuel:Personal                              MYR 21.90
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -21.90
     ; raw: 10 MAY 09 MAY GP 65 ONDO SDN BHD (LAGEN KEDAH 21.90
 
 2026-05-11 * NYONYA BABA DELIGHTS GEORGETOWN MY
-    Expenses:Dining                                MYR 65.00
-    Liabilities:CreditCard:HSBC                    MYR -65.00
+    Expenses:Samuel:Dining                                MYR 65.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -65.00
     ; raw: 11 MAY 10 MAY NYONYA BABA DELIGHTS GEORGETOWN MY 65.00
 
 2026-05-11 * PETRON SG BAKAP LAYBY SIMPANG AMPAT MY
-    Expenses:Transport:Fuel                        MYR 63.79
-    Liabilities:CreditCard:HSBC                    MYR -63.79
+    Expenses:Samuel:Transport:Fuel                        MYR 63.79
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -63.79
     ; raw: 11 MAY 10 MAY PETRON SG BAKAP LAYBY SIMPANG AMPAT MY 63.79
 
 2026-05-13 * GREATEASTERN1031508066 KUALA LUMPUR MY
-    Expenses:Insurance                             MYR 305.00
-    Liabilities:CreditCard:HSBC                    MYR -305.00
+    Expenses:Samuel:Insurance                             MYR 305.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -305.00
     ; raw: 13 MAY 12 MAY GREATEASTERN1031508066 KUALA LUMPUR MY 305.00
 
 2026-05-15 * GRAB RIDES-EC PETALING JAYA MY
-    Expenses:Transport:Grab                        MYR 46.16
-    Liabilities:CreditCard:HSBC                    MYR -46.16
+    Expenses:Samuel:Transport:Grab                        MYR 46.16
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -46.16
     ; raw: 15 MAY 14 MAY GRAB RIDES-EC PETALING JAYA MY 46.16
 
 2026-05-15 * GRAB RIDES-EC PETALING JAYA MY
-    Expenses:Transport:Grab                        MYR 3.50
-    Liabilities:CreditCard:HSBC                    MYR -3.50
+    Expenses:Samuel:Transport:Grab                        MYR 3.50
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -3.50
     ; raw: 15 MAY 14 MAY GRAB RIDES-EC PETALING JAYA MY 3.50
 
 2026-05-17 * *AIRASIA-AK-INFLIGHT KUALALUMPUR MY
-    Expenses:Dining                                MYR 40.30
-    Liabilities:CreditCard:HSBC                    MYR -40.30
+    Expenses:Samuel:Dining                                MYR 40.30
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -40.30
     ; raw: 17 MAY 14 MAY *AIRASIA-AK-INFLIGHT KUALALUMPUR MY 40.30
 
 2026-05-17 * IPAY88*KLIAEKSPRES KUALALUMPUR MY
-    Expenses:Transport:PublicTransport             MYR 49.50
-    Liabilities:CreditCard:HSBC                    MYR -49.50
+    Expenses:Samuel:Transport:PublicTransport             MYR 49.50
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -49.50
     ; raw: 17 MAY 16 MAY IPAY88*KLIAEKSPRES KUALALUMPUR MY 49.50
 
 2026-05-18 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 84.26
-    Liabilities:CreditCard:HSBC                    MYR -84.26
+    Expenses:Samuel:Transport:Fuel                        MYR 84.26
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -84.26
     ; raw: 18 MAY 17 MAY PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 84.26
 
 2026-05-21 * ALI, MUTHU & AH HOCK P SELANGOR MY
-    Expenses:Dining                                MYR 28.20
-    Liabilities:CreditCard:HSBC                    MYR -28.20
+    Expenses:Samuel:Dining                                MYR 28.20
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -28.20
     ; raw: 21 MAY 20 MAY ALI, MUTHU & AH HOCK P SELANGOR MY 28.20
 
 2026-05-22 * TSUYOI KUALA LUMPUR MY
-    Expenses:Dining                                MYR 150.80
-    Liabilities:CreditCard:HSBC                    MYR -150.80
+    Expenses:Samuel:Dining                                MYR 150.80
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -150.80
     ; raw: 22 MAY 21 MAY TSUYOI KUALA LUMPUR MY 150.80
 
 2026-05-24 * SHELL-STERLING STATION KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 65.04
-    Liabilities:CreditCard:HSBC                    MYR -65.04
+    Expenses:Samuel:Transport:Fuel                        MYR 65.04
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -65.04
     ; raw: 24 MAY 22 MAY SHELL-STERLING STATION KUALA LUMPUR MY 65.04
 
 2026-05-24 * ZUS COFFEE SHAH ALAM MY
-    Expenses:Dining                                MYR 20.45
-    Liabilities:CreditCard:HSBC                    MYR -20.45
+    Expenses:Samuel:Dining                                MYR 20.45
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -20.45
     ; raw: 24 MAY 23 MAY ZUS COFFEE SHAH ALAM MY 20.45
 
 2026-05-25 * MCDONALD'S-PEARL POINT KUALA LUMPUR MY
-    Expenses:Dining                                MYR 57.50
-    Liabilities:CreditCard:HSBC                    MYR -57.50
+    Expenses:Samuel:Dining                                MYR 57.50
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -57.50
     ; raw: 25 MAY 23 MAY MCDONALD'S-PEARL POINT KUALA LUMPUR MY 57.50
 
 2026-05-26 * SPOTIFY STOCKHOLM — SE
-    Expenses:Subscriptions:Spotify                 MYR 30.90
-    Liabilities:CreditCard:HSBC                    MYR -30.90
+    Expenses:Samuel:Subscriptions:Spotify                 MYR 30.90
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -30.90
     ; raw: 26 MAY 25 MAY SPOTIFY STOCKHOLM — SE 30.90
 
 2026-05-26 * ALI, MUTHU & AH HOCK P SELANGOR MY 3 43667590165b6353 DOO002C3b1L99 OD
-    Expenses:Dining                                MYR 58.30
-    Liabilities:CreditCard:HSBC                    MYR -58.30
+    Expenses:Samuel:Dining                                MYR 58.30
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -58.30
     ; raw: 26 MAY 25 MAY ALI, MUTHU & AH HOCK P SELANGOR MY 58.30 3 43667590165b6353 DOO002C3b1L99 ODOOOOSS?b3 Visa Signature cara 
 
 2026-05-28 * CBTL-PJ33 PETALING JAYA MY
-    Expenses:Coffee                                MYR 32.60
-    Liabilities:CreditCard:HSBC                    MYR -32.60
+    Expenses:Samuel:Coffee                                MYR 32.60
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -32.60
     ; raw: 28 MAY 26 MAY CBTL-PJ33 PETALING JAYA MY 32.60
 
 2026-06-02 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 61.96
-    Liabilities:CreditCard:HSBC                    MYR -61.96
+    Expenses:Samuel:Transport:Fuel                        MYR 61.96
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -61.96
     ; raw: 02 JUN 28 MAY PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 61.96
 
 2026-06-02 * ALI, MUTHU & AH HOCK P SELANGOR MY
-    Expenses:Dining                                MYR 36.25
-    Liabilities:CreditCard:HSBC                    MYR -36.25
+    Expenses:Samuel:Dining                                MYR 36.25
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -36.25
     ; raw: 02 JUN 29 MAY ALI, MUTHU & AH HOCK P SELANGOR MY 36.25
 
 2026-06-02 * GOOD TASTE TAMAN DESA KUALA LUMPUR MY
-    Expenses:Dining                                MYR 46.15
-    Liabilities:CreditCard:HSBC                    MYR -46.15
+    Expenses:Samuel:Dining                                MYR 46.15
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -46.15
     ; raw: 02 JUN 30 MAY GOOD TASTE TAMAN DESA KUALA LUMPUR MY 46.15
 
 2026-06-02 * ZUS COFFEE SHAH ALAM MY
-    Expenses:Dining                                MYR 8.95
-    Liabilities:CreditCard:HSBC                    MYR -8.95
+    Expenses:Samuel:Dining                                MYR 8.95
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -8.95
     ; raw: 02 JUN 30 MAY ZUS COFFEE SHAH ALAM MY 8.95
 
 2026-06-02 * MCDONALD'S-SHELL TMN D KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 31.10
-    Liabilities:CreditCard:HSBC                    MYR -31.10
+    Expenses:Samuel:Transport:Fuel                        MYR 31.10
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -31.10
     ; raw: 02 JUN 30 MAY MCDONALD'S-SHELL TMN D KUALA LUMPUR MY 31.10
 
 2026-06-02 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 31.28
-    Liabilities:CreditCard:HSBC                    MYR -31.28
+    Expenses:Samuel:Transport:Fuel                        MYR 31.28
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -31.28
     ; raw: 02 JUN 31 MAY PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 31.28
 
 2026-06-02 * ZUS COFFEE SHAH ALAM MY
-    Expenses:Dining                                MYR 11.20
-    Liabilities:CreditCard:HSBC                    MYR -11.20
+    Expenses:Samuel:Dining                                MYR 11.20
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -11.20
     ; raw: 02 JUN 31 MAY ZUS COFFEE SHAH ALAM MY 11.20
 
 2026-06-02 * ATO PETALING JAYA MY
-    Expenses:Personal                              MYR 60.00
-    Liabilities:CreditCard:HSBC                    MYR -60.00
+    Expenses:Samuel:Personal                              MYR 60.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -60.00
     ; raw: 02 JUN 01 JUN ATO PETALING JAYA MY 60.00
 
 2026-06-03 * LOVE AND CO- MV GEN - 7/12 INSTALMENT
-    Expenses:Instalment:Jewellery                  MYR 249.91
-    Liabilities:CreditCard:HSBC                    MYR -249.91
+    Expenses:Samuel:Instalment:Jewellery                  MYR 249.91
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -249.91
     ; raw: 03 JUN 03 JUN LOVE AND CO- MV GEN - 7/12 INSTALMENT 249.91
 
 2026-06-03 * NESH MARKETING - 24 - 3/24 INSTALMENT
-    Expenses:Instalment:Divo                       MYR 112.00
-    Liabilities:CreditCard:HSBC                    MYR -112.00
+    Expenses:Samuel:Instalment:Divo                       MYR 112.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -112.00
     ; raw: 03 JUN 03 JUN NESH MARKETING - 24 - 3/24 INSTALMENT 112.00
 
 2026-06-03 * TNS LIVING SG BULOH - 3/12 INSTALMENT Your charge(s) for this month RM
     Equity:Transfer                                MYR 132.33
-    Liabilities:CreditCard:HSBC                    MYR -132.33
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -132.33
     ; raw: 03 JUN 03 JUN TNS LIVING SG BULOH - 3/12 INSTALMENT 132.33 Your charge(s) for this month RM1,867.75 ***Please forward yo
 

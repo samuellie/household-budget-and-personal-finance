@@ -4,147 +4,147 @@
 ; Transactions: 29
 
 2026-02-22 * PAYMENT - THANK YOU CR
-    Liabilities:CreditCard:HSBC                    MYR 1,379.91
+    Liabilities:Samuel:CreditCard:HSBC                    MYR 1,379.91
     Equity:Transfer                                MYR -1,379.91
     ; raw: 22 FEB 22 FEB PAYMENT - THANK YOU 1,379.91 CR
 
 2026-02-04 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 55.99
-    Liabilities:CreditCard:HSBC                    MYR -55.99
+    Expenses:Samuel:Transport:Fuel                        MYR 55.99
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -55.99
     ; raw: 04 FEB 02 FEB PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 55.99
 
 2026-02-08 * IPY*BLACKBIXON CAFE - SELANGOR MY
-    Expenses:Dining                                MYR 66.10
-    Liabilities:CreditCard:HSBC                    MYR -66.10
+    Expenses:Samuel:Dining                                MYR 66.10
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -66.10
     ; raw: 08 FEB 06 FEB IPY*BLACKBIXON CAFE - SELANGOR MY 66.10
 
 2026-02-08 * IPY*BLACKBIXON CAFE - SELANGOR MY
-    Expenses:Dining                                MYR 228.05
-    Liabilities:CreditCard:HSBC                    MYR -228.05
+    Expenses:Samuel:Dining                                MYR 228.05
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -228.05
     ; raw: 08 FEB 06 FEB IPY*BLACKBIXON CAFE - SELANGOR MY 228.05
 
 2026-02-08 * GP MCDONALD'S-SHELL TMN D KUALA LUMPUR
-    Expenses:Transport:Fuel                        MYR 25.60
-    Liabilities:CreditCard:HSBC                    MYR -25.60
+    Expenses:Samuel:Transport:Fuel                        MYR 25.60
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -25.60
     ; raw: 08 FEB 07 FEB GP MCDONALD'S-SHELL TMN D KUALA LUMPUR 25.60
 
 2026-02-08 * GP BRANDS OUTLET KUALA LUMPUR
-    Expenses:Personal                              MYR 69.80
-    Liabilities:CreditCard:HSBC                    MYR -69.80
+    Expenses:Samuel:Personal                              MYR 69.80
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -69.80
     ; raw: 08 FEB 07 FEB GP BRANDS OUTLET KUALA LUMPUR 69.80
 
 2026-02-09 * GP PETRON ML3 JLN KLG LAM KUALA LUMPUR
-    Expenses:Transport:Fuel                        MYR 51.94
-    Liabilities:CreditCard:HSBC                    MYR -51.94
+    Expenses:Samuel:Transport:Fuel                        MYR 51.94
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -51.94
     ; raw: 09 FEB 08 FEB GP PETRON ML3 JLN KLG LAM KUALA LUMPUR 51.94
 
 2026-02-10 * GP MASTER LEE HOTPOT KUC KUALA LUMPUR
-    Expenses:Dining                                MYR 88.90
-    Liabilities:CreditCard:HSBC                    MYR -88.90
+    Expenses:Samuel:Dining                                MYR 88.90
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -88.90
     ; raw: 10 FEB 08 FEB GP MASTER LEE HOTPOT KUC KUALA LUMPUR 88.90
 
 2026-02-12 * GP BREW & BREAD-TMN DESA KUALA LUMPUR
-    Expenses:Dining                                MYR 41.80
-    Liabilities:CreditCard:HSBC                    MYR -41.80
+    Expenses:Samuel:Dining                                MYR 41.80
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -41.80
     ; raw: 12 FEB 11 FEB GP BREW & BREAD-TMN DESA KUALA LUMPUR 41.80
 
 2026-02-13 * GP PADI HOUSE-THE GARDENS KUALA LUMPUR
-    Expenses:Personal                              MYR 15.00
-    Liabilities:CreditCard:HSBC                    MYR -15.00
+    Expenses:Samuel:Personal                              MYR 15.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -15.00
     ; raw: 13 FEB 12 FEB GP PADI HOUSE-THE GARDENS KUALA LUMPUR 15.00
 
 2026-02-15 * GP SFC-SYMPHONY SQUARE PETALING JAYA
-    Expenses:Dining                                MYR 10.20
-    Liabilities:CreditCard:HSBC                    MYR -10.20
+    Expenses:Samuel:Dining                                MYR 10.20
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -10.20
     ; raw: 15 FEB 13 FEB GP SFC-SYMPHONY SQUARE PETALING JAYA 10.20
 
 2026-02-15 * PETRON TAMAN SHAMELIN KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 62.70
-    Liabilities:CreditCard:HSBC                    MYR -62.70
+    Expenses:Samuel:Transport:Fuel                        MYR 62.70
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -62.70
     ; raw: 15 FEB 13 FEB PETRON TAMAN SHAMELIN KUALA LUMPUR MY 62.70
 
 2026-02-16 * GP TAIER-PDH KUALA LUMPUR
-    Expenses:Personal                              MYR 158.92
-    Liabilities:CreditCard:HSBC                    MYR -158.92
+    Expenses:Samuel:Personal                              MYR 158.92
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -158.92
     ; raw: 16 FEB 15 FEB GP TAIER-PDH KUALA LUMPUR 158.92
 
 2026-02-19 * GP EASY CAFE TANJUNG MALIM
-    Expenses:Dining                                MYR 45.05
-    Liabilities:CreditCard:HSBC                    MYR -45.05
+    Expenses:Samuel:Dining                                MYR 45.05
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -45.05
     ; raw: 19 FEB 16 FEB GP EASY CAFE TANJUNG MALIM 45.05
 
 2026-02-19 * 7 ELEVEN MALAYSIA SDN Tanjong Malim MY
-    Expenses:Groceries                             MYR 20.50
-    Liabilities:CreditCard:HSBC                    MYR -20.50
+    Expenses:Samuel:Groceries                             MYR 20.50
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -20.50
     ; raw: 19 FEB 16 FEB 7 ELEVEN MALAYSIA SDN Tanjong Malim MY 20.50
 
 2026-02-19 * PETRON TANJUNG MALIM TANJUNG MALIM MY
-    Expenses:Transport:Fuel                        MYR 109.70
-    Liabilities:CreditCard:HSBC                    MYR -109.70
+    Expenses:Samuel:Transport:Fuel                        MYR 109.70
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -109.70
     ; raw: 19 FEB 17 FEB PETRON TANJUNG MALIM TANJUNG MALIM MY 109.70
 
 2026-02-20 * GP KGB-THE GARDENS KUALA LUMPUR
-    Expenses:Personal                              MYR 27.75
-    Liabilities:CreditCard:HSBC                    MYR -27.75
+    Expenses:Samuel:Personal                              MYR 27.75
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -27.75
     ; raw: 20 FEB 19 FEB GP KGB-THE GARDENS KUALA LUMPUR 27.75
 
 2026-02-20 * GP ACE -MV KUALA LUMPUR
-    Expenses:Personal                              MYR 14.80
-    Liabilities:CreditCard:HSBC                    MYR -14.80
+    Expenses:Samuel:Personal                              MYR 14.80
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -14.80
     ; raw: 20 FEB 19 FEB GP ACE -MV KUALA LUMPUR 14.80
 
 2026-02-22 * GP ALI, MUTHU & AH HOCK P SELANGOR
-    Expenses:Dining                                MYR 33.05
-    Liabilities:CreditCard:HSBC                    MYR -33.05
+    Expenses:Samuel:Dining                                MYR 33.05
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -33.05
     ; raw: 22 FEB 20 FEB GP ALI, MUTHU & AH HOCK P SELANGOR 33.05
 
 2026-02-23 * BIG-IPC PETALING JAYA MY
-    Expenses:Groceries                             MYR 88.00
-    Liabilities:CreditCard:HSBC                    MYR -88.00
+    Expenses:Samuel:Groceries                             MYR 88.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -88.00
     ; raw: 23 FEB 21 FEB BIG-IPC PETALING JAYA MY 88.00
 
 2026-02-23 * GP OMEGA PORK NOODLE SDN. SELANGOR
-    Expenses:Dining                                MYR 25.00
-    Liabilities:CreditCard:HSBC                    MYR -25.00
+    Expenses:Samuel:Dining                                MYR 25.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -25.00
     ; raw: 23 FEB 22 FEB GP OMEGA PORK NOODLE SDN. SELANGOR 25.00
 
 2026-02-24 * DE MARKET KUALA LUMPUR MY 3 43667590165bb6353 DOO00cbbb1L5 DOOO03707e2
-    Expenses:Dining                                MYR 68.30
-    Liabilities:CreditCard:HSBC                    MYR -68.30
+    Expenses:Samuel:Dining                                MYR 68.30
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -68.30
     ; raw: 24 FEB 23 FEB DE MARKET KUALA LUMPUR MY 68.30 3 43667590165bb6353 DOO00cbbb1L5 DOOO03707e2 Visa Signature cara number 43
 
 2026-02-25 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 64.02
-    Liabilities:CreditCard:HSBC                    MYR -64.02
+    Expenses:Samuel:Transport:Fuel                        MYR 64.02
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -64.02
     ; raw: 25 FEB 23 FEB PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 64.02
 
 2026-02-26 * SPOTIFY STOCKHOLM — SE
-    Expenses:Subscriptions:Spotify                 MYR 30.90
-    Liabilities:CreditCard:HSBC                    MYR -30.90
+    Expenses:Samuel:Subscriptions:Spotify                 MYR 30.90
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -30.90
     ; raw: 26 FEB 25 FEB SPOTIFY STOCKHOLM — SE 30.90
 
 2026-03-01 * GP PERCENTAGE ARABICA TRX KUALA LUMPUR
-    Expenses:Personal                              MYR 22.05
-    Liabilities:CreditCard:HSBC                    MYR -22.05
+    Expenses:Samuel:Personal                              MYR 22.05
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -22.05
     ; raw: 01 MAR 28 FEB GP PERCENTAGE ARABICA TRX KUALA LUMPUR 22.05
 
 2026-03-01 * GP EXALTECH PETALING JAYA
-    Expenses:Personal                              MYR 899.00
-    Liabilities:CreditCard:HSBC                    MYR -899.00
+    Expenses:Samuel:Personal                              MYR 899.00
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -899.00
     ; raw: 01 MAR 28 FEB GP EXALTECH PETALING JAYA 899.00
 
 2026-03-01 * GP MR DIY (KUCHAI)-PMIV KUALA LUMPUR
-    Expenses:Shopping:General                      MYR 40.20
-    Liabilities:CreditCard:HSBC                    MYR -40.20
+    Expenses:Samuel:Shopping:General                      MYR 40.20
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -40.20
     ; raw: 01 MAR 28 FEB GP MR DIY (KUCHAI)-PMIV KUALA LUMPUR 40.20
 
 2026-03-03 * PETRON ML3 JLN KLG LAM KUALA LUMPUR MY
-    Expenses:Transport:Fuel                        MYR 52.92
-    Liabilities:CreditCard:HSBC                    MYR -52.92
+    Expenses:Samuel:Transport:Fuel                        MYR 52.92
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -52.92
     ; raw: 03 MAR 01 MAR PETRON ML3 JLN KLG LAM KUALA LUMPUR MY 52.92
 
 2026-03-03 * LOVE AND CO- MV GEN - 4/12 INSTALMENT
-    Expenses:Instalment:Jewellery                  MYR 249.91
-    Liabilities:CreditCard:HSBC                    MYR -249.91
+    Expenses:Samuel:Instalment:Jewellery                  MYR 249.91
+    Liabilities:Samuel:CreditCard:HSBC                    MYR -249.91
     ; raw: 03 MAR 03 MAR LOVE AND CO- MV GEN - 4/12 INSTALMENT 249.91 Your charge(s) for this month RM2,416.24 ***Please forward yo
 

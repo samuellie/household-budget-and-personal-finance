@@ -40,11 +40,21 @@ ALLOWED_SCRIPTS = {
     "parse_ambank.py",
     "parse_maybank.py",
     "parse_hsbc.py",
+    "parse_ambcc.py",
+    "parse_fy_cimb.py",
+    "parse_fy_cimbcc.py",
+    "parse_fy_hsbc.py",
+    "parse_fy_rhb.py",
+    "parse_fy_uob.py",
+    "dedup_fy_cimb.py",
     "csv_to_ledger.py",
     "generate_reports.py",
 }
 
-ALLOWED_BANKS = {"ambank", "maybank", "hsbc"}
+ALLOWED_BANKS = {
+    "ambank", "maybank", "hsbc", "ambcc",
+    "fy_cimb", "fy_cimbcc", "fy_hsbc", "fy_rhb", "fy_uob",
+}
 ALLOWED_PIPELINE_STAGES = {"parse", "convert", "validate", "report", "all"}
 
 SHELL_METACHAR_RE = re.compile(r"[;&|`$(){}<>]")
@@ -53,7 +63,10 @@ mcp = FastMCP(
     "household-finance",
     instructions=(
         "Tools for querying Samuel and Fui Yee's household finances (MYR). "
-        "Covers AmBank, Maybank, and HSBC credit card. "
+        "Accounts are person-first: Assets/Liabilities/Income/Expenses:<Person>:<...> "
+        "(Equity is shared). Samuel: AmBank, Maybank, HSBC CC, AmBank CC. "
+        "Fui Yee: CIMB savings, CIMB CC, HSBC CC, RHB CC, UOB CC. "
+        "Per-person review: 'bal Expenses:Samuel' or 'bal Expenses:FuiYee'; combined: 'bal Expenses'. "
         "Use ledger_balance / ledger_register for read-only queries. "
         "Use parse_statements → convert_to_ledger → generate_report for the pipeline. "
         "Use account_balances and spending_summary for quick summaries."

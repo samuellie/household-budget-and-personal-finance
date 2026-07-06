@@ -77,3 +77,93 @@ include hsbc/2026-03.journal
 include hsbc/2026-04.journal
 include hsbc/2026-05.journal
 include hsbc/2026-06.journal
+
+; ============================================================
+; FUI YEE — CIMB, CIMB CC, HSBC, RHB, UOB
+; ============================================================
+; --- CIMB Savings (Assets:FuiYee:Bank:CIMB) ---
+include fuiyee/cimb/opening-balance.journal
+include fuiyee/cimb/2024-12.journal
+include fuiyee/cimb/2025-01.journal
+include fuiyee/cimb/2025-02.journal
+include fuiyee/cimb/2025-03.journal
+include fuiyee/cimb/2025-04.journal
+include fuiyee/cimb/2025-05.journal
+include fuiyee/cimb/2025-06.journal
+include fuiyee/cimb/2025-07.journal
+include fuiyee/cimb/2025-08.journal
+include fuiyee/cimb/2025-09.journal
+include fuiyee/cimb/2025-10.journal
+include fuiyee/cimb/2025-11.journal
+include fuiyee/cimb/2025-12.journal
+include fuiyee/cimb/2026-01.journal
+include fuiyee/cimb/2026-02.journal
+include fuiyee/cimb/2026-03.journal
+include fuiyee/cimb/2026-04.journal
+include fuiyee/cimb/2026-05.journal
+include fuiyee/cimb/2026-06.journal
+
+; --- CIMB Credit Card (Liabilities:FuiYee:CreditCard:CIMBCC) ---
+include fuiyee/cimbcc/opening-balance.journal
+include fuiyee/cimbcc/2024-09.journal
+include fuiyee/cimbcc/2024-10.journal
+include fuiyee/cimbcc/2024-11.journal
+include fuiyee/cimbcc/2024-12.journal
+include fuiyee/cimbcc/2025-01.journal
+include fuiyee/cimbcc/2025-02.journal
+include fuiyee/cimbcc/2025-03.journal
+include fuiyee/cimbcc/2025-04.journal
+include fuiyee/cimbcc/2025-05.journal
+include fuiyee/cimbcc/2025-06.journal
+include fuiyee/cimbcc/2025-07.journal
+include fuiyee/cimbcc/2025-08.journal
+include fuiyee/cimbcc/2025-09.journal
+include fuiyee/cimbcc/2025-10.journal
+include fuiyee/cimbcc/2025-11.journal
+include fuiyee/cimbcc/2025-12.journal
+include fuiyee/cimbcc/2026-01.journal
+include fuiyee/cimbcc/2026-02.journal
+include fuiyee/cimbcc/2026-03.journal
+include fuiyee/cimbcc/2026-04.journal
+include fuiyee/cimbcc/2026-05.journal
+include fuiyee/cimbcc/2026-06.journal
+
+; --- HSBC Credit Card (Liabilities:FuiYee:CreditCard:HSBC) ---
+include fuiyee/hsbc/2025-08.journal
+include fuiyee/hsbc/2025-09.journal
+include fuiyee/hsbc/2025-10.journal
+include fuiyee/hsbc/2025-11.journal
+include fuiyee/hsbc/2025-12.journal
+include fuiyee/hsbc/2026-01.journal
+include fuiyee/hsbc/2026-02.journal
+include fuiyee/hsbc/2026-03.journal
+include fuiyee/hsbc/2026-04.journal
+include fuiyee/hsbc/2026-05.journal
+include fuiyee/hsbc/2026-06.journal
+
+; --- RHB Credit Card (Liabilities:FuiYee:CreditCard:RHB) ---
+include fuiyee/rhb/2025-08.journal
+include fuiyee/rhb/2025-09.journal
+include fuiyee/rhb/2025-10.journal
+include fuiyee/rhb/2025-11.journal
+include fuiyee/rhb/2025-12.journal
+include fuiyee/rhb/2026-01.journal
+include fuiyee/rhb/2026-02.journal
+include fuiyee/rhb/2026-03.journal
+include fuiyee/rhb/2026-04.journal
+include fuiyee/rhb/2026-05.journal
+include fuiyee/rhb/2026-06.journal
+
+; --- UOB Credit Card (Liabilities:FuiYee:CreditCard:UOB) ---
+include fuiyee/uob/2025-08.journal
+include fuiyee/uob/2025-09.journal
+include fuiyee/uob/2025-10.journal
+include fuiyee/uob/2025-11.journal
+include fuiyee/uob/2025-12.journal
+include fuiyee/uob/2026-01.journal
+include fuiyee/uob/2026-02.journal
+include fuiyee/uob/2026-03.journal
+include fuiyee/uob/2026-04.journal
+include fuiyee/uob/2026-05.journal
+include fuiyee/uob/2026-06.journal
+

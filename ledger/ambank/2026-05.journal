@@ -4,27 +4,27 @@
 ; Transactions: 5
 
 2026-05-05 * IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 500.00
-    Assets:Bank:AmBank                             MYR -500.00
+    Assets:Samuel:Investment:AHAM                         MYR 500.00
+    Assets:Samuel:Bank:AmBank                             MYR -500.00
     ; raw: 05May IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET 500.00 1,406.76 MANAGEMEN, PayNet Direct Debit, 5000032438
 
 2026-05-23 * DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own
     Equity:Transfer                                MYR 992.07
-    Assets:Bank:AmBank                             MYR -992.07
+    Assets:Samuel:Bank:AmBank                             MYR -992.07
     ; raw: 23May DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own, 992.07 414.69
 
 2026-05-25 * DuitNow CR TRF /MISC CREDIT, NG KAI WEN
-    Assets:Bank:AmBank                             MYR 23.00
+    Assets:Samuel:Bank:AmBank                             MYR 23.00
     Equity:Transfer                                MYR -23.00
     ; raw: 25May DuitNow CR TRF /MISC CREDIT, NG KAI WEN, 23.00 437.69 Transfer,
 
 2026-05-26 * DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU
-    Assets:Bank:AmBank                             MYR 600.00
+    Assets:Samuel:Bank:AmBank                             MYR 600.00
     Equity:Transfer                                MYR -600.00
     ; raw: 26May DuitNow CR TRF /MISC CREDIT, LIE ZHI HOU, 600.00 1,037.69 Transfer,
 
 2026-05-31 * INT/HB/PFT
-    Assets:Bank:AmBank                             MYR 0.17
-    Income:Interest                                MYR -0.17
+    Assets:Samuel:Bank:AmBank                             MYR 0.17
+    Income:Samuel:Interest                                MYR -0.17
     ; raw: 31May INT/HB/PFT, , , 0.17 1,037.86 Dilindungi oleh PIDM setakat RM250,000 bagi setiap pendeposit TAX INVOICE NO. / NO. 
 

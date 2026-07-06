@@ -4,42 +4,42 @@
 ; Transactions: 8
 
 2025-12-08 * FIGMA FIGMA.COM US [USD 37.80]
-    Expenses:Subscriptions                         MYR 157.30
-    Liabilities:CreditCard:AmBankCC                MYR -157.30
+    Expenses:Samuel:Subscriptions                         MYR 157.30
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -157.30
     ; raw: FIGMA FIGMA.COM US 157.30
 
 2025-12-12 * GREATEASTERN1031508066 KUALA LUMPUR MY
-    Expenses:Insurance                             MYR 280.00
-    Liabilities:CreditCard:AmBankCC                MYR -280.00
+    Expenses:Samuel:Insurance                             MYR 280.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -280.00
     ; raw: GREATEASTERN1031508066 KUALA LUMPUR MY 280.00
 
 2025-12-21 * PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own,
-    Liabilities:CreditCard:AmBankCC                MYR 1,559.55
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR 1,559.55
     Equity:Transfer                                MYR -1,559.55
     ; raw: PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own, 1,559.55CR
 
 2026-01-01 * CUCKOO Kuala Lumpur MY
-    Expenses:Subscriptions:WaterFilter             MYR 85.00
-    Liabilities:CreditCard:AmBankCC                MYR -85.00
+    Expenses:Samuel:Subscriptions:WaterFilter             MYR 85.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -85.00
     ; raw: CUCKOO Kuala Lumpur MY 85.00
 
 2026-01-01 * PAYMENT RECEIVED - THANK YOU,LIE YING PING @ LEE YING PING,own,4662
-    Liabilities:CreditCard:AmBankCC                MYR 500.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR 500.00
     Equity:Transfer                                MYR -500.00
     ; raw: PAYMENT RECEIVED - THANK YOU,LIE YING PING @ LEE YING 500.00CR PING,own,4662
 
 2026-01-03 * LEGEND 05th/24 (RM7,904)
-    Expenses:Instalment:Divo                       MYR 416.00
-    Liabilities:CreditCard:AmBankCC                MYR -416.00
+    Expenses:Samuel:Instalment:Divo                       MYR 416.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -416.00
     ; raw: LEGEND 05th/24 (RM7,904) 416.00
 
 2026-01-03 * UR @ PINNACLE S PETA 28th/36 (RM648)
-    Expenses:Instalment:Personal                   MYR 81.00
-    Liabilities:CreditCard:AmBankCC                MYR -81.00
+    Expenses:Samuel:Instalment:Personal                   MYR 81.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -81.00
     ; raw: UR @ PINNACLE S PETA 28th/36 (RM648) 81.00
 
 2026-01-03 * MACHINES-PVL BKT JAL 22nd/36 (RM4,830)
-    Expenses:Instalment:Personal                   MYR 345.00
-    Liabilities:CreditCard:AmBankCC                MYR -345.00
+    Expenses:Samuel:Instalment:Personal                   MYR 345.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -345.00
     ; raw: MACHINES-PVL BKT JAL 22nd/36 (RM4,830) 345.00
 

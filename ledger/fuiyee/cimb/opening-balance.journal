@@ -1,0 +1,8 @@
+; Opening balance for Fui Yee CIMB Savings Account (70-1778898-5)
+; Source: balance before the earliest tracked transaction (2024-12-20),
+; derived as final balance 5,720.48 (Jun 2026) minus the sum of all
+; de-duplicated transactions. Verified by full balance-chain reconstruction.
+
+2024-12-19 * Opening Balance — Fui Yee CIMB Savings 70-1778898-5
+    Assets:FuiYee:Bank:CIMB       MYR 54,260.18
+    Equity:OpeningBalance         MYR -54,260.18

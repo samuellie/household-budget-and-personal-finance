@@ -4,62 +4,62 @@
 ; Transactions: 12
 
 2025-10-03 * DuitNow CR TRF /MISC CREDIT, NG KAI WEN
-    Assets:Bank:AmBank                             MYR 15.00
+    Assets:Samuel:Bank:AmBank                             MYR 15.00
     Equity:Transfer                                MYR -15.00
     ; raw: 03Oct DuitNow CR TRF /MISC CREDIT, NG KAI WEN, 15.00 2,094.53 Funds Transfer,
 
 2025-10-05 * DuitNow CR TRF /MISC CREDIT, LIM JUN HAO
-    Assets:Bank:AmBank                             MYR 35.09
+    Assets:Samuel:Bank:AmBank                             MYR 35.09
     Equity:Transfer                                MYR -35.09
     ; raw: 05Oct DuitNow CR TRF /MISC CREDIT, LIM JUN HAO, 35.09 2,129.62 lunch,
 
 2025-10-06 * IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 500.00
-    Assets:Bank:AmBank                             MYR -500.00
+    Assets:Samuel:Investment:AHAM                         MYR 500.00
+    Assets:Samuel:Bank:AmBank                             MYR -500.00
     ; raw: 06Oct IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET 500.00 1,629.62 MANAGEMEN, PayNet Direct Debit, 5000032438
 
 2025-10-06 * DuitNow CR TRF /MISC CREDIT, KOO JIA ERN
-    Assets:Bank:AmBank                             MYR 15.50
+    Assets:Samuel:Bank:AmBank                             MYR 15.50
     Equity:Transfer                                MYR -15.50
     ; raw: 06Oct DuitNow CR TRF /MISC CREDIT, KOO JIA ERN 15.50 1,645.12 CRYSTAL, Lunch,
 
 2025-10-13 * CMS INTER ACC TRF /MISC CREDIT
-    Assets:Bank:AmBank                             MYR 2,000.00
-    Assets:Crypto:Luno                             MYR -2,000.00
+    Assets:Samuel:Bank:AmBank                             MYR 2,000.00
+    Assets:Samuel:Crypto:Luno                             MYR -2,000.00
     ; raw: 13Oct CMS INTER ACC TRF /MISC CREDIT, 2,000.00 3,645.12 MTRUSTEE BERHAD FOR LUNO MALAYSIA SDN BHD, FIN1310256375858, BX8
 
 2025-10-13 * DuitNow CR TRF /MISC CREDIT, KOO JIA ERN
-    Assets:Bank:AmBank                             MYR 17.60
+    Assets:Samuel:Bank:AmBank                             MYR 17.60
     Equity:Transfer                                MYR -17.60
     ; raw: 13Oct DuitNow CR TRF /MISC CREDIT, KOO JIA ERN 17.60 3,662.72 CRYSTAL, Lunch,
 
 2025-10-17 * DuitNow CR TRF /MISC CREDIT, AIMAN HAZIM
-    Assets:Bank:AmBank                             MYR 10.00
+    Assets:Samuel:Bank:AmBank                             MYR 10.00
     Equity:Transfer                                MYR -10.00
     ; raw: 17Oct DuitNow CR TRF /MISC CREDIT, AIMAN HAZIM 10.00 3,672.72 BIN ABDUL HALIM, DuitNow Transfer,
 
 2025-10-20 * DuitNow CR TRF /MISC CREDIT, MUHAMMAD
-    Assets:Bank:AmBank                             MYR 18.70
+    Assets:Samuel:Bank:AmBank                             MYR 18.70
     Equity:Transfer                                MYR -18.70
     ; raw: 20Oct DuitNow CR TRF /MISC CREDIT, MUHAMMAD 18.70 3,691.42 FAIRUZ BIN KHALIZAN, Transfer,
 
 2025-10-21 * DuitNow CR TRF /MISC CREDIT, CHAN XIN
-    Assets:Bank:AmBank                             MYR 18.00
+    Assets:Samuel:Bank:AmBank                             MYR 18.00
     Equity:Transfer                                MYR -18.00
     ; raw: 21Oct DuitNow CR TRF /MISC CREDIT, CHAN XIN 18.00 3,709.42 YEN, Transfer,
 
 2025-10-22 * DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own
     Equity:Transfer                                MYR 1,277.92
-    Assets:Bank:AmBank                             MYR -1,277.92
+    Assets:Samuel:Bank:AmBank                             MYR -1,277.92
     ; raw: 22Oct DEP TO CARD /MISC DEBIT, LIE ZHI HOU, own, 1,277.92 2,431.50 Dilindungi oleh PIDM setakat RM250,000 bagi setiap pe
 
 2025-10-26 * DuitNow CR TRF /MISC CREDIT, LIM JUN HAO
-    Assets:Bank:AmBank                             MYR 60.31
+    Assets:Samuel:Bank:AmBank                             MYR 60.31
     Equity:Transfer                                MYR -60.31
     ; raw: 26Oct DuitNow CR TRF /MISC CREDIT, LIM JUN HAO, 60.31 2,491.81 lunch,
 
 2025-10-31 * INT/HB/PFT
-    Assets:Bank:AmBank                             MYR 0.33
-    Income:Interest                                MYR -0.33
+    Assets:Samuel:Bank:AmBank                             MYR 0.33
+    Income:Samuel:Interest                                MYR -0.33
     ; raw: 31Oct INT/HB/PFT, , , 0.33 2,492.14 customercare@ambankgroup.com Kumpulan AmBank telah mengeluarkan satu Notis Privasi y
 

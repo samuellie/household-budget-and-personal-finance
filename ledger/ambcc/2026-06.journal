@@ -4,27 +4,27 @@
 ; Transactions: 5
 
 2026-05-23 * PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own,
-    Liabilities:CreditCard:AmBankCC                MYR 992.07
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR 992.07
     Equity:Transfer                                MYR -992.07
     ; raw: PAYMENT RECEIVED - THANK YOU,LIE ZHI HOU,own, 992.07CR
 
 2026-06-01 * CUCKOO Kuala Lumpur MY
-    Expenses:Subscriptions:WaterFilter             MYR 85.00
-    Liabilities:CreditCard:AmBankCC                MYR -85.00
+    Expenses:Samuel:Subscriptions:WaterFilter             MYR 85.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -85.00
     ; raw: CUCKOO Kuala Lumpur MY 85.00
 
 2026-06-03 * LEGEND 10th/24 (RM5,824)
-    Expenses:Instalment:Divo                       MYR 416.00
-    Liabilities:CreditCard:AmBankCC                MYR -416.00
+    Expenses:Samuel:Instalment:Divo                       MYR 416.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -416.00
     ; raw: LEGEND 10th/24 (RM5,824) 416.00
 
 2026-06-03 * UR @ PINNACLE S PETA 33rd/36 (RM243)
-    Expenses:Instalment:Personal                   MYR 81.00
-    Liabilities:CreditCard:AmBankCC                MYR -81.00
+    Expenses:Samuel:Instalment:Personal                   MYR 81.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -81.00
     ; raw: UR @ PINNACLE S PETA 33rd/36 (RM243) 81.00
 
 2026-06-03 * MACHINES-PVL BKT JAL 27th/36 (RM3,105)
-    Expenses:Instalment:Personal                   MYR 345.00
-    Liabilities:CreditCard:AmBankCC                MYR -345.00
+    Expenses:Samuel:Instalment:Personal                   MYR 345.00
+    Liabilities:Samuel:CreditCard:AmBankCC                MYR -345.00
     ; raw: MACHINES-PVL BKT JAL 27th/36 (RM3,105) 345.00
 

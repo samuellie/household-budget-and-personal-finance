@@ -1,0 +1,11 @@
+Fui Yee HSBC OCR Review File
+============================================================
+
+Transactions parsed : 10
+Previous balance    : 4.31
+Charges (bank stmt) : 92.73
+New balance (bank)  : 509.39
+Computed new balance: 509.39
+Reconciliation      : PASS (diff = 0.0)
+
+No low-confidence lines flagged.

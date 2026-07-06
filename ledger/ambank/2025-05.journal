@@ -5,31 +5,31 @@
 
 2025-05-01 * DuitNow DR TRF /MISC DEBIT, WONG FUI YEE
     Equity:Transfer                                MYR 1,185.81
-    Assets:Bank:AmBank                             MYR -1,185.81
+    Assets:Samuel:Bank:AmBank                             MYR -1,185.81
     ; raw: 01May DuitNow DR TRF /MISC DEBIT, WONG FUI YEE, 1,185.81 2,305.71 Sent from AmOnline, Miao
 
 2025-05-05 * IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 500.00
-    Assets:Bank:AmBank                             MYR -500.00
+    Assets:Samuel:Investment:AHAM                         MYR 500.00
+    Assets:Samuel:Bank:AmBank                             MYR -500.00
     ; raw: 05May IBG DIRECT DEBIT /MISC DEBIT, AHAM ASSET 500.00 1,805.71 MANAGEMEN, PayNet Direct Debit, 5000032438
 
 2025-05-16 * TD INTERIM INT/PFT TD/-i INT/PFT TF, MR LIE
-    Income:Interest                                MYR 711.11
-    Assets:Bank:AmBank                             MYR -711.11
+    Income:Samuel:Interest                                MYR 711.11
+    Assets:Samuel:Bank:AmBank                             MYR -711.11
     ; raw: 16May TD INTERIM INT/PFT TD/-i INT/PFT TF, MR LIE 711.11 2,516.82 ZHI HOU, AmBank, Standing Instruction
 
 2025-05-18 * CREDIT TRANSFER
-    Assets:Bank:AmBank                             MYR 35,000.00
-    Income:Other                                   MYR -35,000.00  ; TODO: categorise
+    Assets:Samuel:Bank:AmBank                             MYR 35,000.00
+    Income:Samuel:Other                                   MYR -35,000.00  ; TODO: categorise
     ; raw: 18May CREDIT TRANSFER, , , 35,000.00 37,516.82
 
 2025-05-18 * FPX PAYMENT /MISC DEBIT, AHAM ASSET
-    Assets:Investment:AHAM                         MYR 5,000.00
-    Assets:Bank:AmBank                             MYR -5,000.00
+    Assets:Samuel:Investment:AHAM                         MYR 5,000.00
+    Assets:Samuel:Bank:AmBank                             MYR -5,000.00
     ; raw: 18May FPX PAYMENT /MISC DEBIT, AHAM ASSET 5,000.00 32,516.82 MANAGEMENT BERHAD532505181567063, 532505181567063, 25051816
 
 2025-05-31 * INT/HB/PFT
-    Assets:Bank:AmBank                             MYR 2.63
-    Income:Interest                                MYR -2.63
+    Assets:Samuel:Bank:AmBank                             MYR 2.63
+    Income:Samuel:Interest                                MYR -2.63
     ; raw: 31May INT/HB/PFT, , , 2.63 32,519.45 customercare@ambankgroup.com Kumpulan AmBank telah mengeluarkan satu Notis Privasi 
 
